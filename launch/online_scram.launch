@@ -1,0 +1,20 @@
+<launch>
+	<master auto="start"/>
+	<param name="/use_sim_time" value="true"/>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find online_scram)/stage_config/maps/willow-empty-0.05.pgm 0.1" respawn="false" >
+    	<param name="frame_id" value="/map" />
+  	</node> 
+  
+  	<node pkg="stage_ros" type="stageros" name="stageros" args="$(find online_scram)/stage_config/worlds/willow-pr2-multi.world" respawn="false">
+    	<param name="base_watchdog_timeout" value="0.2"/>
+  	</node>
+  	
+  	<include file="$(find online_scram)/launch/robot_0.launch" />
+  	<include file="$(find online_scram)/launch/robot_1.launch" />
+  	<include file="$(find online_scram)/launch/robot_2.launch" />
+  	<include file="$(find online_scram)/launch/robot_3.launch" />
+  	<include file="$(find online_scram)/launch/robot_4.launch" />
+  	
+  	<node pkg="online_scram" type="assigner" name="assigner" output="screen" />
+
+</launch>

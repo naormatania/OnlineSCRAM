@@ -1,0 +1,21 @@
+<launch>
+    <group ns="robot_0">
+		<param name="tf_prefix" value="robot_0" />
+		<node pkg="tf" type="static_transform_publisher" name="link_broadcaster" args="30 30 0 0 0 0 /map /robot_0/odom 100" />
+        
+        <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen">
+      		<remap from="map" to="/map" />
+      		<param name="controller_frequency" value="10.0" />
+      		<rosparam file="$(find online_scram)/move_base_config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+      		<rosparam file="$(find online_scram)/move_base_config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+      		<rosparam file="$(find online_scram)/move_base_config/local_costmap_params.yaml" command="load" />
+      		<rosparam file="$(find online_scram)/move_base_config/global_costmap_params.yaml" command="load" />
+      		<rosparam file="$(find online_scram)/move_base_config/base_local_planner_params.yaml" command="load" />
+    	</node>
+
+    	<node pkg="fake_localization" type="fake_localization" name="fake_localization" respawn="false" output="screen">
+      		<param name="odom_frame_id" value="robot_0/odom" />
+      		<param name="base_frame_id" value="robot_0/base_link" />
+    	</node>
+    </group>
+</launch>
