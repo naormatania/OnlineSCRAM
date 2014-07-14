@@ -2,7 +2,7 @@
     <group ns="robot_3">
 		<param name="tf_prefix" value="robot_3" />
 		<node pkg="tf" type="static_transform_publisher" name="link_broadcaster" args="30 30 0 0 0 0 /map /robot_3/odom 100" />
-        
+  		<node pkg="online_scram" type="walker" name="walker" output="screen" />
         <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen">
       		<remap from="map" to="/map" />
       		<param name="controller_frequency" value="10.0" />
