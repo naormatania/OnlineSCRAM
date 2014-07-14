@@ -96,7 +96,7 @@ public:
 
   	// wait to have some transform before start
   	listener.waitForTransform("/map", this_robot_frame, ros::Time(0), ros::Duration(10.0));
-
+  	/*
   	tf::StampedTransform transform;
   	try {
 		listener.lookupTransform("/map", this_robot_frame, ros::Time(0), transform);
@@ -105,16 +105,16 @@ public:
 		ROS_ERROR("%s",ex.what());
 	}
 
-	//double theta = atan2(transform.getOrigin().y() - goal->y,
-	//  				transform.getOrigin().x() - goal->x);
-	double theta = M_PI/2;
+	ROS_INFO("Robot %d with goal %d,%d", robot_id_, goal->x, goal->y);
+	double theta = atan2(double(goal->y - transform.getOrigin().y()),
+			double(goal->x - transform.getOrigin().x()));
 
 	move_base_msgs::MoveBaseGoal moveBaseGoal;
 	moveBaseGoal.target_pose.header.frame_id = "map";
 	moveBaseGoal.target_pose.header.stamp = ros::Time::now();
 
-	moveBaseGoal.target_pose.pose.position.x = 10;
-	moveBaseGoal.target_pose.pose.position.y = 10;
+	moveBaseGoal.target_pose.pose.position.x = transform.getOrigin().x();
+	moveBaseGoal.target_pose.pose.position.y = transform.getOrigin().y();
 
 	// Convert the Euler angle to quaternion
 	tf::Quaternion quaternion;
@@ -133,8 +133,8 @@ public:
 	ROS_INFO("state is %s", moveBaseClient_->getState().toString().c_str());
 	moveBaseClient_->waitForResult();
 	ROS_INFO("result reached");
-
-  	ros::Rate fasterLoopRate(10);
+	*/
+  	ros::Rate fasterLoopRate(20);
   	while (ros::ok()) {
 
         // check that preempt has not been requested by the client
@@ -156,24 +156,44 @@ public:
   			ROS_ERROR("%s",ex.what());
   		}
 
-  		float dist = sqrt(pow(transform.getOrigin().x() - goal->x, 2) +
+  		double dist = sqrt(pow(transform.getOrigin().x() - goal->x, 2) +
                   pow(transform.getOrigin().y() - goal->y, 2));
 
+  		ROS_INFO("Robot %d is at yaw %f and should",
+  				robot_id_, tf::getYaw(transform.getRotation()));
+  		double theta =  atan2(double(goal->y - transform.getOrigin().y()),
+  							double(goal->x - transform.getOrigin().x()))
+  									- tf::getYaw(transform.getRotation());
+
+  		geometry_msgs::Twist vel_msg;
+  		vel_msg.linear.z = 0;
+  		/*
+  		if ((theta < 5*M_PI/180) && (theta > -5*M_PI/180)) {
+  			vel_msg.angular.z = 0;
+  		}
+  		else {
+  			vel_msg.angular.z = max(theta, double(MAX_ANGULAR_VEL));
+  		}
+		*/
   		if (dist < NEGLIBLE_DISTANCE) {
   			result_.total_dishes_cleaned = 3;
   			ROS_INFO("%s: Succeeded", action_name_.c_str());
+  			vel_msg.linear.x = 0;
+  			vel_msg.linear.y = 0;
+  			cmdVelPublisher_.publish(vel_msg);
   			// set the action state to succeeded
   			as_.setSucceeded(result_);
   			success = true;
   			break;
   		}
-
-  		geometry_msgs::Twist vel_msg;
-
-		vel_msg.linear.x = min(dist, float(MAX_LINEAR_VEL));
-		vel_msg.angular.z = 0;
-
-  		cmdVelPublisher_.publish(vel_msg);
+  		else {
+  			// vel_msg.linear.x = min(dist, double(MAX_LINEAR_VEL));
+  			vel_msg.linear.x = min(goal->x - transform.getOrigin().x(),
+  					double(MAX_LINEAR_VEL));
+  			vel_msg.linear.y = min(goal->y - transform.getOrigin().y(),
+  					double(MAX_LINEAR_VEL));
+  			cmdVelPublisher_.publish(vel_msg);
+  		}
 
   		ros::spinOnce();
   		fasterLoopRate.sleep();

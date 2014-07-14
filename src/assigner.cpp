@@ -41,7 +41,7 @@ typedef actionlib::SimpleActionClient<online_scram::WalkAction> WalkClient;
 #define GRID_WIDTH 60
 #define LOGGER_NAME "ScramOnline.log"
 
-void moveRobot(MoveBaseClient *ac, std::pair<int,int> location, double angle);
+void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle);
 
 bool sortEdges(const Edge &e1,const Edge &e2) { return (e1.first<e2.first); }
 
@@ -191,11 +191,13 @@ int main(int argc, char** argv) {
 	AssignmentAlgorithms.push_back(std::make_pair(string("MURDOCH"), (void*)MURDOCH));
 
 	std::vector<MoveBaseClient*> MoveBaseClientList;
+	std::vector<WalkClient*> WalkClientList;
 	std::vector<ros::Publisher> CmdVelPublishersList;
 	std::vector<ros::Publisher> PosePublishersList;
 
 	for (int robot_id = 0; robot_id < NUM_ROBOTS; ++robot_id) {
 		ROS_INFO("Trying to connect to move base robot %d", robot_id);
+		/*
 		// Create the string "robot_X/move_base"
 		string move_base_str = "/robot_";
 		move_base_str += boost::lexical_cast<string>(robot_id);
@@ -210,7 +212,7 @@ int main(int argc, char** argv) {
 
 		ROS_INFO("Connected to move base server");
 		MoveBaseClientList.push_back(ac);
-		/*
+		*/
 		// Create the string "robot_X/move_base"
 		string move_base_str = "/robot_";
 		move_base_str += boost::lexical_cast<string>(robot_id);
@@ -225,7 +227,7 @@ int main(int argc, char** argv) {
 
 		ROS_INFO("Connected to move base server");
 		WalkClientList.push_back(ac);
-		*/
+
 		string cmd_vel_str = "/robot_";
 		cmd_vel_str += boost::lexical_cast<string>(robot_id);
 		cmd_vel_str += "/cmd_vel";
@@ -332,7 +334,7 @@ int main(int argc, char** argv) {
 
 					// adjustAngle(CmdVelPublishersList[robot_index], robotsAngles[robot_index], angle);
 					// getRobotToLocation(CmdVelPublishersList[robot_index], robot_location, target_location);
-					moveRobot(MoveBaseClientList[robot_index],
+					moveRobot(WalkClientList[robot_index],
 							t.targets[target_index], angle);
 				}
 				log << std::endl;
@@ -341,7 +343,7 @@ int main(int argc, char** argv) {
 				int robot_finished = -1;
 				while (!finished) {
 					for (int i=0; i< NUM_ROBOTS; i++) {
-						if (MoveBaseClientList[i]->getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
+						if (WalkClientList[i]->getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
 							ROS_INFO("Robot %d has reached the goal!", i);
 							robot_finished = i;
 							finished = true;
@@ -357,7 +359,7 @@ int main(int argc, char** argv) {
 					robots_state[robot_finished] = true;
 					while (num_robots_left > 0) {
 						for (int i=0; i< NUM_ROBOTS; i++) {
-							if ((MoveBaseClientList[i]->getState() == actionlib::SimpleClientGoalState::SUCCEEDED) \
+							if ((WalkClientList[i]->getState() == actionlib::SimpleClientGoalState::SUCCEEDED) \
 									&& (robots_state[i] == false)){
 								ROS_INFO("Robot %d has reached the goal!", i);
 								log << "Robot " << i << " finished At time " << time(NULL) - start_time << std::endl;
@@ -371,7 +373,7 @@ int main(int argc, char** argv) {
 				}
 
 				for (int i = 0; i < NUM_ROBOTS; i++) {
-					MoveBaseClientList[i]->cancelAllGoals();
+					WalkClientList[i]->cancelAllGoals();
 					/*
 					tf::TransformListener tf(ros::Duration(10));
 					string robot_str = "/robot_";
@@ -400,11 +402,11 @@ int main(int argc, char** argv) {
 			}
 			// move robots back to their spots (30,30) for another run
 			for (int i=0; i< NUM_ROBOTS; i++) {
-				moveRobot(MoveBaseClientList[i],
+				moveRobot(WalkClientList[i],
 					Point(30,30), 0);
 			}
 			for (int i=0; i< NUM_ROBOTS; i++) {
-				MoveBaseClientList[i]->waitForResult();
+				WalkClientList[i]->waitForResult();
 			}
 		}
 		log.close();
@@ -413,8 +415,9 @@ int main(int argc, char** argv) {
 	return 0;
 }
 
-void moveRobot(MoveBaseClient *ac, std::pair<int,int> location, double angle)
+void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle)
 {
+	/*
 	move_base_msgs::MoveBaseGoal goal;
 	goal.target_pose.header.frame_id = "map";
 	goal.target_pose.header.stamp = ros::Time::now();
@@ -437,12 +440,12 @@ void moveRobot(MoveBaseClient *ac, std::pair<int,int> location, double angle)
 
 	// ac.waitForResult();
 
-	/*
+	*/
 	online_scram::WalkGoal goal;
 	goal.x = location.first;
-	goal.y = location.first;
+	goal.y = location.second;
 	ros::Rate loopRate(10);
 
 	ac->sendGoal(goal);
-	*/
+
 }
