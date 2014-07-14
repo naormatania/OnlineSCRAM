@@ -28,10 +28,13 @@
 #include "mmdr.h"
 #include "mmd_msd2.h"
 
+#include <online_scram/WalkAction.h>
+
 using namespace std;
 using namespace boost;
 
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
+typedef actionlib::SimpleActionClient<online_scram::WalkAction> WalkClient;
 
 #define NUM_ROBOTS 5
 #define NUM_RUNS 10
@@ -207,7 +210,22 @@ int main(int argc, char** argv) {
 
 		ROS_INFO("Connected to move base server");
 		MoveBaseClientList.push_back(ac);
+		/*
+		// Create the string "robot_X/move_base"
+		string move_base_str = "/robot_";
+		move_base_str += boost::lexical_cast<string>(robot_id);
+		move_base_str += "/walker";
 
+		// create the action client
+		WalkClient *ac = new WalkClient(move_base_str, true);
+
+		// Wait for the action server to become available
+		ROS_INFO("Waiting for the move_base action server");
+		ac->waitForServer(ros::Duration(5));
+
+		ROS_INFO("Connected to move base server");
+		WalkClientList.push_back(ac);
+		*/
 		string cmd_vel_str = "/robot_";
 		cmd_vel_str += boost::lexical_cast<string>(robot_id);
 		cmd_vel_str += "/cmd_vel";
@@ -418,4 +436,13 @@ void moveRobot(MoveBaseClient *ac, std::pair<int,int> location, double angle)
 	ac->sendGoal(goal);
 
 	// ac.waitForResult();
+
+	/*
+	online_scram::WalkGoal goal;
+	goal.x = location.first;
+	goal.y = location.first;
+	ros::Rate loopRate(10);
+
+	ac->sendGoal(goal);
+	*/
 }
