@@ -1,0 +1,10 @@
+# Define the goal
+uint32 x
+uint32 y
+---
+# Define the result
+# USELESS
+uint32 total_dishes_cleaned
+---
+# Define a feedback message
+bool is_waiting
