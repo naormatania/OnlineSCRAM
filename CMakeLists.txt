@@ -122,6 +122,17 @@ target_link_libraries(assigner
   ${catkin_LIBRARIES}
 )
 
+## Declare a cpp executable
+add_executable(walker src/walker.cpp)
+
+## Add cmake target dependencies of the executable/library
+## as an example, message headers may need to be generated before nodes
+add_dependencies(walker online_scram_generate_messages_cpp)
+
+target_link_libraries(walker
+  ${catkin_LIBRARIES}
+)
+
 find_package(Eigen REQUIRED)
 include_directories(${EIGEN_INCLUDE_DIRS})
 add_definitions(${EIGEN_DEFINITIONS})
