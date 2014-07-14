@@ -156,14 +156,13 @@ public:
   			ROS_ERROR("%s",ex.what());
   		}
 
-  		double dist = sqrt(pow(transform.getOrigin().x() - goal->x, 2) +
-                  pow(transform.getOrigin().y() - goal->y, 2));
+  		double x_diff = transform.getOrigin().x() - goal->x;
+  		double y_diff = transform.getOrigin().y() - goal->y;
+  		double dist = sqrt(pow(x_diff, 2) + pow(y_diff, 2));
 
   		ROS_INFO("Robot %d is at yaw %f and should",
   				robot_id_, tf::getYaw(transform.getRotation()));
-  		double theta =  atan2(double(goal->y - transform.getOrigin().y()),
-  							double(goal->x - transform.getOrigin().x()))
-  									- tf::getYaw(transform.getRotation());
+  		double theta =  atan2(y_diff,x_diff) - tf::getYaw(transform.getRotation());
 
   		geometry_msgs::Twist vel_msg;
   		vel_msg.linear.z = 0;
@@ -187,11 +186,13 @@ public:
   			break;
   		}
   		else {
+  			double factor = fabs(y_diff)/fabs(x_diff);
+  			double siz = min(dist,double(MAX_LINEAR_VEL))/sqrt(1+pow(factor,2));
+  			int x_sign = (x_diff>0)?(-1):(1);
+  			int y_sign = (y_diff>0)?(-1):(1);
   			// vel_msg.linear.x = min(dist, double(MAX_LINEAR_VEL));
-  			vel_msg.linear.x = min(goal->x - transform.getOrigin().x(),
-  					double(MAX_LINEAR_VEL));
-  			vel_msg.linear.y = min(goal->y - transform.getOrigin().y(),
-  					double(MAX_LINEAR_VEL));
+  			vel_msg.linear.x = x_sign*siz;
+  			vel_msg.linear.y = y_sign*factor*siz;
   			cmdVelPublisher_.publish(vel_msg);
   		}
 

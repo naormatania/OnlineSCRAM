@@ -24,7 +24,7 @@ define pr2 position
   gui_nose 1
   drive "omni"
   #topurg(pose [ 0.275 0.000 0 0.000 ])
-  # topurg(pose [ 0.275 0.000 -0.1 0.000 ])
+  topurg(pose [ 0.275 0.000 -0.1 0.000 ])
 )
 
 define floorplan model
