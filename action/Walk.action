@@ -1,6 +1,7 @@
 # Define the goal
 uint32 x
 uint32 y
+uint32 t
 ---
 # Define the result
 # USELESS

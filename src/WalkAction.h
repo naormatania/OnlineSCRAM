@@ -55,9 +55,14 @@ protected:
 public:
 
   WalkAction(std::string name, int robot_id) :
-    as_(nh_, name, boost::bind(&WalkAction::executeCB, this, _1), false),
+    as_(nh_, name, false),
     action_name_(name), robot_id_(robot_id)
   {
+
+	//register the goal and feeback callbacks
+	as_.registerGoalCallback(boost::bind(&WalkAction::goalCB, this));
+	// as_.registerPreemptCallback(boost::bind(&AveragingAction::preemptCB, this));
+
 	string cmd_vel_str = "/robot_";
 	cmd_vel_str += boost::lexical_cast<string>(robot_id);
 	cmd_vel_str += "/cmd_vel";
@@ -80,10 +85,11 @@ public:
 	  delete moveBaseClient_;
   }
 
-  void executeCB(const online_scram::WalkGoalConstPtr &goal)
+  void goalCB()
   {
-    // helper variables
-    ros::Rate r(1);
+	// online_scram::WalkGoalConstPtr
+	online_scram::WalkGoalConstPtr goal = as_.acceptNewGoal();
+	// helper variables
     bool success = true;
     string tf_prefix;
     nh_.getParam("tf_prefix", tf_prefix);
@@ -155,11 +161,28 @@ public:
   		catch (tf::TransformException &ex) {
   			ROS_ERROR("%s",ex.what());
   		}
-
+  		/*
   		double x_diff = transform.getOrigin().x() - goal->x;
   		double y_diff = transform.getOrigin().y() - goal->y;
+  		*/
+  		double x_diff = goal->x - transform.getOrigin().x();
+  		double y_diff = goal->y - transform.getOrigin().y();
   		double dist = sqrt(pow(x_diff, 2) + pow(y_diff, 2));
+  		double theta =  atan2(y_diff,x_diff) - tf::getYaw(transform.getRotation());
+  		x_diff = dist*cos(theta);
+  		y_diff = dist*sin(theta);
 
+		geometry_msgs::Twist vel_msg;
+
+		if (dist > NEGLIBLE_DISTANCE) {
+			vel_msg.linear.x = min(dist, MAX_LINEAR_VEL);
+			vel_msg.angular.z = min(4 * atan2(y_diff,x_diff), MAX_ANGULAR_VEL);
+		}
+		else {
+			as_.setSucceeded(result_);
+		}
+		cmdVelPublisher_.publish(vel_msg);
+  		/*
   		ROS_INFO("Robot %d is at yaw %f and should",
   				robot_id_, tf::getYaw(transform.getRotation()));
   		double theta =  atan2(y_diff,x_diff) - tf::getYaw(transform.getRotation());
@@ -174,6 +197,7 @@ public:
   			vel_msg.angular.z = max(theta, double(MAX_ANGULAR_VEL));
   		}
 		*/
+  		/*
   		if (dist < NEGLIBLE_DISTANCE) {
   			result_.total_dishes_cleaned = 3;
   			ROS_INFO("%s: Succeeded", action_name_.c_str());
@@ -195,12 +219,71 @@ public:
   			vel_msg.linear.y = y_sign*factor*siz;
   			cmdVelPublisher_.publish(vel_msg);
   		}
+  		*/
 
   		ros::spinOnce();
   		fasterLoopRate.sleep();
   	}
+  }
+
+void executeCB2(const online_scram::WalkGoalConstPtr &goal)
+  {
+	string tf_prefix;
+	nh_.getParam("tf_prefix", tf_prefix);
+
+	// push_back the seeds for the fibonacci sequence
+	feedback_.is_waiting = false;
+
+	tf::TransformListener listener;
+	string this_robot_frame = tf::resolve(tf_prefix, "base_footprint");
+
+	string target_str = "/robot_";
+	target_str += boost::lexical_cast<string>(goal->t);
+	string target_frame = tf::resolve(target_str, "base_footprint");
+
+	// wait to have some transform before start
+	listener.waitForTransform(this_robot_frame, target_frame, ros::Time(0), ros::Duration(10.0));
+
+	// make the frequency larger to hadle with obstacles
+	ros::Rate fasterLoopRate(10);
+	while (ros::ok()) {
+
+		// check that preempt has not been requested by the client
+		if (as_.isPreemptRequested() || !ros::ok())
+		{
+		  ROS_INFO("%s: Preempted", action_name_.c_str());
+		  // set the action state to preempted
+		  as_.setPreempted();
+		  break;
+		}
+
+		tf::StampedTransform transform;
+
+		try {
+			listener.lookupTransform(this_robot_frame, target_frame, ros::Time(0), transform);
+		}
+		catch (tf::TransformException &ex) {
+			ROS_ERROR("%s",ex.what());
+		}
+
+		double dist = sqrt(pow(transform.getOrigin().x(), 2) +
+				pow(transform.getOrigin().y(), 2));
+		geometry_msgs::Twist vel_msg;
+
+		if (dist < NEGLIBLE_DISTANCE) {
+			as_.setSucceeded(result_);
+		}
+		else {
+			vel_msg.linear.x = min(dist, MAX_LINEAR_VEL);
+			vel_msg.angular.z = min(4 * atan2(transform.getOrigin().y(),
+										  transform.getOrigin().x()), MAX_ANGULAR_VEL);
+		}
+		cmdVelPublisher_.publish(vel_msg);
+
+		ros::spinOnce();
+		fasterLoopRate.sleep();
+	}
   };
 
 };
-
 #endif /* WALKACTION_CPP_ */

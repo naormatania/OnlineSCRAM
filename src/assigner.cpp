@@ -41,7 +41,7 @@ typedef actionlib::SimpleActionClient<online_scram::WalkAction> WalkClient;
 #define GRID_WIDTH 60
 #define LOGGER_NAME "ScramOnline.log"
 
-void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle);
+void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle, int target);
 
 bool sortEdges(const Edge &e1,const Edge &e2) { return (e1.first<e2.first); }
 
@@ -287,7 +287,7 @@ int main(int argc, char** argv) {
 				  t.targets.push_back(GoalsList.back());
 				  GoalsList.pop_back();
 				}
-
+				std::map<Point,int> locToTatrget;
 				// put the targets on the stage map
 				for (int i = 0; i < n; i++) {
 					Point p = t.targets[i];
@@ -296,6 +296,7 @@ int main(int argc, char** argv) {
 					msg.y = p.second;
 					msg.theta = 0;
 					PosePublishersList[i].publish(msg);
+					locToTatrget.insert(std::make_pair(p,i+NUM_ROBOTS));
 				}
 
 				ROS_INFO("Trying to run task assignment algorithm");
@@ -335,7 +336,7 @@ int main(int argc, char** argv) {
 					// adjustAngle(CmdVelPublishersList[robot_index], robotsAngles[robot_index], angle);
 					// getRobotToLocation(CmdVelPublishersList[robot_index], robot_location, target_location);
 					moveRobot(WalkClientList[robot_index],
-							t.targets[target_index], angle);
+							t.targets[target_index], angle, locToTatrget[t.targets[target_index]]);
 				}
 				log << std::endl;
 
@@ -403,7 +404,7 @@ int main(int argc, char** argv) {
 			// move robots back to their spots (30,30) for another run
 			for (int i=0; i< NUM_ROBOTS; i++) {
 				moveRobot(WalkClientList[i],
-					Point(30,30), 0);
+					Point(30,30), 0, 0);
 			}
 			for (int i=0; i< NUM_ROBOTS; i++) {
 				WalkClientList[i]->waitForResult();
@@ -415,7 +416,7 @@ int main(int argc, char** argv) {
 	return 0;
 }
 
-void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle)
+void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle, int target)
 {
 	/*
 	move_base_msgs::MoveBaseGoal goal;
@@ -444,6 +445,7 @@ void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle)
 	online_scram::WalkGoal goal;
 	goal.x = location.first;
 	goal.y = location.second;
+	goal.t = target;
 	ros::Rate loopRate(10);
 
 	ac->sendGoal(goal);
