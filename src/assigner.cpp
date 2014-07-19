@@ -29,6 +29,12 @@
 #include "mmd_msd2.h"
 
 #include <online_scram/WalkAction.h>
+#include <online_scram/WalkActionFeedback.h>
+#include <online_scram/WalkActionResult.h>
+#include <online_scram/WalkGoal.h>
+#include <online_scram/WalkFeedback.h>
+#include <online_scram/WalkActionGoal.h>
+#include <online_scram/WalkResult.h>
 
 using namespace std;
 using namespace boost;
@@ -41,13 +47,36 @@ typedef actionlib::SimpleActionClient<online_scram::WalkAction> WalkClient;
 #define GRID_WIDTH 60
 #define LOGGER_NAME "ScramOnline.log"
 
-void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle, int target);
+void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle);
 
 bool sortEdges(const Edge &e1,const Edge &e2) { return (e1.first<e2.first); }
 
 typedef std::vector<Edge> AssignmentAlgo(Test t);
 
 std::auto_ptr<std::pair<Test,std::vector<Edge> > > lastAssignment(NULL);
+
+bool is_waiting[NUM_ROBOTS] = {false, false, false, false, false};
+
+// Called once when the goal completes
+void doneCb(const actionlib::SimpleClientGoalState& state,
+            const online_scram::WalkResultConstPtr& result)
+{
+  ROS_INFO("Finished in state [%s]", state.toString().c_str());
+}
+
+// Called once when the goal becomes active
+void activeCb()
+{
+  ROS_INFO("Goal just went active");
+}
+
+// Called every time feedback is received for the goal
+void feedbackCb(const online_scram::WalkFeedbackConstPtr& feedback)
+{
+  ROS_WARN("Robot id %d with feed_back %d", feedback->robot_id,
+  			feedback->is_waiting);
+  is_waiting[feedback->robot_id] = feedback->is_waiting;
+}
 
 std::vector<Edge> BLE(Test t){
 	std::vector<Edge> all_distances;
@@ -335,18 +364,27 @@ int main(int argc, char** argv) {
 					// adjustAngle(CmdVelPublishersList[robot_index], robotsAngles[robot_index], angle);
 					// getRobotToLocation(CmdVelPublishersList[robot_index], robot_location, target_location);
 					moveRobot(WalkClientList[robot_index],
-							t.targets[target_index], angle, 0);
+							t.targets[target_index], angle);
 				}
 				log << std::endl;
 
 				bool finished = false;
 				int robot_finished = -1;
+				geometry_msgs::Twist vel_msg;
+				// we won't deal with face to face robots here.
+				vel_msg.linear.x = -1;
 				while (!finished) {
 					for (int i=0; i< NUM_ROBOTS; i++) {
 						if (WalkClientList[i]->getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
 							ROS_INFO("Robot %d has reached the goal!", i);
 							robot_finished = i;
 							finished = true;
+						}
+					}
+					for (int j =0; j < NUM_ROBOTS; j++) {
+						if (is_waiting[j] == true) {
+							CmdVelPublishersList[j].publish(vel_msg);
+							break;
 						}
 					}
 				}
@@ -403,7 +441,7 @@ int main(int argc, char** argv) {
 			// move robots back to their spots (30,30) for another run
 			for (int i=0; i< NUM_ROBOTS; i++) {
 				moveRobot(WalkClientList[i],
-					Point(10*(i+1),10*(i+1)), 0, 0);
+					Point(10*(i+1),10*(i+1)), 0);
 			}
 			for (int i=0; i< NUM_ROBOTS; i++) {
 				WalkClientList[i]->waitForResult();
@@ -415,7 +453,7 @@ int main(int argc, char** argv) {
 	return 0;
 }
 
-void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle, int target)
+void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle)
 {
 	/*
 	move_base_msgs::MoveBaseGoal goal;
@@ -444,9 +482,8 @@ void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle, int ta
 	online_scram::WalkGoal goal;
 	goal.x = location.first;
 	goal.y = location.second;
-	goal.t = target;
 	ros::Rate loopRate(10);
 
-	ac->sendGoal(goal);
+	ac->sendGoal(goal, &doneCb, &activeCb, &feedbackCb);
 
 }

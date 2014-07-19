@@ -1,11 +1,10 @@
 # Define the goal
 uint32 x
 uint32 y
-uint32 t
 ---
 # Define the result
-# USELESS
-uint32 total_dishes_cleaned
+uint32 result
 ---
 # Define a feedback message
+uint32 robot_id
 bool is_waiting

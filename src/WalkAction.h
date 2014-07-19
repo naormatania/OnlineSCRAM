@@ -112,6 +112,7 @@ public:
 
     // push_back the seeds for the fibonacci sequence
     feedback_.is_waiting = false;
+    feedback_.robot_id = robot_id_;
 
   	tf::TransformListener listener;
   	string this_robot_frame = tf::resolve(tf_prefix, "base_footprint");
@@ -203,6 +204,7 @@ public:
 			}
 		}
 		else {
+			feedback_.is_waiting = false;
 			as_.setSucceeded(result_);
 			break;
 		}
@@ -274,65 +276,6 @@ public:
           obstacleFound = false;
       }
   }
-
-void executeCB2(const online_scram::WalkGoalConstPtr &goal)
-  {
-	string tf_prefix;
-	nh_.getParam("tf_prefix", tf_prefix);
-
-	// push_back the seeds for the fibonacci sequence
-	feedback_.is_waiting = false;
-
-	tf::TransformListener listener;
-	string this_robot_frame = tf::resolve(tf_prefix, "base_footprint");
-
-	string target_str = "/robot_";
-	target_str += boost::lexical_cast<string>(goal->t);
-	string target_frame = tf::resolve(target_str, "base_footprint");
-
-	// wait to have some transform before start
-	listener.waitForTransform(this_robot_frame, target_frame, ros::Time(0), ros::Duration(10.0));
-
-	// make the frequency larger to hadle with obstacles
-	ros::Rate fasterLoopRate(10);
-	while (ros::ok()) {
-
-		// check that preempt has not been requested by the client
-		if (as_.isPreemptRequested() || !ros::ok())
-		{
-		  ROS_INFO("%s: Preempted", action_name_.c_str());
-		  // set the action state to preempted
-		  as_.setPreempted();
-		  break;
-		}
-
-		tf::StampedTransform transform;
-
-		try {
-			listener.lookupTransform(this_robot_frame, target_frame, ros::Time(0), transform);
-		}
-		catch (tf::TransformException &ex) {
-			ROS_ERROR("%s",ex.what());
-		}
-
-		double dist = sqrt(pow(transform.getOrigin().x(), 2) +
-				pow(transform.getOrigin().y(), 2));
-		geometry_msgs::Twist vel_msg;
-
-		if (dist < NEGLIBLE_DISTANCE) {
-			as_.setSucceeded(result_);
-		}
-		else {
-			vel_msg.linear.x = min(dist, MAX_LINEAR_VEL);
-			vel_msg.angular.z = min(4 * atan2(transform.getOrigin().y(),
-										  transform.getOrigin().x()), MAX_ANGULAR_VEL);
-		}
-		cmdVelPublisher_.publish(vel_msg);
-
-		ros::spinOnce();
-		fasterLoopRate.sleep();
-	}
-  };
 
 };
 #endif /* WALKACTION_CPP_ */
