@@ -1,7 +1,7 @@
 <launch>
     <group ns="robot_4">
 		<param name="tf_prefix" value="robot_4" />
-		<node pkg="tf" type="static_transform_publisher" name="link_broadcaster" args="30 30 0 0 0 0 /map /robot_4/odom 100" />
+		<node pkg="tf" type="static_transform_publisher" name="link_broadcaster" args="50 50 0 0 0 0 /map /robot_4/odom 100" />
   		<node pkg="online_scram" type="walker" name="walker" output="screen" />
         <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen">
       		<remap from="map" to="/map" />

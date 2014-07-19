@@ -42,7 +42,7 @@ define floorplan model
   gripper_return 0
   fiducial_return 0
   
-  ranger_return 0
+  ranger_return 1
   obstacle_return 0
 )
 
@@ -68,82 +68,77 @@ floorplan
   name "willow"
   bitmap "../maps/willow-empty-0.05.pgm"
   #size [60 60 0.5]
-  size [60 60 0]   
+  size [120 120 0]   
   #pose [ 29.2 26.2 0 0 ]
   pose [ 0 0 0 0 ]        
 )
 
 # robots
 pr2(
-	pose [ 30 30 0 0 ] 
+	pose [ 10 10 0 0 ] 
 	name "robot0" 
 	color "blue"
-	ranger_return 0
 	obstacle_return 0
 )
 pr2( 
-	pose [ 30 30 0 0 ] 
+	pose [ 20 20 0 0 ] 
 	name "robot1" 
 	color "blue"
-	ranger_return 0
 	obstacle_return 0
 )
 pr2(
 	pose [ 30 30 0 0 ] 
 	name "robot2" 
 	color "blue"
-	ranger_return 0
 	obstacle_return 0
 )
 pr2( 
-	pose [ 30 30 0 0 ] 
+	pose [ 40 40 0 0 ] 
 	name "robot3" 
 	color "blue"
-	ranger_return 0
 	obstacle_return 0
 )
 pr2( 
-	pose [ 30 30 0 0 ] 
+	pose [ 50 50 0 0 ] 
 	name "robot4" 
 	color "blue"
-	ranger_return 0
 	obstacle_return 0
 )
 
-# robots
+# targets
 pr2(
-	pose [ 10 10 0 0 ]
+	pose [ 0 0 0 0 ]
 	name "target0"
 	color "black"
-	ranger_return 0
+	ranger_return -1
 	obstacle_return 0
 )
 pr2(
-	pose [ 10 10 0 0 ]
+	pose [ 0 0 0 0 ]
 	name "target1"
 	color "black"
-	ranger_return 0
+	ranger_return -1
 	obstacle_return 0
 )
 pr2(
-	pose [ 10 10 0 0 ]
+	pose [ 0 0 0 0 ]
 	name "target2"
 	color "black"
-	ranger_return 0
+	ranger_return -1
 	obstacle_return 0
 )
 pr2(
-	pose [ 10 10 0 0 ]
+	pose [ 0 0 0 0 ]
 	name "target3"
 	color "black"
-	ranger_return 0
+	ranger_return -1
 	obstacle_return 0
 )
 pr2(
-	pose [ 10 10 0 0 ]
+	pose [ 0 0 0 0 ]
 	name "target4"
 	color "black"
-	ranger_return 0
+	ranger_return -1
 	obstacle_return 0
 )
 

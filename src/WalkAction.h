@@ -12,6 +12,7 @@
 #include <tf/transform_listener.h>
 
 #include "geometry_msgs/Twist.h"
+#include <sensor_msgs/LaserScan.h>
 
 #include <ros/ros.h>
 #include <ros/time.h>
@@ -36,6 +37,10 @@ using namespace boost;
 
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
 
+bool obstacleFound = false;
+
+void readSensorCallback(const sensor_msgs::LaserScan::ConstPtr &sensor_msg);
+
 class WalkAction
 {
 protected:
@@ -51,6 +56,7 @@ protected:
   MoveBaseClient *moveBaseClient_;
 
   ros::Publisher cmdVelPublisher_;
+  ros::Subscriber baseScanSubscriber_;
 
 public:
 
@@ -76,6 +82,16 @@ public:
 	// Wait for the action server to become available
 	ROS_INFO("Waiting for the move_base action server");
 	moveBaseClient_->waitForServer(ros::Duration(5));
+
+	// subscribe to robot's laser scan topic "base_scan"
+	string laser_scan_topic_name = "base_scan";
+
+	baseScanSubscriber_ = nh_.subscribe<sensor_msgs::LaserScan>(laser_scan_topic_name, 1,
+            &WalkAction::readSensorCallback);
+
+	// ros::Subscriber laser_sub = n.subscribe("scan", 100, laserCallback);
+
+	// ros::Subscriber ranger_sub = n.subscribe("range", 100, rangeCallback);
 
     as_.start();
   }
@@ -142,6 +158,7 @@ public:
 	*/
   	ros::Rate fasterLoopRate(20);
   	while (ros::ok()) {
+  		as_.publishFeedback(feedback_);
 
         // check that preempt has not been requested by the client
         if (as_.isPreemptRequested() || !ros::ok())
@@ -175,11 +192,19 @@ public:
 		geometry_msgs::Twist vel_msg;
 
 		if (dist > NEGLIBLE_DISTANCE) {
-			vel_msg.linear.x = min(dist, MAX_LINEAR_VEL);
-			vel_msg.angular.z = min(4 * atan2(y_diff,x_diff), MAX_ANGULAR_VEL);
+			if (obstacleFound == true) {
+				ROS_WARN("ROBOT %d is waiting", robot_id_);
+				feedback_.is_waiting = true;
+			}
+			else {
+				vel_msg.linear.x = min(dist, MAX_LINEAR_VEL);
+				vel_msg.angular.z = min(4 * atan2(y_diff,x_diff), MAX_ANGULAR_VEL);
+				feedback_.is_waiting = false;
+			}
 		}
 		else {
 			as_.setSucceeded(result_);
+			break;
 		}
 		cmdVelPublisher_.publish(vel_msg);
   		/*
@@ -224,6 +249,30 @@ public:
   		ros::spinOnce();
   		fasterLoopRate.sleep();
   	}
+  }
+
+  static void readSensorCallback(const sensor_msgs::LaserScan::ConstPtr &sensor_msg)
+  {
+      int arraySize = (sensor_msg->angle_max - sensor_msg->angle_min) /
+              sensor_msg->angle_increment;
+
+      bool isObstacle = false;
+
+      for (int i = 0; i < arraySize; i++) {
+          if ((sensor_msg->ranges[i] > sensor_msg->range_min) &&
+        		  (sensor_msg->ranges[i] < sensor_msg->range_max) &&
+        		  (sensor_msg->ranges[i] < 0.5)) {
+              isObstacle = true;
+          }
+      }
+
+
+      if (isObstacle)
+      {
+          obstacleFound = true;
+      } else {
+          obstacleFound = false;
+      }
   }
 
 void executeCB2(const online_scram::WalkGoalConstPtr &goal)
