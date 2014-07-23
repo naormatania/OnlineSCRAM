@@ -1,6 +1,7 @@
 # Define the goal
 uint32 x
 uint32 y
+bool c
 ---
 # Define the result
 uint32 result

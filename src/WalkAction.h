@@ -193,8 +193,9 @@ public:
 		geometry_msgs::Twist vel_msg;
 
 		if (dist > NEGLIBLE_DISTANCE) {
-			if (obstacleFound == true) {
+			if ((obstacleFound == true) && (goal->c == true)) {
 				ROS_WARN("ROBOT %d is waiting", robot_id_);
+				vel_msg.angular.z = M_PI/2;
 				feedback_.is_waiting = true;
 			}
 			else {

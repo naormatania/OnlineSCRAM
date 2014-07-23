@@ -43,11 +43,11 @@ typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseCl
 typedef actionlib::SimpleActionClient<online_scram::WalkAction> WalkClient;
 
 #define NUM_ROBOTS 5
-#define NUM_RUNS 10
-#define GRID_WIDTH 60
+#define NUM_RUNS 20
+#define GRID_WIDTH 15
 #define LOGGER_NAME "ScramOnline.log"
 
-void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle);
+void moveRobot(WalkClient *ac, std::pair<int,int> location, bool care_collision = true);
 
 bool sortEdges(const Edge &e1,const Edge &e2) { return (e1.first<e2.first); }
 
@@ -73,8 +73,10 @@ void activeCb()
 // Called every time feedback is received for the goal
 void feedbackCb(const online_scram::WalkFeedbackConstPtr& feedback)
 {
-  ROS_WARN("Robot id %d with feed_back %d", feedback->robot_id,
-  			feedback->is_waiting);
+  if (feedback->is_waiting == true) {
+	  ROS_WARN("Robot id %d with feed_back %d", feedback->robot_id,
+	  			feedback->is_waiting);
+  }
   is_waiting[feedback->robot_id] = feedback->is_waiting;
 }
 
@@ -214,10 +216,10 @@ int main(int argc, char** argv) {
 
 	std::vector<std::pair<std::string,void*> > AssignmentAlgorithms;
 
-	AssignmentAlgorithms.push_back(std::make_pair(string("mmdr"), (void*)mmdr_n5));
-	AssignmentAlgorithms.push_back(std::make_pair(string("mmd_msd2"), (void*)mmd_msd2));
 	AssignmentAlgorithms.push_back(std::make_pair(string("BLE"), (void*)BLE));
 	AssignmentAlgorithms.push_back(std::make_pair(string("MURDOCH"), (void*)MURDOCH));
+	AssignmentAlgorithms.push_back(std::make_pair(string("mmdr"), (void*)mmdr_n5));
+	AssignmentAlgorithms.push_back(std::make_pair(string("mmd_msd2"), (void*)mmd_msd2));
 
 	std::vector<MoveBaseClient*> MoveBaseClientList;
 	std::vector<WalkClient*> WalkClientList;
@@ -364,7 +366,7 @@ int main(int argc, char** argv) {
 					// adjustAngle(CmdVelPublishersList[robot_index], robotsAngles[robot_index], angle);
 					// getRobotToLocation(CmdVelPublishersList[robot_index], robot_location, target_location);
 					moveRobot(WalkClientList[robot_index],
-							t.targets[target_index], angle);
+							t.targets[target_index]);
 				}
 				log << std::endl;
 
@@ -372,7 +374,8 @@ int main(int argc, char** argv) {
 				int robot_finished = -1;
 				geometry_msgs::Twist vel_msg;
 				// we won't deal with face to face robots here.
-				vel_msg.linear.x = -1;
+				vel_msg.linear.x = 0;
+				vel_msg.angular.z = M_PI/2;
 				while (!finished) {
 					for (int i=0; i< NUM_ROBOTS; i++) {
 						if (WalkClientList[i]->getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
@@ -381,12 +384,14 @@ int main(int argc, char** argv) {
 							finished = true;
 						}
 					}
+					/*
 					for (int j =0; j < NUM_ROBOTS; j++) {
 						if (is_waiting[j] == true) {
 							CmdVelPublishersList[j].publish(vel_msg);
-							break;
+							// break;
 						}
 					}
+					*/
 				}
 				log << "Robot " << robot_finished << " finished At time " << time(NULL) - start_time << std::endl;
 
@@ -441,7 +446,7 @@ int main(int argc, char** argv) {
 			// move robots back to their spots (30,30) for another run
 			for (int i=0; i< NUM_ROBOTS; i++) {
 				moveRobot(WalkClientList[i],
-					Point(10*(i+1),10*(i+1)), 0);
+					Point(GRID_WIDTH*(i+1)/5,GRID_WIDTH*(i+1)/5), false);
 			}
 			for (int i=0; i< NUM_ROBOTS; i++) {
 				WalkClientList[i]->waitForResult();
@@ -453,7 +458,7 @@ int main(int argc, char** argv) {
 	return 0;
 }
 
-void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle)
+void moveRobot(WalkClient *ac, std::pair<int,int> location, bool care_collision)
 {
 	/*
 	move_base_msgs::MoveBaseGoal goal;
@@ -482,6 +487,7 @@ void moveRobot(WalkClient *ac, std::pair<int,int> location, double angle)
 	online_scram::WalkGoal goal;
 	goal.x = location.first;
 	goal.y = location.second;
+	goal.c = care_collision;
 	ros::Rate loopRate(10);
 
 	ac->sendGoal(goal, &doneCb, &activeCb, &feedbackCb);
