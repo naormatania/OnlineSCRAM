@@ -228,22 +228,7 @@ int main(int argc, char** argv) {
 
 	for (int robot_id = 0; robot_id < NUM_ROBOTS; ++robot_id) {
 		ROS_INFO("Trying to connect to move base robot %d", robot_id);
-		/*
-		// Create the string "robot_X/move_base"
-		string move_base_str = "/robot_";
-		move_base_str += boost::lexical_cast<string>(robot_id);
-		move_base_str += "/move_base";
 
-		// create the action client
-		MoveBaseClient *ac = new MoveBaseClient(move_base_str, true);
-
-		// Wait for the action server to become available
-		ROS_INFO("Waiting for the move_base action server");
-		ac->waitForServer(ros::Duration(5));
-
-		ROS_INFO("Connected to move base server");
-		MoveBaseClientList.push_back(ac);
-		*/
 		// Create the string "robot_X/move_base"
 		string move_base_str = "/robot_";
 		move_base_str += boost::lexical_cast<string>(robot_id);
@@ -384,14 +369,6 @@ int main(int argc, char** argv) {
 							finished = true;
 						}
 					}
-					/*
-					for (int j =0; j < NUM_ROBOTS; j++) {
-						if (is_waiting[j] == true) {
-							CmdVelPublishersList[j].publish(vel_msg);
-							// break;
-						}
-					}
-					*/
 				}
 				log << "Robot " << robot_finished << " finished At time " << time(NULL) - start_time << std::endl;
 
@@ -417,15 +394,6 @@ int main(int argc, char** argv) {
 
 				for (int i = 0; i < NUM_ROBOTS; i++) {
 					WalkClientList[i]->cancelAllGoals();
-					/*
-					tf::TransformListener tf(ros::Duration(10));
-					string robot_str = "/robot_";
-					robot_str += boost::lexical_cast<string>(i);
-					costmap_2d::Costmap2DROS local_costmap(robot_str+"/move_base_node/local_costmap", tf);
-					local_costmap.resetLayers();
-					costmap_2d::Costmap2DROS global_costmap(robot_str+"/move_base_node/global_costmap", tf);
-					global_costmap.resetLayers();
-					*/
 				}
 				int target_finished = -1;
 				for (std::vector<Edge>::iterator it=answer.begin();
@@ -460,30 +428,6 @@ int main(int argc, char** argv) {
 
 void moveRobot(WalkClient *ac, std::pair<int,int> location, bool care_collision)
 {
-	/*
-	move_base_msgs::MoveBaseGoal goal;
-	goal.target_pose.header.frame_id = "map";
-	goal.target_pose.header.stamp = ros::Time::now();
-
-	goal.target_pose.pose.position.x = location.first;
-	goal.target_pose.pose.position.y = location.second;
-
-	// Convert the Euler angle to quaternion
-	double radians = angle * (M_PI/180);
-	tf::Quaternion quaternion;
-	quaternion = tf::createQuaternionFromYaw(radians);
-
-	geometry_msgs::Quaternion qMsg;
-	tf::quaternionTFToMsg(quaternion, qMsg);
-	goal.target_pose.pose.orientation = qMsg;
-
-	ros::Rate loopRate(10);
-
-	ac->sendGoal(goal);
-
-	// ac.waitForResult();
-
-	*/
 	online_scram::WalkGoal goal;
 	goal.x = location.first;
 	goal.y = location.second;

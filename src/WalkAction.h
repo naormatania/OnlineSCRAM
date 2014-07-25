@@ -89,10 +89,6 @@ public:
 	baseScanSubscriber_ = nh_.subscribe<sensor_msgs::LaserScan>(laser_scan_topic_name, 1,
             &WalkAction::readSensorCallback);
 
-	// ros::Subscriber laser_sub = n.subscribe("scan", 100, laserCallback);
-
-	// ros::Subscriber ranger_sub = n.subscribe("range", 100, rangeCallback);
-
     as_.start();
   }
 
@@ -119,44 +115,7 @@ public:
 
   	// wait to have some transform before start
   	listener.waitForTransform("/map", this_robot_frame, ros::Time(0), ros::Duration(10.0));
-  	/*
-  	tf::StampedTransform transform;
-  	try {
-		listener.lookupTransform("/map", this_robot_frame, ros::Time(0), transform);
-	}
-	catch (tf::TransformException &ex) {
-		ROS_ERROR("%s",ex.what());
-	}
 
-	ROS_INFO("Robot %d with goal %d,%d", robot_id_, goal->x, goal->y);
-	double theta = atan2(double(goal->y - transform.getOrigin().y()),
-			double(goal->x - transform.getOrigin().x()));
-
-	move_base_msgs::MoveBaseGoal moveBaseGoal;
-	moveBaseGoal.target_pose.header.frame_id = "map";
-	moveBaseGoal.target_pose.header.stamp = ros::Time::now();
-
-	moveBaseGoal.target_pose.pose.position.x = transform.getOrigin().x();
-	moveBaseGoal.target_pose.pose.position.y = transform.getOrigin().y();
-
-	// Convert the Euler angle to quaternion
-	tf::Quaternion quaternion;
-	quaternion = tf::createQuaternionFromYaw(theta);
-
-	geometry_msgs::Quaternion qMsg;
-	tf::quaternionTFToMsg(quaternion, qMsg);
-	moveBaseGoal.target_pose.pose.orientation = qMsg;
-
-	ros::Rate loopRate(10);
-	ROS_INFO("Sending goal to change angle with x=%f,y=%f", transform.getOrigin().x(),
-			transform.getOrigin().y());
-	moveBaseClient_->sendGoal(moveBaseGoal);
-	ROS_INFO("Waiting for result");
-	ros::Duration(1).sleep();
-	ROS_INFO("state is %s", moveBaseClient_->getState().toString().c_str());
-	moveBaseClient_->waitForResult();
-	ROS_INFO("result reached");
-	*/
   	ros::Rate fasterLoopRate(20);
   	while (ros::ok()) {
   		as_.publishFeedback(feedback_);
@@ -179,10 +138,7 @@ public:
   		catch (tf::TransformException &ex) {
   			ROS_ERROR("%s",ex.what());
   		}
-  		/*
-  		double x_diff = transform.getOrigin().x() - goal->x;
-  		double y_diff = transform.getOrigin().y() - goal->y;
-  		*/
+
   		double x_diff = goal->x - transform.getOrigin().x();
   		double y_diff = goal->y - transform.getOrigin().y();
   		double dist = sqrt(pow(x_diff, 2) + pow(y_diff, 2));
@@ -210,44 +166,6 @@ public:
 			break;
 		}
 		cmdVelPublisher_.publish(vel_msg);
-  		/*
-  		ROS_INFO("Robot %d is at yaw %f and should",
-  				robot_id_, tf::getYaw(transform.getRotation()));
-  		double theta =  atan2(y_diff,x_diff) - tf::getYaw(transform.getRotation());
-
-  		geometry_msgs::Twist vel_msg;
-  		vel_msg.linear.z = 0;
-  		/*
-  		if ((theta < 5*M_PI/180) && (theta > -5*M_PI/180)) {
-  			vel_msg.angular.z = 0;
-  		}
-  		else {
-  			vel_msg.angular.z = max(theta, double(MAX_ANGULAR_VEL));
-  		}
-		*/
-  		/*
-  		if (dist < NEGLIBLE_DISTANCE) {
-  			result_.total_dishes_cleaned = 3;
-  			ROS_INFO("%s: Succeeded", action_name_.c_str());
-  			vel_msg.linear.x = 0;
-  			vel_msg.linear.y = 0;
-  			cmdVelPublisher_.publish(vel_msg);
-  			// set the action state to succeeded
-  			as_.setSucceeded(result_);
-  			success = true;
-  			break;
-  		}
-  		else {
-  			double factor = fabs(y_diff)/fabs(x_diff);
-  			double siz = min(dist,double(MAX_LINEAR_VEL))/sqrt(1+pow(factor,2));
-  			int x_sign = (x_diff>0)?(-1):(1);
-  			int y_sign = (y_diff>0)?(-1):(1);
-  			// vel_msg.linear.x = min(dist, double(MAX_LINEAR_VEL));
-  			vel_msg.linear.x = x_sign*siz;
-  			vel_msg.linear.y = y_sign*factor*siz;
-  			cmdVelPublisher_.publish(vel_msg);
-  		}
-  		*/
 
   		ros::spinOnce();
   		fasterLoopRate.sleep();
