@@ -87,16 +87,18 @@ std::vector<Edge> BLE(Test t){
 	int n = t.starts.size();
 	int m = t.targets.size();
 
-	bool is_robot_taken[N];
-	bool is_target_taken[N];
+	bool *is_robot_taken = new bool[n];
+	bool *is_target_taken = new bool[m];
 
-	for (int i=0; i < N; i++) {
+	for (int i=0; i < n; i++) {
 		is_robot_taken[i] = false;
+	}
+	for (int i=0; i < m; i++) {
 		is_target_taken[i] = false;
 	}
 
-	for (int i=0; i < N; i++) {
-		for (int j=0; j < N; j++) {
+	for (int i=0; i < n; i++) {
+		for (int j=0; j < m; j++) {
 			double dist = 1000;
 			if ((i < n) && (j < m)) {
 				dist = getdist(t.starts[i], t.targets[j]);
@@ -119,6 +121,8 @@ std::vector<Edge> BLE(Test t){
 	return answer;
 }
 
+int robot_finished = -1;
+
 std::vector<Edge> MURDOCH(Test t){
 	int n = t.starts.size();
 	int m = t.targets.size();
@@ -128,31 +132,20 @@ std::vector<Edge> MURDOCH(Test t){
 	if (lastAssignment.get() == NULL) {
 		answer = BLE(t);
 	}
-	else {
+	else if (robot_finished != -1) {
 		Test lastTest = lastAssignment.get()->first;
 		std::vector<Edge> lastAnswer = lastAssignment.get()->second;
-		std::vector<Point> diff;
-		// we assume here the next target won't be on the same location as the previous one
-		std::set_difference(lastTest.targets.begin(), lastTest.targets.end(),
-				t.targets.begin(), t.targets.end(),
-		                        std::inserter(diff, diff.begin()));
 
+		int lastFinishedRobot = robot_finished;
 		int lastFinishedTarget = -1;
-		int lastFinishedRobot = -1;
-		for (int i=0; i < lastTest.targets.size(); i++) {
-			if (lastTest.targets[i] == diff[0]) {
-				lastFinishedTarget = i;
-				break;
-			}
-		}
-
 		for (int i=0; i < lastAnswer.size(); i++) {
-			if (lastFinishedTarget == lastAnswer[i].second.second) {
-				lastFinishedRobot = lastAnswer[i].second.first;
+			if (lastFinishedRobot == lastAnswer[i].second.first) {
+				lastFinishedTarget = lastAnswer[i].second.second;
 				break;
 			}
 		}
 
+		vector<int> robotsAssigned;
 		for (int i=0; i < lastAnswer.size(); i++) {
 			int robotIndex = lastAnswer[i].second.first;
 			int targetIndex = lastAnswer[i].second.second;
@@ -164,10 +157,32 @@ std::vector<Edge> MURDOCH(Test t){
 			}
 			double dist = getdist(t.starts[robotIndex], t.targets[targetIndex]);
 			answer.push_back(make_pair(dist, make_pair(robotIndex,targetIndex)));
+			robotsAssigned.push_back(targetIndex);
 		}
-		answer.push_back(
-			make_pair(getdist(t.starts[lastFinishedRobot], t.targets[m-1]),
-				make_pair(lastFinishedRobot,m-1)));
+
+		std::vector<Edge> dist_list;
+		for (int i=0; i < m; i++) {
+			bool f= false;
+			for (int j = 0; j <n - 1; j++) {
+				if (robotsAssigned[j]==i) {
+					f = true;
+				}
+			}
+			if (f) {
+				continue;
+			}
+			double dist = getdist(t.starts[lastFinishedRobot], t.targets[i]);
+			dist_list.push_back(Edge(dist,std::make_pair(lastFinishedRobot,i)));
+		}
+		if (dist_list.size() > 0) {
+			std::sort(dist_list.begin(), dist_list.end(), sortEdges);
+			answer.push_back(dist_list[0]);
+		}
+
+
+	}
+	else {
+		answer = lastAssignment.get()->second;
 	}
 
 	lastAssignment.reset(new pair<Test,vector<Edge> >(t,answer));
@@ -209,6 +224,14 @@ void adjustAngle(ros::Publisher &cmd_vel_pub, double curAngle, double newAngle) 
 	cmd_vel_pub.publish(vel_msg);
 }
 
+int NUM_CUR_GOALS = 0;
+bool shouldAbort = false;
+void timerCallback(const ros::TimerEvent&) {
+	ROS_WARN("Timer called");
+	NUM_CUR_GOALS++;
+	shouldAbort = true;
+}
+
 int main(int argc, char** argv) {
 	ros::init(argc, argv, "assigner");
 	ros::NodeHandle nh;
@@ -216,8 +239,8 @@ int main(int argc, char** argv) {
 
 	std::vector<std::pair<std::string,void*> > AssignmentAlgorithms;
 
-	AssignmentAlgorithms.push_back(std::make_pair(string("BLE"), (void*)BLE));
 	AssignmentAlgorithms.push_back(std::make_pair(string("MURDOCH"), (void*)MURDOCH));
+	AssignmentAlgorithms.push_back(std::make_pair(string("BLE"), (void*)BLE));
 	AssignmentAlgorithms.push_back(std::make_pair(string("mmdr"), (void*)mmdr_n5));
 	AssignmentAlgorithms.push_back(std::make_pair(string("mmd_msd2"), (void*)mmd_msd2));
 
@@ -269,7 +292,20 @@ int main(int argc, char** argv) {
 		ROS_INFO("Generating goals for run");
 		std::vector<Point> RunGoalsList;
 		for (int i = 0; i < NUM_GOALS; i++) {
-			pair<int,int> goal(1+rand()%GRID_WIDTH, 1+rand()%GRID_WIDTH);
+			Point goal;
+			while (true) {
+				goal = std::make_pair(1+rand()%GRID_WIDTH, 1+rand()%GRID_WIDTH);
+				bool found = false;
+				for (int j = 0; j < RunGoalsList.size(); j++) {
+					if (RunGoalsList[j] == goal) {
+						found = true;
+						break;
+					}
+				}
+				if (found == false) {
+					break;
+				}
+			}
 			RunGoalsList.push_back(goal);
 		}
 
@@ -287,8 +323,12 @@ int main(int argc, char** argv) {
 			std::vector<Point> GoalsList = RunGoalsList;
 			time_t start_time = time(NULL);
 
+			int n = NUM_ROBOTS;
+			NUM_CUR_GOALS = n;
+			ros::Timer timer = nh.createTimer(ros::Duration(5.0), timerCallback);
+			timer.start();
 			while (GoalsList.size() > 0) {
-				int n = NUM_ROBOTS;
+				NUM_CUR_GOALS = std::min(NUM_CUR_GOALS,(int)GoalsList.size());
 
 				Test t;
 
@@ -299,13 +339,13 @@ int main(int argc, char** argv) {
 				}
 
 				// retrieve the next goal locations
-				for (int i = 0; i < n; i++) {
+				for (int i = 0; i < NUM_CUR_GOALS; i++) {
 				  t.targets.push_back(GoalsList.back());
 				  GoalsList.pop_back();
 				}
-
+				/*
 				// put the targets on the stage map
-				for (int i = 0; i < n; i++) {
+				for (int i = 0; i < std::min(n,NUM_CUR_GOALS); i++) {
 					Point p = t.targets[i];
 					geometry_msgs::Pose2D msg;
 					msg.x = p.first;
@@ -313,12 +353,21 @@ int main(int argc, char** argv) {
 					msg.theta = 0;
 					PosePublishersList[i].publish(msg);
 				}
-
+				*/
 				ROS_INFO("Trying to run task assignment algorithm");
 				// solve the task assignment problem
 				std::vector<Edge> answer =
 						((AssignmentAlgo*)(it->second))(t);
 				ROS_INFO("Success !!!");
+
+				for (int i=0; i < answer.size(); i++) {
+					Point p = t.targets[answer[i].second.second];
+					geometry_msgs::Pose2D msg;
+					msg.x = p.first;
+					msg.y = p.second;
+					msg.theta = 0;
+					PosePublishersList[i].publish(msg);
+				}
 
 				// log the task assignment chosen & and the time before performing it
 				log << "Time " << time(NULL) - start_time << std::endl;
@@ -330,7 +379,7 @@ int main(int argc, char** argv) {
 				log << std::endl;
 
 				log << "Target Locations: ";
-				for (int i = 0; i < n; i++) {
+				for (int i = 0; i < NUM_CUR_GOALS; i++) {
 					log << " " << i << "-(" << t.targets[i].first << "," << t.targets[i].second << ")";
 				}
 				log << std::endl;
@@ -348,20 +397,16 @@ int main(int argc, char** argv) {
 					double angle = getAngleRobotToTarget(robot_location,
 							target_location);
 
-					// adjustAngle(CmdVelPublishersList[robot_index], robotsAngles[robot_index], angle);
-					// getRobotToLocation(CmdVelPublishersList[robot_index], robot_location, target_location);
 					moveRobot(WalkClientList[robot_index],
 							t.targets[target_index]);
 				}
 				log << std::endl;
 
 				bool finished = false;
-				int robot_finished = -1;
-				geometry_msgs::Twist vel_msg;
-				// we won't deal with face to face robots here.
-				vel_msg.linear.x = 0;
-				vel_msg.angular.z = M_PI/2;
-				while (!finished) {
+				robot_finished = -1;
+
+				ros::spinOnce();
+				while ((!finished) && (!shouldAbort)) {
 					for (int i=0; i< NUM_ROBOTS; i++) {
 						if (WalkClientList[i]->getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
 							ROS_INFO("Robot %d has reached the goal!", i);
@@ -369,22 +414,34 @@ int main(int argc, char** argv) {
 							finished = true;
 						}
 					}
+					ros::spinOnce();
 				}
-				log << "Robot " << robot_finished << " finished At time " << time(NULL) - start_time << std::endl;
+				shouldAbort = false;
 
-				if (GoalsList.size() == 0) {
-					int num_robots_left = NUM_ROBOTS - 1;
+				if (finished) {
+					ROS_INFO("FINISHED");
+					log << "Robot " << robot_finished << " finished At time " << time(NULL) - start_time << std::endl;
+					NUM_CUR_GOALS = NUM_CUR_GOALS - 1;
+				}
+				else {
+					ROS_INFO("ABORT");
+					log << "Assignment aborted At time " << time(NULL) - start_time << std::endl;
+				}
+				ROS_INFO("NUM_CUR_GOALS %d", NUM_CUR_GOALS);
+				ROS_INFO("GoalsList size %d", GoalsList.size());
+				if ((GoalsList.size() == 0) && (NUM_CUR_GOALS <= 4)) {
+					timer.stop();
 					bool robots_state[NUM_ROBOTS];
 					memset(robots_state,false,NUM_ROBOTS);
 					robots_state[robot_finished] = true;
-					while (num_robots_left > 0) {
+					while (NUM_CUR_GOALS > 0) {
 						for (int i=0; i< NUM_ROBOTS; i++) {
 							if ((WalkClientList[i]->getState() == actionlib::SimpleClientGoalState::SUCCEEDED) \
 									&& (robots_state[i] == false)){
 								ROS_INFO("Robot %d has reached the goal!", i);
 								log << "Robot " << i << " finished At time " << time(NULL) - start_time << std::endl;
 								robots_state[i] = true;
-								num_robots_left--;
+								NUM_CUR_GOALS--;
 							}
 						}
 					}
