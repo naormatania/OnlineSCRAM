@@ -1,0 +1,2116 @@
+Goals: (13,6) (4,12) (14,9) (14,5) (8,5) (12,9) (12,8) (7,9) (15,2) (13,2) (7,6) (15,14) (4,2) (11,12) (5,2) (1,3) (3,10) (14,6) (2,8) (8,14) (6,14) (14,4) (5,12) (6,5) (10,10) (15,12) (5,3) (11,1) (5,9) (3,2) (10,12) (4,9) (14,3) (8,11) (15,5) (8,6) (3,11) (12,13) (1,12) (13,11) (5,13) (3,8) (9,1) (4,5) (2,4) (8,10) (6,15) (13,7) (9,13) (3,15)
+/MURDOCH
+Time 2
+Robots Locations 0-(3,3) 1-(6,6) 2-(9,9) 3-(12,13) 4-(15,15)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10)
+Task Assignment: 2-3 4-2 1-0 0-1 3-4
+Assignment aborted At time 6
+Time 8
+Robots Locations 0-(4,3) 1-(5,7) 2-(9,11) 3-(10,12) 4-(15,14)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(2,4)
+Task Assignment: 2-3 4-2 1-0 0-1 3-4
+Assignment aborted At time 12
+Time 14
+Robots Locations 0-(5,5) 1-(4,9) 2-(7,13) 3-(9,11) 4-(15,12)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(2,4) 6-(4,5)
+Task Assignment: 2-3 4-2 1-0 0-1 3-4
+Assignment aborted At time 18
+Time 20
+Robots Locations 0-(6,7) 1-(4,11) 2-(6,15) 3-(8,10) 4-(14,10)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(2,4) 6-(4,5) 7-(9,1)
+Task Assignment: 2-3 4-2 1-0 0-1 3-4
+Robot 3 finished At time 21
+Time 23
+Robots Locations 0-(6,7) 1-(4,11) 2-(6,15) 3-(8,10) 4-(14,10)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(2,4) 5-(4,5) 6-(9,1)
+Task Assignment: 2-3 4-2 1-0 0-1 3-5
+Assignment aborted At time 24
+Time 26
+Robots Locations 0-(6,7) 1-(4,12) 2-(6,15) 3-(8,10) 4-(14,9)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(2,4) 5-(4,5) 6-(9,1) 7-(3,8)
+Task Assignment: 2-3 4-2 1-0 0-1 3-5
+Robot 2 finished At time 28
+Time 29
+Robots Locations 0-(6,8) 1-(4,12) 2-(6,15) 3-(7,9) 4-(14,8)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(2,4) 4-(4,5) 5-(9,1) 6-(3,8)
+Task Assignment: 4-2 1-0 0-1 3-4 2-6
+Assignment aborted At time 29
+Time 32
+Robots Locations 0-(6,8) 1-(4,13) 2-(6,15) 3-(7,9) 4-(13,7)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(2,4) 4-(4,5) 5-(9,1) 6-(3,8) 7-(5,13)
+Task Assignment: 4-2 1-0 0-1 3-4 2-6
+Robot 4 finished At time 34
+Time 36
+Robots Locations 0-(7,9) 1-(3,15) 2-(5,14) 3-(7,9) 4-(13,7)
+Target Locations:  0-(3,15) 1-(9,13) 2-(2,4) 3-(4,5) 4-(9,1) 5-(3,8) 6-(5,13)
+Task Assignment: 1-0 0-1 3-3 2-5 4-4
+Assignment aborted At time 36
+Time 38
+Robots Locations 0-(7,9) 1-(3,15) 2-(5,13) 3-(7,9) 4-(12,7)
+Target Locations:  0-(3,15) 1-(9,13) 2-(2,4) 3-(4,5) 4-(9,1) 5-(3,8) 6-(5,13) 7-(13,11)
+Task Assignment: 1-0 0-1 3-3 2-5 4-4
+Assignment aborted At time 42
+Time 44
+Robots Locations 0-(8,11) 1-(3,15) 2-(4,11) 3-(6,7) 4-(11,6)
+Target Locations:  0-(3,15) 1-(9,13) 2-(2,4) 3-(4,5) 4-(9,1) 5-(3,8) 6-(5,13) 7-(13,11) 8-(1,12)
+Task Assignment: 1-0 0-1 3-3 2-5 4-4
+Robot 1 finished At time 48
+Time 50
+Robots Locations 0-(9,13) 1-(3,15) 2-(3,9) 3-(5,6) 4-(10,4)
+Target Locations:  0-(9,13) 1-(2,4) 2-(4,5) 3-(9,1) 4-(3,8) 5-(5,13) 6-(13,11) 7-(1,12)
+Task Assignment: 0-0 3-2 2-4 4-3 1-5
+Assignment aborted At time 50
+Time 52
+Robots Locations 0-(9,13) 1-(3,15) 2-(3,9) 3-(4,6) 4-(10,3)
+Target Locations:  0-(9,13) 1-(2,4) 2-(4,5) 3-(9,1) 4-(3,8) 5-(5,13) 6-(13,11) 7-(1,12) 8-(12,13)
+Task Assignment: 0-0 3-2 2-4 4-3 1-5
+Assignment aborted At time 54
+Time 56
+Robots Locations 0-(10,13) 1-(3,14) 2-(3,8) 3-(4,5) 4-(9,2)
+Target Locations:  0-(9,13) 1-(2,4) 2-(4,5) 3-(9,1) 4-(3,8) 5-(5,13) 6-(13,11) 7-(1,12) 8-(12,13) 9-(3,11)
+Task Assignment: 0-0 3-2 2-4 4-3 1-5
+Robot 3 finished At time 57
+Time 59
+Robots Locations 0-(10,13) 1-(4,14) 2-(3,8) 3-(4,5) 4-(9,2)
+Target Locations:  0-(9,13) 1-(2,4) 2-(9,1) 3-(3,8) 4-(5,13) 5-(13,11) 6-(1,12) 7-(12,13) 8-(3,11)
+Task Assignment: 0-0 2-3 4-2 1-4 3-1
+Assignment aborted At time 60
+Time 62
+Robots Locations 0-(9,13) 1-(4,13) 2-(3,8) 3-(4,5) 4-(9,1)
+Target Locations:  0-(9,13) 1-(2,4) 2-(9,1) 3-(3,8) 4-(5,13) 5-(13,11) 6-(1,12) 7-(12,13) 8-(3,11) 9-(8,6)
+Task Assignment: 0-0 2-3 4-2 1-4 3-1
+Robot 2 finished At time 64
+Time 66
+Robots Locations 0-(9,13) 1-(5,13) 2-(3,8) 3-(3,4) 4-(9,1)
+Target Locations:  0-(9,13) 1-(2,4) 2-(9,1) 3-(5,13) 4-(13,11) 5-(1,12) 6-(12,13) 7-(3,11) 8-(8,6)
+Task Assignment: 0-0 4-2 1-3 3-1 2-7
+Assignment aborted At time 66
+Time 68
+Robots Locations 0-(9,13) 1-(5,13) 2-(3,8) 3-(2,4) 4-(9,1)
+Target Locations:  0-(9,13) 1-(2,4) 2-(9,1) 3-(5,13) 4-(13,11) 5-(1,12) 6-(12,13) 7-(3,11) 8-(8,6) 9-(15,5)
+Task Assignment: 0-0 4-2 1-3 3-1 2-7
+Robot 4 finished At time 69
+Time 71
+Robots Locations 0-(9,13) 1-(5,13) 2-(4,8) 3-(2,4) 4-(9,1)
+Target Locations:  0-(9,13) 1-(2,4) 2-(5,13) 3-(13,11) 4-(1,12) 5-(12,13) 6-(3,11) 7-(8,6) 8-(15,5)
+Task Assignment: 0-0 1-2 3-1 2-6 4-7
+Assignment aborted At time 71
+Time 73
+Robots Locations 0-(9,13) 1-(5,13) 2-(4,8) 3-(2,4) 4-(9,1)
+Target Locations:  0-(9,13) 1-(2,4) 2-(5,13) 3-(13,11) 4-(1,12) 5-(12,13) 6-(3,11) 7-(8,6) 8-(15,5) 9-(8,11)
+Task Assignment: 0-0 1-2 3-1 2-6 4-7
+Robot 3 finished At time 74
+Time 76
+Robots Locations 0-(9,13) 1-(5,13) 2-(4,9) 3-(2,4) 4-(9,1)
+Target Locations:  0-(9,13) 1-(5,13) 2-(13,11) 3-(1,12) 4-(12,13) 5-(3,11) 6-(8,6) 7-(15,5) 8-(8,11)
+Task Assignment: 0-0 1-1 2-5 4-6 3-3
+Assignment aborted At time 77
+Time 79
+Robots Locations 0-(9,13) 1-(5,13) 2-(4,9) 3-(2,4) 4-(8,1)
+Target Locations:  0-(9,13) 1-(5,13) 2-(13,11) 3-(1,12) 4-(12,13) 5-(3,11) 6-(8,6) 7-(15,5) 8-(8,11) 9-(14,3)
+Task Assignment: 0-0 1-1 2-5 4-6 3-3
+Robot 0 finished At time 83
+Time 84
+Robots Locations 0-(9,13) 1-(5,13) 2-(3,11) 3-(1,6) 4-(8,3)
+Target Locations:  0-(5,13) 1-(13,11) 2-(1,12) 3-(12,13) 4-(3,11) 5-(8,6) 6-(15,5) 7-(8,11) 8-(14,3)
+Task Assignment: 1-0 2-4 4-5 3-2 0-7
+Assignment aborted At time 84
+Time 86
+Robots Locations 0-(9,13) 1-(5,13) 2-(3,11) 3-(1,6) 4-(8,3)
+Target Locations:  0-(5,13) 1-(13,11) 2-(1,12) 3-(12,13) 4-(3,11) 5-(8,6) 6-(15,5) 7-(8,11) 8-(14,3) 9-(4,9)
+Task Assignment: 1-0 2-4 4-5 3-2 0-7
+Robot 1 finished At time 87
+Time 89
+Robots Locations 0-(8,12) 1-(5,13) 2-(3,11) 3-(1,7) 4-(8,4)
+Target Locations:  0-(13,11) 1-(1,12) 2-(12,13) 3-(3,11) 4-(8,6) 5-(15,5) 6-(8,11) 7-(14,3) 8-(4,9)
+Task Assignment: 2-3 4-4 3-1 0-6 1-8
+Assignment aborted At time 89
+Time 91
+Robots Locations 0-(8,12) 1-(5,13) 2-(3,11) 3-(1,8) 4-(8,5)
+Target Locations:  0-(13,11) 1-(1,12) 2-(12,13) 3-(3,11) 4-(8,6) 5-(15,5) 6-(8,11) 7-(14,3) 8-(4,9) 9-(10,12)
+Task Assignment: 2-3 4-4 3-1 0-6 1-8
+Robot 2 finished At time 94
+Time 96
+Robots Locations 0-(7,11) 1-(4,11) 2-(3,11) 3-(1,10) 4-(8,6)
+Target Locations:  0-(13,11) 1-(1,12) 2-(12,13) 3-(8,6) 4-(15,5) 5-(8,11) 6-(14,3) 7-(4,9) 8-(10,12)
+Task Assignment: 4-3 3-1 0-5 1-7 2-8
+Assignment aborted At time 96
+Time 98
+Robots Locations 0-(7,11) 1-(4,11) 2-(3,11) 3-(1,10) 4-(8,6)
+Target Locations:  0-(13,11) 1-(1,12) 2-(12,13) 3-(8,6) 4-(15,5) 5-(8,11) 6-(14,3) 7-(4,9) 8-(10,12) 9-(3,2)
+Task Assignment: 4-3 3-1 0-5 1-7 2-8
+Assignment aborted At time 100
+Time 102
+Robots Locations 0-(8,12) 1-(4,9) 2-(3,12) 3-(1,12) 4-(8,6)
+Target Locations:  0-(13,11) 1-(1,12) 2-(12,13) 3-(8,6) 4-(15,5) 5-(8,11) 6-(14,3) 7-(4,9) 8-(10,12) 9-(3,2) 10-(5,9)
+Task Assignment: 4-3 3-1 0-5 1-7 2-8
+Robot 3 finished At time 105
+Time 107
+Robots Locations 0-(8,11) 1-(4,9) 2-(4,12) 3-(1,12) 4-(8,6)
+Target Locations:  0-(13,11) 1-(12,13) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(4,9) 7-(10,12) 8-(3,2) 9-(5,9)
+Task Assignment: 4-2 0-4 1-6 2-7 3-9
+Assignment aborted At time 107
+Time 109
+Robots Locations 0-(8,11) 1-(4,9) 2-(4,12) 3-(1,12) 4-(8,6)
+Target Locations:  0-(13,11) 1-(12,13) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(4,9) 7-(10,12) 8-(3,2) 9-(5,9) 10-(11,1)
+Task Assignment: 4-2 0-4 1-6 2-7 3-9
+Robot 1 finished At time 109
+Time 111
+Robots Locations 0-(8,11) 1-(4,9) 2-(5,12) 3-(2,12) 4-(8,6)
+Target Locations:  0-(13,11) 1-(12,13) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(10,12) 7-(3,2) 8-(5,9) 9-(11,1)
+Task Assignment: 4-2 0-4 2-6 3-8 1-7
+Assignment aborted At time 111
+Time 113
+Robots Locations 0-(8,11) 1-(4,9) 2-(5,12) 3-(3,11) 4-(8,6)
+Target Locations:  0-(13,11) 1-(12,13) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(10,12) 7-(3,2) 8-(5,9) 9-(11,1) 10-(5,3)
+Task Assignment: 4-2 0-4 2-6 3-8 1-7
+Robot 4 finished At time 115
+Time 117
+Robots Locations 0-(8,11) 1-(2,8) 2-(6,11) 3-(4,11) 4-(8,6)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(8,11) 4-(14,3) 5-(10,12) 6-(3,2) 7-(5,9) 8-(11,1) 9-(5,3)
+Task Assignment: 0-3 2-5 3-7 1-6 4-9
+Assignment aborted At time 117
+Time 119
+Robots Locations 0-(8,11) 1-(2,8) 2-(6,11) 3-(4,10) 4-(9,6)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(8,11) 4-(14,3) 5-(10,12) 6-(3,2) 7-(5,9) 8-(11,1) 9-(5,3) 10-(15,12)
+Task Assignment: 0-3 2-5 3-7 1-6 4-9
+Robot 3 finished At time 123
+Time 125
+Robots Locations 0-(8,11) 1-(4,6) 2-(7,13) 3-(5,9) 4-(7,4)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(8,11) 4-(14,3) 5-(10,12) 6-(3,2) 7-(11,1) 8-(5,3) 9-(15,12)
+Task Assignment: 0-3 2-5 1-6 4-8 3-1
+Assignment aborted At time 125
+Time 127
+Robots Locations 0-(8,11) 1-(4,6) 2-(8,12) 3-(6,9) 4-(6,4)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(8,11) 4-(14,3) 5-(10,12) 6-(3,2) 7-(11,1) 8-(5,3) 9-(15,12) 10-(10,10)
+Task Assignment: 0-3 2-5 1-6 4-8 3-1
+Assignment aborted At time 129
+Time 131
+Robots Locations 0-(8,11) 1-(4,4) 2-(9,12) 3-(7,10) 4-(6,3)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(8,11) 4-(14,3) 5-(10,12) 6-(3,2) 7-(11,1) 8-(5,3) 9-(15,12) 10-(10,10) 11-(6,5)
+Task Assignment: 0-3 2-5 1-6 4-8 3-1
+Robot 4 finished At time 135
+Time 137
+Robots Locations 0-(8,11) 1-(3,2) 2-(10,12) 3-(8,10) 4-(5,3)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(8,11) 4-(14,3) 5-(10,12) 6-(3,2) 7-(11,1) 8-(15,12) 9-(10,10) 10-(6,5)
+Task Assignment: 0-3 2-5 1-6 3-1 4-10
+Assignment aborted At time 137
+Time 139
+Robots Locations 0-(8,11) 1-(3,2) 2-(10,12) 3-(7,11) 4-(4,4)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(8,11) 4-(14,3) 5-(10,12) 6-(3,2) 7-(11,1) 8-(15,12) 9-(10,10) 10-(6,5) 11-(5,12)
+Task Assignment: 0-3 2-5 1-6 3-1 4-10
+Robot 0 finished At time 140
+Time 141
+Robots Locations 0-(8,11) 1-(3,2) 2-(10,12) 3-(7,11) 4-(5,4)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(14,3) 4-(10,12) 5-(3,2) 6-(11,1) 7-(15,12) 8-(10,10) 9-(6,5) 10-(5,12)
+Task Assignment: 2-4 1-5 3-1 4-9 0-8
+Assignment aborted At time 141
+Time 143
+Robots Locations 0-(8,11) 1-(3,2) 2-(10,12) 3-(7,11) 4-(5,4)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(14,3) 4-(10,12) 5-(3,2) 6-(11,1) 7-(15,12) 8-(10,10) 9-(6,5) 10-(5,12) 11-(14,4)
+Task Assignment: 2-4 1-5 3-1 4-9 0-8
+Robot 2 finished At time 144
+Time 146
+Robots Locations 0-(8,11) 1-(3,2) 2-(10,12) 3-(7,11) 4-(5,4)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(15,12) 7-(10,10) 8-(6,5) 9-(5,12) 10-(14,4)
+Task Assignment: 1-4 3-1 4-8 0-7 2-0
+Assignment aborted At time 146
+Time 148
+Robots Locations 0-(8,11) 1-(3,2) 2-(10,12) 3-(7,11) 4-(5,4)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(15,12) 7-(10,10) 8-(6,5) 9-(5,12) 10-(14,4) 11-(6,14)
+Task Assignment: 1-4 3-1 4-8 0-7 2-0
+Assignment aborted At time 153
+Time 156
+Robots Locations 0-(9,10) 1-(3,2) 2-(12,11) 3-(9,12) 4-(6,5)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(15,12) 7-(10,10) 8-(6,5) 9-(5,12) 10-(14,4) 11-(6,14) 12-(8,14)
+Task Assignment: 1-4 3-1 4-8 0-7 2-0
+Robot 4 finished At time 156
+Time 158
+Robots Locations 0-(10,10) 1-(3,2) 2-(12,11) 3-(9,12) 4-(6,5)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(15,12) 7-(10,10) 8-(5,12) 9-(14,4) 10-(6,14) 11-(8,14)
+Task Assignment: 1-4 3-1 0-7 2-0 4-5
+Assignment aborted At time 159
+Time 161
+Robots Locations 0-(10,10) 1-(3,2) 2-(13,11) 3-(9,12) 4-(6,5)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(15,12) 7-(10,10) 8-(5,12) 9-(14,4) 10-(6,14) 11-(8,14) 12-(2,8)
+Task Assignment: 1-4 3-1 0-7 2-0 4-5
+Robot 1 finished At time 162
+Time 163
+Robots Locations 0-(10,10) 1-(3,2) 2-(13,11) 3-(10,12) 4-(7,5)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(14,3) 4-(11,1) 5-(15,12) 6-(10,10) 7-(5,12) 8-(14,4) 9-(6,14) 10-(8,14) 11-(2,8)
+Task Assignment: 3-1 0-6 2-0 4-4 1-11
+Assignment aborted At time 165
+Time 167
+Robots Locations 0-(10,10) 1-(3,2) 2-(13,11) 3-(10,13) 4-(7,5)
+Target Locations:  0-(13,11) 1-(12,13) 2-(15,5) 3-(14,3) 4-(11,1) 5-(15,12) 6-(10,10) 7-(5,12) 8-(14,4) 9-(6,14) 10-(8,14) 11-(2,8) 12-(14,6)
+Task Assignment: 3-1 0-6 2-0 4-4 1-11
+Robot 2 finished At time 167
+Time 169
+Robots Locations 0-(10,10) 1-(2,2) 2-(13,11) 3-(11,13) 4-(7,4)
+Target Locations:  0-(12,13) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(10,10) 6-(5,12) 7-(14,4) 8-(6,14) 9-(8,14) 10-(2,8) 11-(14,6)
+Task Assignment: 3-0 0-5 4-3 1-10 2-4
+Assignment aborted At time 170
+Time 172
+Robots Locations 0-(10,10) 1-(2,2) 2-(13,11) 3-(11,13) 4-(7,4)
+Target Locations:  0-(12,13) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(10,10) 6-(5,12) 7-(14,4) 8-(6,14) 9-(8,14) 10-(2,8) 11-(14,6) 12-(3,10)
+Task Assignment: 3-0 0-5 4-3 1-10 2-4
+Robot 0 finished At time 172
+Time 174
+Robots Locations 0-(10,10) 1-(2,2) 2-(13,11) 3-(11,13) 4-(8,4)
+Target Locations:  0-(12,13) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(5,12) 6-(14,4) 7-(6,14) 8-(8,14) 9-(2,8) 10-(14,6) 11-(3,10)
+Task Assignment: 3-0 4-3 1-9 2-4 0-8
+Assignment aborted At time 175
+Time 177
+Robots Locations 0-(10,10) 1-(2,3) 2-(14,11) 3-(11,13) 4-(8,4)
+Target Locations:  0-(12,13) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(5,12) 6-(14,4) 7-(6,14) 8-(8,14) 9-(2,8) 10-(14,6) 11-(3,10) 12-(1,3)
+Task Assignment: 3-0 4-3 1-9 2-4 0-8
+Robot 3 finished At time 181
+Time 183
+Robots Locations 0-(10,12) 1-(2,4) 2-(15,12) 3-(12,13) 4-(9,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(11,1) 3-(15,12) 4-(5,12) 5-(14,4) 6-(6,14) 7-(8,14) 8-(2,8) 9-(14,6) 10-(3,10) 11-(1,3)
+Task Assignment: 4-2 1-8 2-3 0-7 3-6
+Assignment aborted At time 183
+Time 185
+Robots Locations 0-(10,12) 1-(2,4) 2-(15,12) 3-(12,14) 4-(10,2)
+Target Locations:  0-(15,5) 1-(14,3) 2-(11,1) 3-(15,12) 4-(5,12) 5-(14,4) 6-(6,14) 7-(8,14) 8-(2,8) 9-(14,6) 10-(3,10) 11-(1,3) 12-(5,2)
+Task Assignment: 4-2 1-8 2-3 0-7 3-6
+Assignment aborted At time 187
+Time 189
+Robots Locations 0-(9,13) 1-(2,7) 2-(15,12) 3-(11,14) 4-(11,1)
+Target Locations:  0-(15,5) 1-(14,3) 2-(11,1) 3-(15,12) 4-(5,12) 5-(14,4) 6-(6,14) 7-(8,14) 8-(2,8) 9-(14,6) 10-(3,10) 11-(1,3) 12-(5,2) 13-(11,12)
+Task Assignment: 4-2 1-8 2-3 0-7 3-6
+Robot 4 finished At time 191
+Time 193
+Robots Locations 0-(8,14) 1-(2,8) 2-(15,12) 3-(10,14) 4-(11,1)
+Target Locations:  0-(15,5) 1-(14,3) 2-(15,12) 3-(5,12) 4-(14,4) 5-(6,14) 6-(8,14) 7-(2,8) 8-(14,6) 9-(3,10) 10-(1,3) 11-(5,2) 12-(11,12)
+Task Assignment: 1-7 2-2 0-6 3-5 4-1
+Assignment aborted At time 193
+Time 195
+Robots Locations 0-(8,14) 1-(2,8) 2-(15,12) 3-(9,14) 4-(12,1)
+Target Locations:  0-(15,5) 1-(14,3) 2-(15,12) 3-(5,12) 4-(14,4) 5-(6,14) 6-(8,14) 7-(2,8) 8-(14,6) 9-(3,10) 10-(1,3) 11-(5,2) 12-(11,12) 13-(4,2)
+Task Assignment: 1-7 2-2 0-6 3-5 4-1
+Assignment aborted At time 199
+Time 201
+Robots Locations 0-(8,14) 1-(2,8) 2-(15,12) 3-(8,13) 4-(13,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(15,12) 3-(5,12) 4-(14,4) 5-(6,14) 6-(8,14) 7-(2,8) 8-(14,6) 9-(3,10) 10-(1,3) 11-(5,2) 12-(11,12) 13-(4,2) 14-(15,14)
+Task Assignment: 1-7 2-2 0-6 3-5 4-1
+Robot 2 finished At time 202
+Time 204
+Robots Locations 0-(8,14) 1-(2,8) 2-(15,12) 3-(8,13) 4-(13,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(5,12) 3-(14,4) 4-(6,14) 5-(8,14) 6-(2,8) 7-(14,6) 8-(3,10) 9-(1,3) 10-(5,2) 11-(11,12) 12-(4,2) 13-(15,14)
+Task Assignment: 1-6 0-5 3-4 4-1 2-13
+Assignment aborted At time 205
+Time 207
+Robots Locations 0-(8,14) 1-(2,8) 2-(15,12) 3-(8,13) 4-(13,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(5,12) 3-(14,4) 4-(6,14) 5-(8,14) 6-(2,8) 7-(14,6) 8-(3,10) 9-(1,3) 10-(5,2) 11-(11,12) 12-(4,2) 13-(15,14) 14-(7,6)
+Task Assignment: 1-6 0-5 3-4 4-1 2-13
+Robot 1 finished At time 210
+Time 212
+Robots Locations 0-(8,14) 1-(2,8) 2-(15,13) 3-(7,13) 4-(14,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(5,12) 3-(14,4) 4-(6,14) 5-(8,14) 6-(14,6) 7-(3,10) 8-(1,3) 9-(5,2) 10-(11,12) 11-(4,2) 12-(15,14) 13-(7,6)
+Task Assignment: 0-5 3-4 4-1 2-12 1-7
+Assignment aborted At time 212
+Time 213
+Robots Locations 0-(8,14) 1-(2,8) 2-(15,13) 3-(7,13) 4-(14,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(5,12) 3-(14,4) 4-(6,14) 5-(8,14) 6-(14,6) 7-(3,10) 8-(1,3) 9-(5,2) 10-(11,12) 11-(4,2) 12-(15,14) 13-(7,6) 14-(13,2)
+Task Assignment: 0-5 3-4 4-1 2-12 1-7
+Robot 4 finished At time 214
+Time 216
+Robots Locations 0-(8,14) 1-(2,8) 2-(15,13) 3-(6,14) 4-(14,3)
+Target Locations:  0-(15,5) 1-(5,12) 2-(14,4) 3-(6,14) 4-(8,14) 5-(14,6) 6-(3,10) 7-(1,3) 8-(5,2) 9-(11,12) 10-(4,2) 11-(15,14) 12-(7,6) 13-(13,2)
+Task Assignment: 0-4 3-3 2-11 1-6 4-2
+Robot 0 finished At time 216
+Time 218
+Robots Locations 0-(8,14) 1-(2,8) 2-(15,14) 3-(6,14) 4-(14,3)
+Target Locations:  0-(15,5) 1-(5,12) 2-(14,4) 3-(6,14) 4-(14,6) 5-(3,10) 6-(1,3) 7-(5,2) 8-(11,12) 9-(4,2) 10-(15,14) 11-(7,6) 12-(13,2)
+Task Assignment: 3-3 2-10 1-5 4-2 0-1
+Assignment aborted At time 218
+Time 220
+Robots Locations 0-(8,14) 1-(2,8) 2-(15,14) 3-(6,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(5,12) 2-(14,4) 3-(6,14) 4-(14,6) 5-(3,10) 6-(1,3) 7-(5,2) 8-(11,12) 9-(4,2) 10-(15,14) 11-(7,6) 12-(13,2) 13-(15,2)
+Task Assignment: 3-3 2-10 1-5 4-2 0-1
+Robot 3 finished At time 221
+Time 223
+Robots Locations 0-(7,13) 1-(3,8) 2-(15,14) 3-(6,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(5,12) 2-(14,4) 3-(14,6) 4-(3,10) 5-(1,3) 6-(5,2) 7-(11,12) 8-(4,2) 9-(15,14) 10-(7,6) 11-(13,2) 12-(15,2)
+Task Assignment: 2-9 1-4 4-2 0-1 3-7
+Assignment aborted At time 223
+Time 225
+Robots Locations 0-(7,13) 1-(3,8) 2-(15,15) 3-(6,15) 4-(13,4)
+Target Locations:  0-(15,5) 1-(5,12) 2-(14,4) 3-(14,6) 4-(3,10) 5-(1,3) 6-(5,2) 7-(11,12) 8-(4,2) 9-(15,14) 10-(7,6) 11-(13,2) 12-(15,2) 13-(7,9)
+Task Assignment: 2-9 1-4 4-2 0-1 3-7
+Assignment aborted At time 228
+Time 230
+Robots Locations 0-(7,11) 1-(3,10) 2-(15,14) 3-(8,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(5,12) 2-(14,4) 3-(14,6) 4-(3,10) 5-(1,3) 6-(5,2) 7-(11,12) 8-(4,2) 9-(15,14) 10-(7,6) 11-(13,2) 12-(15,2) 13-(7,9) 14-(12,8)
+Task Assignment: 2-9 1-4 4-2 0-1 3-7
+Robot 4 finished At time 231
+Time 233
+Robots Locations 0-(7,11) 1-(3,10) 2-(15,14) 3-(8,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(5,12) 2-(14,6) 3-(3,10) 4-(1,3) 5-(5,2) 6-(11,12) 7-(4,2) 8-(15,14) 9-(7,6) 10-(13,2) 11-(15,2) 12-(7,9) 13-(12,8)
+Task Assignment: 2-8 1-3 0-1 3-6 4-0
+Robot 2 finished At time 234
+Time 236
+Robots Locations 0-(6,12) 1-(3,10) 2-(15,14) 3-(8,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(5,12) 2-(14,6) 3-(3,10) 4-(1,3) 5-(5,2) 6-(11,12) 7-(4,2) 8-(7,6) 9-(13,2) 10-(15,2) 11-(7,9) 12-(12,8)
+Task Assignment: 1-3 0-1 3-6 4-0 2-12
+Assignment aborted At time 236
+Time 238
+Robots Locations 0-(6,12) 1-(3,10) 2-(15,14) 3-(9,13) 4-(15,4)
+Target Locations:  0-(15,5) 1-(5,12) 2-(14,6) 3-(3,10) 4-(1,3) 5-(5,2) 6-(11,12) 7-(4,2) 8-(7,6) 9-(13,2) 10-(15,2) 11-(7,9) 12-(12,8) 13-(12,9)
+Task Assignment: 1-3 0-1 3-6 4-0 2-12
+Assignment aborted At time 240
+Time 242
+Robots Locations 0-(5,12) 1-(3,10) 2-(15,13) 3-(10,13) 4-(14,5)
+Target Locations:  0-(15,5) 1-(5,12) 2-(14,6) 3-(3,10) 4-(1,3) 5-(5,2) 6-(11,12) 7-(4,2) 8-(7,6) 9-(13,2) 10-(15,2) 11-(7,9) 12-(12,8) 13-(12,9) 14-(8,5)
+Task Assignment: 1-3 0-1 3-6 4-0 2-12
+Robot 0 finished At time 243
+Time 245
+Robots Locations 0-(5,12) 1-(3,10) 2-(15,12) 3-(10,12) 4-(15,5)
+Target Locations:  0-(15,5) 1-(14,6) 2-(3,10) 3-(1,3) 4-(5,2) 5-(11,12) 6-(4,2) 7-(7,6) 8-(13,2) 9-(15,2) 10-(7,9) 11-(12,8) 12-(12,9) 13-(8,5)
+Task Assignment: 1-2 3-5 4-0 2-11 0-10
+Assignment aborted At time 245
+Time 247
+Robots Locations 0-(5,12) 1-(3,10) 2-(15,12) 3-(10,12) 4-(15,5)
+Target Locations:  0-(15,5) 1-(14,6) 2-(3,10) 3-(1,3) 4-(5,2) 5-(11,12) 6-(4,2) 7-(7,6) 8-(13,2) 9-(15,2) 10-(7,9) 11-(12,8) 12-(12,9) 13-(8,5) 14-(14,5)
+Task Assignment: 1-2 3-5 4-0 2-11 0-10
+Robot 1 finished At time 250
+Time 252
+Robots Locations 0-(5,11) 1-(3,10) 2-(14,11) 3-(11,12) 4-(15,5)
+Target Locations:  0-(15,5) 1-(14,6) 2-(1,3) 3-(5,2) 4-(11,12) 5-(4,2) 6-(7,6) 7-(13,2) 8-(15,2) 9-(7,9) 10-(12,8) 11-(12,9) 12-(8,5) 13-(14,5)
+Task Assignment: 3-4 4-0 2-10 0-9 1-6
+Assignment aborted At time 252
+Time 255
+Robots Locations 0-(5,11) 1-(3,10) 2-(14,10) 3-(11,12) 4-(15,5)
+Target Locations:  0-(15,5) 1-(14,6) 2-(1,3) 3-(5,2) 4-(11,12) 5-(4,2) 6-(7,6) 7-(13,2) 8-(15,2) 9-(7,9) 10-(12,8) 11-(12,9) 12-(8,5) 13-(14,5) 14-(14,9)
+Task Assignment: 3-4 4-0 2-10 0-9 1-6
+Robot 4 finished At time 255
+Time 257
+Robots Locations 0-(5,11) 1-(3,10) 2-(14,10) 3-(11,12) 4-(15,5)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(11,12) 4-(4,2) 5-(7,6) 6-(13,2) 7-(15,2) 8-(7,9) 9-(12,8) 10-(12,9) 11-(8,5) 12-(14,5) 13-(14,9)
+Task Assignment: 3-3 2-9 0-8 1-5 4-12
+Assignment aborted At time 258
+Time 260
+Robots Locations 0-(5,11) 1-(3,11) 2-(14,10) 3-(11,12) 4-(15,5)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(11,12) 4-(4,2) 5-(7,6) 6-(13,2) 7-(15,2) 8-(7,9) 9-(12,8) 10-(12,9) 11-(8,5) 12-(14,5) 13-(14,9) 14-(4,12)
+Task Assignment: 3-3 2-9 0-8 1-5 4-12
+Robot 3 finished At time 260
+Time 263
+Robots Locations 0-(5,11) 1-(3,11) 2-(13,10) 3-(11,12) 4-(15,5)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(7,6) 5-(13,2) 6-(15,2) 7-(7,9) 8-(12,8) 9-(12,9) 10-(8,5) 11-(14,5) 12-(14,9) 13-(4,12)
+Task Assignment: 2-8 0-7 1-4 4-11 3-9
+Assignment aborted At time 263
+Time 265
+Robots Locations 0-(5,11) 1-(3,11) 2-(13,10) 3-(11,12) 4-(15,5)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(7,6) 5-(13,2) 6-(15,2) 7-(7,9) 8-(12,8) 9-(12,9) 10-(8,5) 11-(14,5) 12-(14,9) 13-(4,12) 14-(13,6)
+Task Assignment: 2-8 0-7 1-4 4-11 3-9
+Assignment aborted At time 270
+Time 272
+Robots Locations 0-(7,9) 1-(5,9) 2-(12,8) 3-(12,10) 4-(14,5)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(7,6) 5-(13,2) 6-(15,2) 7-(7,9) 8-(12,8) 9-(12,9) 10-(8,5) 11-(14,5) 12-(14,9) 13-(4,12) 14-(13,6)
+Task Assignment: 2-8 0-7 1-4 4-11 3-9
+Robot 4 finished At time 274
+Time 276
+Robots Locations 0-(7,9) 1-(5,9) 2-(12,8) 3-(12,10) 4-(14,5)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(7,6) 5-(13,2) 6-(15,2) 7-(7,9) 8-(12,8) 9-(12,9) 10-(8,5) 11-(14,9) 12-(4,12) 13-(13,6)
+Task Assignment: 2-8 0-7 1-4 3-9 4-0
+Assignment aborted At time 276
+Time 278
+Robots Locations 0-(7,9) 1-(5,9) 2-(12,8) 3-(12,9) 4-(14,6)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(7,6) 5-(13,2) 6-(15,2) 7-(7,9) 8-(12,8) 9-(12,9) 10-(8,5) 11-(14,9) 12-(4,12) 13-(13,6)
+Task Assignment: 2-8 0-7 1-4 3-9 4-0
+Robot 3 finished At time 279
+Time 282
+Robots Locations 0-(7,9) 1-(6,7) 2-(12,8) 3-(12,9) 4-(15,6)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(7,6) 5-(13,2) 6-(15,2) 7-(7,9) 8-(12,8) 9-(8,5) 10-(14,9) 11-(4,12) 12-(13,6)
+Task Assignment: 2-8 0-7 1-4 4-0 3-10
+Assignment aborted At time 282
+Time 284
+Robots Locations 0-(7,9) 1-(6,7) 2-(12,8) 3-(12,9) 4-(14,6)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(7,6) 5-(13,2) 6-(15,2) 7-(7,9) 8-(12,8) 9-(8,5) 10-(14,9) 11-(4,12) 12-(13,6)
+Task Assignment: 2-8 0-7 1-4 4-0 3-10
+Robot 0 finished At time 285
+Time 287
+Robots Locations 0-(7,9) 1-(7,6) 2-(12,8) 3-(13,9) 4-(14,6)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(7,6) 5-(13,2) 6-(15,2) 7-(12,8) 8-(8,5) 9-(14,9) 10-(4,12) 11-(13,6)
+Task Assignment: 2-7 1-4 4-0 3-9 0-8
+Assignment aborted At time 287
+Time 289
+Robots Locations 0-(7,9) 1-(7,6) 2-(12,8) 3-(14,9) 4-(14,6)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(7,6) 5-(13,2) 6-(15,2) 7-(12,8) 8-(8,5) 9-(14,9) 10-(4,12) 11-(13,6)
+Task Assignment: 2-7 1-4 4-0 3-9 0-8
+Robot 2 finished At time 289
+Time 291
+Robots Locations 0-(7,9) 1-(7,6) 2-(12,8) 3-(14,9) 4-(14,6)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(7,6) 5-(13,2) 6-(15,2) 7-(8,5) 8-(14,9) 9-(4,12) 10-(13,6)
+Task Assignment: 1-4 4-0 3-8 0-7 2-10
+Robot 1 finished At time 292
+Time 294
+Robots Locations 0-(7,8) 1-(7,6) 2-(12,8) 3-(14,9) 4-(14,6)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(13,2) 5-(15,2) 6-(8,5) 7-(14,9) 8-(4,12) 9-(13,6)
+Task Assignment: 4-0 3-7 0-6 2-9 1-2
+Assignment aborted At time 294
+Time 296
+Robots Locations 0-(7,8) 1-(7,6) 2-(12,7) 3-(14,9) 4-(14,6)
+Target Locations:  0-(14,6) 1-(1,3) 2-(5,2) 3-(4,2) 4-(13,2) 5-(15,2) 6-(8,5) 7-(14,9) 8-(4,12) 9-(13,6)
+Task Assignment: 4-0 3-7 0-6 2-9 1-2
+Robot 4 finished At time 297
+Time 299
+Robots Locations 0-(7,7) 1-(7,6) 2-(12,7) 3-(14,9) 4-(14,6)
+Target Locations:  0-(1,3) 1-(5,2) 2-(4,2) 3-(13,2) 4-(15,2) 5-(8,5) 6-(14,9) 7-(4,12) 8-(13,6)
+Task Assignment: 3-6 0-5 2-8 1-1 4-3
+Assignment aborted At time 299
+Time 301
+Robots Locations 0-(7,7) 1-(6,6) 2-(12,7) 3-(14,9) 4-(14,6)
+Target Locations:  0-(1,3) 1-(5,2) 2-(4,2) 3-(13,2) 4-(15,2) 5-(8,5) 6-(14,9) 7-(4,12) 8-(13,6)
+Task Assignment: 3-6 0-5 2-8 1-1 4-3
+Robot 3 finished At time 301
+Time 304
+Robots Locations 0-(7,7) 1-(6,6) 2-(12,7) 3-(14,9) 4-(14,6)
+Target Locations:  0-(1,3) 1-(5,2) 2-(4,2) 3-(13,2) 4-(15,2) 5-(8,5) 6-(4,12) 7-(13,6)
+Task Assignment: 0-5 2-7 1-1 4-3 3-4
+Assignment aborted At time 304
+Time 306
+Robots Locations 0-(7,7) 1-(6,6) 2-(13,7) 3-(14,9) 4-(14,5)
+Target Locations:  0-(1,3) 1-(5,2) 2-(4,2) 3-(13,2) 4-(15,2) 5-(8,5) 6-(4,12) 7-(13,6)
+Task Assignment: 0-5 2-7 1-1 4-3 3-4
+Assignment aborted At time 310
+Time 312
+Robots Locations 0-(8,5) 1-(6,6) 2-(13,6) 3-(15,6) 4-(14,4)
+Target Locations:  0-(1,3) 1-(5,2) 2-(4,2) 3-(13,2) 4-(15,2) 5-(8,5) 6-(4,12) 7-(13,6)
+Task Assignment: 0-5 2-7 1-1 4-3 3-4
+Robot 0 finished At time 313
+Time 315
+Robots Locations 0-(8,5) 1-(6,6) 2-(13,6) 3-(15,6) 4-(14,4)
+Target Locations:  0-(1,3) 1-(5,2) 2-(4,2) 3-(13,2) 4-(15,2) 5-(4,12) 6-(13,6)
+Task Assignment: 2-6 1-1 4-3 3-4 0-2
+Assignment aborted At time 316
+Time 318
+Robots Locations 0-(8,5) 1-(6,5) 2-(13,6) 3-(15,6) 4-(14,4)
+Target Locations:  0-(1,3) 1-(5,2) 2-(4,2) 3-(13,2) 4-(15,2) 5-(4,12) 6-(13,6)
+Task Assignment: 2-6 1-1 4-3 3-4 0-2
+Robot 2 finished At time 319
+Time 321
+Robots Locations 0-(7,4) 1-(6,5) 2-(13,6) 3-(15,5) 4-(14,3)
+Target Locations:  0-(1,3) 1-(5,2) 2-(4,2) 3-(13,2) 4-(15,2) 5-(4,12)
+Task Assignment: 1-1 4-3 3-4 0-2 2-5
+Assignment aborted At time 321
+Time 323
+Robots Locations 0-(7,4) 1-(6,5) 2-(13,6) 3-(15,4) 4-(13,2)
+Target Locations:  0-(1,3) 1-(5,2) 2-(4,2) 3-(13,2) 4-(15,2) 5-(4,12)
+Task Assignment: 1-1 4-3 3-4 0-2 2-5
+Robot 4 finished At time 324
+Time 326
+Robots Locations 0-(6,4) 1-(5,3) 2-(12,6) 3-(15,4) 4-(13,2)
+Target Locations:  0-(1,3) 1-(5,2) 2-(4,2) 3-(15,2) 4-(4,12)
+Task Assignment: 1-1 3-3 0-2 2-4 4-0
+Assignment aborted At time 327
+Time 329
+Robots Locations 0-(6,4) 1-(5,3) 2-(12,6) 3-(15,3) 4-(13,2)
+Target Locations:  0-(1,3) 1-(5,2) 2-(4,2) 3-(15,2) 4-(4,12)
+Task Assignment: 1-1 3-3 0-2 2-4 4-0
+Robot 1 finished At time 334
+Robot 3 finished At time 335
+Robot 2 finished At time 350
+Robot 0 finished At time 351
+Robot 4 finished At time 354
+/BLE
+Time 2
+Robots Locations 0-(3,3) 1-(6,7) 2-(10,8) 3-(12,12) 4-(15,15)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10)
+Task Assignment: 2-4 3-1 1-2 4-3 0-0
+Assignment aborted At time 6
+Time 8
+Robots Locations 0-(3,5) 1-(8,7) 2-(10,9) 3-(10,13) 4-(14,16)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(2,4)
+Task Assignment: 3-1 0-5 2-4 1-2 4-3
+Assignment aborted At time 13
+Time 15
+Robots Locations 0-(2,4) 1-(10,7) 2-(8,10) 3-(9,13) 4-(12,15)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(2,4) 6-(4,5)
+Task Assignment: 3-1 0-5 2-4 1-2 4-3
+Robot 3 finished At time 16
+Time 18
+Robots Locations 0-(2,4) 1-(10,7) 2-(8,10) 3-(9,13) 4-(11,15)
+Target Locations:  0-(3,15) 1-(13,7) 2-(6,15) 3-(8,10) 4-(2,4) 5-(4,5)
+Task Assignment: 0-4 2-3 1-1 3-2 4-0
+Assignment aborted At time 19
+Time 21
+Robots Locations 0-(2,4) 1-(11,7) 2-(8,10) 3-(9,13) 4-(11,15)
+Target Locations:  0-(3,15) 1-(13,7) 2-(6,15) 3-(8,10) 4-(2,4) 5-(4,5) 6-(9,1)
+Task Assignment: 2-3 0-4 1-1 3-2 4-0
+Robot 2 finished At time 21
+Time 23
+Robots Locations 0-(2,4) 1-(11,7) 2-(8,10) 3-(9,13) 4-(11,15)
+Target Locations:  0-(3,15) 1-(13,7) 2-(6,15) 3-(2,4) 4-(4,5) 5-(9,1)
+Task Assignment: 0-3 1-1 3-2 2-4 4-0
+Assignment aborted At time 25
+Time 27
+Robots Locations 0-(2,4) 1-(11,7) 2-(8,10) 3-(8,14) 4-(10,15)
+Target Locations:  0-(3,15) 1-(13,7) 2-(6,15) 3-(2,4) 4-(4,5) 5-(9,1) 6-(3,8)
+Task Assignment: 0-3 1-1 3-2 2-6 4-0
+Robot 0 finished At time 27
+Time 29
+Robots Locations 0-(2,4) 1-(11,7) 2-(7,10) 3-(8,14) 4-(10,15)
+Target Locations:  0-(3,15) 1-(13,7) 2-(6,15) 3-(4,5) 4-(9,1) 5-(3,8)
+Task Assignment: 1-1 3-2 0-3 2-5 4-0
+Assignment aborted At time 30
+Time 32
+Robots Locations 0-(2,4) 1-(12,7) 2-(7,10) 3-(8,14) 4-(10,15)
+Target Locations:  0-(3,15) 1-(13,7) 2-(6,15) 3-(4,5) 4-(9,1) 5-(3,8) 6-(5,13)
+Task Assignment: 1-1 0-3 3-2 2-6 4-0
+Assignment aborted At time 36
+Time 38
+Robots Locations 0-(3,4) 1-(13,7) 2-(6,11) 3-(6,15) 4-(8,15)
+Target Locations:  0-(3,15) 1-(13,7) 2-(6,15) 3-(4,5) 4-(9,1) 5-(3,8) 6-(5,13) 7-(13,11)
+Task Assignment: 3-2 1-1 0-3 2-6 4-0
+Robot 1 finished At time 39
+Time 41
+Robots Locations 0-(4,5) 1-(13,7) 2-(6,11) 3-(6,15) 4-(8,15)
+Target Locations:  0-(3,15) 1-(6,15) 2-(4,5) 3-(9,1) 4-(3,8) 5-(5,13) 6-(13,11)
+Task Assignment: 0-2 3-1 2-5 1-6 4-0
+Assignment aborted At time 42
+Time 44
+Robots Locations 0-(4,5) 1-(13,7) 2-(6,12) 3-(6,15) 4-(7,15)
+Target Locations:  0-(3,15) 1-(6,15) 2-(4,5) 3-(9,1) 4-(3,8) 5-(5,13) 6-(13,11) 7-(1,12)
+Task Assignment: 0-2 3-1 2-5 4-0 1-6
+Robot 3 finished At time 45
+Time 47
+Robots Locations 0-(4,5) 1-(13,8) 2-(5,12) 3-(6,15) 4-(7,15)
+Target Locations:  0-(3,15) 1-(4,5) 2-(9,1) 3-(3,8) 4-(5,13) 5-(13,11) 6-(1,12)
+Task Assignment: 0-1 2-4 3-0 1-5 4-6
+Assignment aborted At time 48
+Time 50
+Robots Locations 0-(4,5) 1-(13,8) 2-(5,12) 3-(6,15) 4-(7,15)
+Target Locations:  0-(3,15) 1-(4,5) 2-(9,1) 3-(3,8) 4-(5,13) 5-(13,11) 6-(1,12) 7-(12,13)
+Task Assignment: 0-1 2-4 3-0 1-5 4-7
+Robot 0 finished At time 51
+Time 54
+Robots Locations 0-(4,5) 1-(13,8) 2-(5,13) 3-(5,15) 4-(7,15)
+Target Locations:  0-(3,15) 1-(9,1) 2-(3,8) 3-(5,13) 4-(13,11) 5-(1,12) 6-(12,13)
+Task Assignment: 2-3 3-0 1-4 0-2 4-6
+Assignment aborted At time 54
+Time 56
+Robots Locations 0-(4,5) 1-(13,8) 2-(5,13) 3-(5,15) 4-(8,15)
+Target Locations:  0-(3,15) 1-(9,1) 2-(3,8) 3-(5,13) 4-(13,11) 5-(1,12) 6-(12,13) 7-(3,11)
+Task Assignment: 2-3 3-0 1-4 0-2 4-6
+Assignment aborted At time 60
+Time 62
+Robots Locations 0-(3,6) 1-(13,11) 2-(5,13) 3-(3,15) 4-(9,15)
+Target Locations:  0-(3,15) 1-(9,1) 2-(3,8) 3-(5,13) 4-(13,11) 5-(1,12) 6-(12,13) 7-(3,11) 8-(8,6)
+Task Assignment: 3-0 2-3 1-4 0-2 4-6
+Robot 3 finished At time 62
+Time 65
+Robots Locations 0-(3,7) 1-(13,11) 2-(5,13) 3-(3,15) 4-(9,15)
+Target Locations:  0-(9,1) 1-(3,8) 2-(5,13) 3-(13,11) 4-(1,12) 5-(12,13) 6-(3,11) 7-(8,6)
+Task Assignment: 2-2 1-3 0-1 4-5 3-4
+Assignment aborted At time 66
+Time 67
+Robots Locations 0-(3,7) 1-(13,11) 2-(5,13) 3-(3,15) 4-(10,15)
+Target Locations:  0-(9,1) 1-(3,8) 2-(5,13) 3-(13,11) 4-(1,12) 5-(12,13) 6-(3,11) 7-(8,6) 8-(15,5)
+Task Assignment: 2-2 1-3 0-1 4-5 3-4
+Robot 1 finished At time 68
+Time 70
+Robots Locations 0-(3,7) 1-(13,11) 2-(5,13) 3-(3,15) 4-(10,15)
+Target Locations:  0-(9,1) 1-(3,8) 2-(5,13) 3-(1,12) 4-(12,13) 5-(3,11) 6-(8,6) 7-(15,5)
+Task Assignment: 2-2 0-1 1-4 3-3 4-5
+Assignment aborted At time 71
+Time 73
+Robots Locations 0-(3,8) 1-(13,11) 2-(5,13) 3-(2,14) 4-(10,14)
+Target Locations:  0-(9,1) 1-(3,8) 2-(5,13) 3-(1,12) 4-(12,13) 5-(3,11) 6-(8,6) 7-(15,5) 8-(8,11)
+Task Assignment: 0-1 2-2 1-4 3-3 4-8
+Robot 2 finished At time 74
+Time 76
+Robots Locations 0-(3,8) 1-(13,12) 2-(5,13) 3-(2,14) 4-(10,14)
+Target Locations:  0-(9,1) 1-(3,8) 2-(1,12) 3-(12,13) 4-(3,11) 5-(8,6) 6-(15,5) 7-(8,11)
+Task Assignment: 0-1 1-3 3-2 2-4 4-7
+Assignment aborted At time 77
+Time 79
+Robots Locations 0-(3,8) 1-(12,12) 2-(5,13) 3-(2,14) 4-(10,14)
+Target Locations:  0-(9,1) 1-(3,8) 2-(1,12) 3-(12,13) 4-(3,11) 5-(8,6) 6-(15,5) 7-(8,11) 8-(14,3)
+Task Assignment: 0-1 1-3 3-2 2-4 4-7
+Robot 0 finished At time 80
+Time 82
+Robots Locations 0-(3,8) 1-(12,12) 2-(4,13) 3-(2,13) 4-(9,13)
+Target Locations:  0-(9,1) 1-(1,12) 2-(12,13) 3-(3,11) 4-(8,6) 5-(15,5) 6-(8,11) 7-(14,3)
+Task Assignment: 1-2 3-1 2-3 4-6 0-4
+Assignment aborted At time 83
+Time 85
+Robots Locations 0-(3,8) 1-(12,13) 2-(4,13) 3-(2,13) 4-(9,13)
+Target Locations:  0-(9,1) 1-(1,12) 2-(12,13) 3-(3,11) 4-(8,6) 5-(15,5) 6-(8,11) 7-(14,3) 8-(4,9)
+Task Assignment: 1-2 3-1 0-8 2-3 4-6
+Robot 1 finished At time 88
+Time 90
+Robots Locations 0-(4,9) 1-(12,13) 2-(4,12) 3-(1,12) 4-(9,12)
+Target Locations:  0-(9,1) 1-(1,12) 2-(3,11) 3-(8,6) 4-(15,5) 5-(8,11) 6-(14,3) 7-(4,9)
+Task Assignment: 3-1 0-7 4-5 2-2 1-3
+Assignment aborted At time 90
+Time 92
+Robots Locations 0-(4,9) 1-(12,13) 2-(3,12) 3-(1,12) 4-(8,11)
+Target Locations:  0-(9,1) 1-(1,12) 2-(3,11) 3-(8,6) 4-(15,5) 5-(8,11) 6-(14,3) 7-(4,9) 8-(10,12)
+Task Assignment: 3-1 0-7 4-5 2-2 1-8
+Robot 3 finished At time 92
+Time 94
+Robots Locations 0-(4,9) 1-(11,13) 2-(3,11) 3-(1,12) 4-(8,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(4,9) 7-(10,12)
+Task Assignment: 4-4 0-6 2-1 1-7 3-2
+Assignment aborted At time 94
+Time 96
+Robots Locations 0-(4,9) 1-(11,13) 2-(3,11) 3-(1,11) 4-(8,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(4,9) 7-(10,12) 8-(3,2)
+Task Assignment: 0-6 2-1 4-4 1-7 3-2
+Robot 0 finished At time 97
+Time 99
+Robots Locations 0-(4,9) 1-(10,12) 2-(3,11) 3-(2,11) 4-(8,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(10,12) 7-(3,2)
+Task Assignment: 4-4 2-1 1-6 0-2 3-7
+Assignment aborted At time 99
+Time 101
+Robots Locations 0-(4,9) 1-(10,12) 2-(3,11) 3-(2,11) 4-(8,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(10,12) 7-(3,2) 8-(5,9)
+Task Assignment: 4-4 2-1 1-6 0-8 3-2
+Robot 1 finished At time 104
+Time 106
+Robots Locations 0-(5,9) 1-(10,12) 2-(3,11) 3-(2,11) 4-(8,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(3,2) 7-(5,9)
+Task Assignment: 4-4 0-7 2-1 1-2 3-6
+Assignment aborted At time 106
+Time 108
+Robots Locations 0-(5,9) 1-(10,12) 2-(3,11) 3-(2,11) 4-(8,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(3,2) 7-(5,9) 8-(11,1)
+Task Assignment: 4-4 0-7 2-1 1-2 3-6
+Robot 4 finished At time 112
+Time 114
+Robots Locations 0-(5,9) 1-(10,10) 2-(3,11) 3-(3,12) 4-(8,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(15,5) 4-(14,3) 5-(3,2) 6-(5,9) 7-(11,1) 8-(5,3)
+Task Assignment: 2-1 0-6 1-2 4-8 3-5
+Robot 2 finished At time 115
+Time 116
+Robots Locations 0-(5,9) 1-(10,10) 2-(3,11) 3-(3,12) 4-(8,11)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(5,9) 6-(11,1) 7-(5,3)
+Task Assignment: 0-5 1-1 2-7 4-2 3-4
+Assignment aborted At time 117
+Time 119
+Robots Locations 0-(5,9) 1-(10,9) 2-(3,11) 3-(3,12) 4-(8,11)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(5,9) 6-(11,1) 7-(5,3) 8-(15,12)
+Task Assignment: 0-5 1-1 4-8 2-7 3-4
+Robot 0 finished At time 121
+Time 123
+Robots Locations 0-(5,9) 1-(10,9) 2-(3,10) 3-(4,11) 4-(9,11)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12)
+Task Assignment: 1-1 0-6 4-7 2-4 3-0
+Assignment aborted At time 123
+Time 125
+Robots Locations 0-(5,9) 1-(10,9) 2-(3,10) 3-(4,11) 4-(10,12)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(10,10)
+Task Assignment: 1-8 0-1 4-7 2-6 3-4
+Assignment aborted At time 130
+Time 131
+Robots Locations 0-(3,8) 1-(9,8) 2-(2,8) 3-(4,9) 4-(12,12)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(10,10) 9-(6,5)
+Task Assignment: 1-8 4-7 0-9 3-1 2-6
+Assignment aborted At time 136
+Time 138
+Robots Locations 0-(5,6) 1-(10,10) 2-(3,6) 3-(6,8) 4-(15,12)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(10,10) 9-(6,5) 10-(5,12)
+Task Assignment: 1-8 4-7 0-9 3-1 2-6
+Robot 1 finished At time 140
+Time 142
+Robots Locations 0-(5,6) 1-(10,10) 2-(4,5) 3-(7,7) 4-(15,12)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(6,5) 9-(5,12)
+Task Assignment: 4-7 0-8 3-1 2-6 1-9
+Assignment aborted At time 142
+Time 144
+Robots Locations 0-(5,6) 1-(10,10) 2-(4,5) 3-(7,7) 4-(15,12)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(6,5) 9-(5,12) 10-(14,4)
+Task Assignment: 4-7 3-1 0-8 2-6 1-9
+Robot 3 finished At time 148
+Time 149
+Robots Locations 0-(6,4) 1-(8,11) 2-(5,3) 3-(8,6) 4-(15,12)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(5,3) 6-(15,12) 7-(6,5) 8-(5,12) 9-(14,4)
+Task Assignment: 4-6 2-5 0-7 1-8 3-0
+Assignment aborted At time 149
+Time 151
+Robots Locations 0-(6,4) 1-(8,11) 2-(5,3) 3-(8,5) 4-(15,12)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(5,3) 6-(15,12) 7-(6,5) 8-(5,12) 9-(14,4) 10-(6,14)
+Task Assignment: 4-6 2-5 0-7 1-8 3-0
+Robot 4 finished At time 152
+Time 154
+Robots Locations 0-(6,5) 1-(6,11) 2-(5,3) 3-(8,5) 4-(15,12)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(5,3) 6-(6,5) 7-(5,12) 8-(14,4) 9-(6,14)
+Task Assignment: 0-6 2-5 1-7 3-0 4-1
+Assignment aborted At time 154
+Time 156
+Robots Locations 0-(6,5) 1-(6,11) 2-(5,3) 3-(8,4) 4-(15,11)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(5,3) 6-(6,5) 7-(5,12) 8-(14,4) 9-(6,14) 10-(8,14)
+Task Assignment: 0-6 2-5 1-7 3-0 4-1
+Robot 0 finished At time 157
+Time 159
+Robots Locations 0-(6,5) 1-(7,12) 2-(5,3) 3-(9,3) 4-(15,10)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(5,3) 6-(5,12) 7-(14,4) 8-(6,14) 9-(8,14)
+Task Assignment: 2-5 3-0 1-6 0-3 4-1
+Assignment aborted At time 159
+Time 161
+Robots Locations 0-(6,5) 1-(7,13) 2-(5,3) 3-(9,2) 4-(15,10)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(5,3) 6-(5,12) 7-(14,4) 8-(6,14) 9-(8,14) 10-(2,8)
+Task Assignment: 2-5 3-0 1-9 0-3 4-1
+Robot 3 finished At time 165
+Time 167
+Robots Locations 0-(5,4) 1-(7,12) 2-(5,3) 3-(9,1) 4-(14,8)
+Target Locations:  0-(15,5) 1-(14,3) 2-(3,2) 3-(11,1) 4-(5,3) 5-(5,12) 6-(14,4) 7-(6,14) 8-(8,14) 9-(2,8)
+Task Assignment: 2-4 3-3 1-5 0-2 4-0
+Assignment aborted At time 167
+Time 169
+Robots Locations 0-(5,4) 1-(7,13) 2-(5,3) 3-(9,1) 4-(15,7)
+Target Locations:  0-(15,5) 1-(14,3) 2-(3,2) 3-(11,1) 4-(5,3) 5-(5,12) 6-(14,4) 7-(6,14) 8-(8,14) 9-(2,8) 10-(14,6)
+Task Assignment: 2-4 4-10 1-7 3-3 0-2
+Assignment aborted At time 171
+Time 172
+Robots Locations 0-(3,3) 1-(5,13) 2-(5,3) 3-(11,1) 4-(14,6)
+Target Locations:  0-(15,5) 1-(14,3) 2-(3,2) 3-(11,1) 4-(5,3) 5-(5,12) 6-(14,4) 7-(6,14) 8-(8,14) 9-(2,8) 10-(14,6) 11-(3,10)
+Task Assignment: 3-3 4-10 2-4 0-2 1-5
+Robot 4 finished At time 175
+Time 176
+Robots Locations 0-(3,2) 1-(5,13) 2-(5,3) 3-(11,1) 4-(14,6)
+Target Locations:  0-(15,5) 1-(14,3) 2-(3,2) 3-(11,1) 4-(5,3) 5-(5,12) 6-(14,4) 7-(6,14) 8-(8,14) 9-(2,8) 10-(3,10)
+Task Assignment: 0-2 3-3 2-4 1-5 4-0
+Assignment aborted At time 176
+Time 178
+Robots Locations 0-(3,2) 1-(5,13) 2-(5,3) 3-(11,1) 4-(14,6)
+Target Locations:  0-(15,5) 1-(14,3) 2-(3,2) 3-(11,1) 4-(5,3) 5-(5,12) 6-(14,4) 7-(6,14) 8-(8,14) 9-(2,8) 10-(3,10) 11-(1,3)
+Task Assignment: 0-2 2-4 3-3 1-5 4-0
+Robot 2 finished At time 179
+Time 181
+Robots Locations 0-(3,2) 1-(5,12) 2-(5,3) 3-(11,1) 4-(14,6)
+Target Locations:  0-(15,5) 1-(14,3) 2-(3,2) 3-(11,1) 4-(5,12) 5-(14,4) 6-(6,14) 7-(8,14) 8-(2,8) 9-(3,10) 10-(1,3)
+Task Assignment: 0-2 3-3 1-4 4-0 2-10
+Robot 3 finished At time 181
+Time 183
+Robots Locations 0-(3,2) 1-(5,12) 2-(5,3) 3-(11,1) 4-(14,6)
+Target Locations:  0-(15,5) 1-(14,3) 2-(3,2) 3-(5,12) 4-(14,4) 5-(6,14) 6-(8,14) 7-(2,8) 8-(3,10) 9-(1,3)
+Task Assignment: 0-2 1-3 4-0 3-1 2-9
+Assignment aborted At time 183
+Time 185
+Robots Locations 0-(3,2) 1-(5,12) 2-(5,3) 3-(12,1) 4-(15,5)
+Target Locations:  0-(15,5) 1-(14,3) 2-(3,2) 3-(5,12) 4-(14,4) 5-(6,14) 6-(8,14) 7-(2,8) 8-(3,10) 9-(1,3) 10-(5,2)
+Task Assignment: 0-2 1-3 4-0 2-10 3-1
+Robot 0 finished At time 186
+Time 188
+Robots Locations 0-(3,2) 1-(5,12) 2-(5,2) 3-(12,2) 4-(15,6)
+Target Locations:  0-(15,5) 1-(14,3) 2-(5,12) 3-(14,4) 4-(6,14) 5-(8,14) 6-(2,8) 7-(3,10) 8-(1,3) 9-(5,2)
+Task Assignment: 1-2 2-9 4-0 0-8 3-1
+Assignment aborted At time 188
+Time 190
+Robots Locations 0-(3,2) 1-(5,12) 2-(4,2) 3-(13,2) 4-(16,6)
+Target Locations:  0-(15,5) 1-(14,3) 2-(5,12) 3-(14,4) 4-(6,14) 5-(8,14) 6-(2,8) 7-(3,10) 8-(1,3) 9-(5,2) 10-(11,12)
+Task Assignment: 1-2 2-9 3-1 4-0 0-8
+Assignment aborted At time 193
+Time 194
+Robots Locations 0-(1,3) 1-(5,12) 2-(5,2) 3-(14,3) 4-(15,5)
+Target Locations:  0-(15,5) 1-(14,3) 2-(5,12) 3-(14,4) 4-(6,14) 5-(8,14) 6-(2,8) 7-(3,10) 8-(1,3) 9-(5,2) 10-(11,12) 11-(4,2)
+Task Assignment: 1-2 3-1 2-9 4-0 0-8
+Robot 1 finished At time 195
+Time 197
+Robots Locations 0-(1,3) 1-(5,12) 2-(5,2) 3-(14,3) 4-(15,5)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(6,14) 4-(8,14) 5-(2,8) 6-(3,10) 7-(1,3) 8-(5,2) 9-(11,12) 10-(4,2)
+Task Assignment: 3-1 2-8 0-7 4-0 1-3
+Assignment aborted At time 198
+Time 200
+Robots Locations 0-(1,3) 1-(5,12) 2-(5,2) 3-(14,3) 4-(15,5)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(6,14) 4-(8,14) 5-(2,8) 6-(3,10) 7-(1,3) 8-(5,2) 9-(11,12) 10-(4,2) 11-(15,14)
+Task Assignment: 4-0 2-8 0-7 3-1 1-3
+Robot 4 finished At time 201
+Time 203
+Robots Locations 0-(1,3) 1-(4,12) 2-(5,2) 3-(14,3) 4-(15,5)
+Target Locations:  0-(14,3) 1-(14,4) 2-(6,14) 3-(8,14) 4-(2,8) 5-(3,10) 6-(1,3) 7-(5,2) 8-(11,12) 9-(4,2) 10-(15,14)
+Task Assignment: 0-6 3-0 2-7 4-1 1-5
+Robot 3 finished At time 203
+Time 205
+Robots Locations 0-(1,3) 1-(4,12) 2-(5,2) 3-(14,3) 4-(15,5)
+Target Locations:  0-(14,4) 1-(6,14) 2-(8,14) 3-(2,8) 4-(3,10) 5-(1,3) 6-(5,2) 7-(11,12) 8-(4,2) 9-(15,14)
+Task Assignment: 0-5 2-6 3-0 1-4 4-7
+Assignment aborted At time 205
+Time 207
+Robots Locations 0-(1,3) 1-(4,12) 2-(5,2) 3-(14,3) 4-(14,5)
+Target Locations:  0-(14,4) 1-(6,14) 2-(8,14) 3-(2,8) 4-(3,10) 5-(1,3) 6-(5,2) 7-(11,12) 8-(4,2) 9-(15,14) 10-(7,6)
+Task Assignment: 0-5 2-6 4-0 1-4 3-10
+Robot 0 finished At time 208
+Time 210
+Robots Locations 0-(1,3) 1-(4,12) 2-(5,2) 3-(14,4) 4-(14,5)
+Target Locations:  0-(14,4) 1-(6,14) 2-(8,14) 3-(2,8) 4-(3,10) 5-(5,2) 6-(11,12) 7-(4,2) 8-(15,14) 9-(7,6)
+Task Assignment: 3-0 2-5 1-4 0-7 4-9
+Assignment aborted At time 210
+Time 212
+Robots Locations 0-(1,3) 1-(4,12) 2-(5,2) 3-(14,4) 4-(14,6)
+Target Locations:  0-(14,4) 1-(6,14) 2-(8,14) 3-(2,8) 4-(3,10) 5-(5,2) 6-(11,12) 7-(4,2) 8-(15,14) 9-(7,6) 10-(13,2)
+Task Assignment: 3-0 2-5 1-4 0-7 4-10
+Robot 2 finished At time 212
+Time 214
+Robots Locations 0-(1,4) 1-(4,11) 2-(5,2) 3-(14,4) 4-(14,6)
+Target Locations:  0-(14,4) 1-(6,14) 2-(8,14) 3-(2,8) 4-(3,10) 5-(11,12) 6-(4,2) 7-(15,14) 8-(7,6) 9-(13,2)
+Task Assignment: 3-0 2-6 1-4 4-9 0-3
+Assignment aborted At time 214
+Time 216
+Robots Locations 0-(1,4) 1-(4,11) 2-(5,2) 3-(14,4) 4-(14,5)
+Target Locations:  0-(14,4) 1-(6,14) 2-(8,14) 3-(2,8) 4-(3,10) 5-(11,12) 6-(4,2) 7-(15,14) 8-(7,6) 9-(13,2) 10-(15,2)
+Task Assignment: 3-0 2-6 1-4 4-10 0-3
+Robot 3 finished At time 217
+Time 219
+Robots Locations 0-(2,5) 1-(3,11) 2-(4,2) 3-(14,4) 4-(14,6)
+Target Locations:  0-(6,14) 1-(8,14) 2-(2,8) 3-(3,10) 4-(11,12) 5-(4,2) 6-(15,14) 7-(7,6) 8-(13,2) 9-(15,2)
+Task Assignment: 2-5 1-3 3-9 0-2 4-8
+Assignment aborted At time 220
+Time 222
+Robots Locations 0-(2,5) 1-(3,11) 2-(4,3) 3-(14,4) 4-(15,5)
+Target Locations:  0-(6,14) 1-(8,14) 2-(2,8) 3-(3,10) 4-(11,12) 5-(4,2) 6-(15,14) 7-(7,6) 8-(13,2) 9-(15,2) 10-(7,9)
+Task Assignment: 2-5 1-3 3-8 4-9 0-2
+Robot 1 finished At time 226
+Time 228
+Robots Locations 0-(2,7) 1-(3,10) 2-(4,2) 3-(13,2) 4-(15,4)
+Target Locations:  0-(6,14) 1-(8,14) 2-(2,8) 3-(11,12) 4-(4,2) 5-(15,14) 6-(7,6) 7-(13,2) 8-(15,2) 9-(7,9)
+Task Assignment: 2-4 3-7 0-2 4-8 1-9
+Assignment aborted At time 228
+Time 229
+Robots Locations 0-(2,7) 1-(3,10) 2-(4,2) 3-(13,2) 4-(15,3)
+Target Locations:  0-(6,14) 1-(8,14) 2-(2,8) 3-(11,12) 4-(4,2) 5-(15,14) 6-(7,6) 7-(13,2) 8-(15,2) 9-(7,9) 10-(12,8)
+Task Assignment: 2-4 3-7 0-2 4-8 1-9
+Robot 3 finished At time 230
+Time 232
+Robots Locations 0-(2,8) 1-(4,10) 2-(4,2) 3-(13,2) 4-(15,3)
+Target Locations:  0-(6,14) 1-(8,14) 2-(2,8) 3-(11,12) 4-(4,2) 5-(15,14) 6-(7,6) 7-(15,2) 8-(7,9) 9-(12,8)
+Task Assignment: 0-2 2-4 4-7 1-8 3-9
+Assignment aborted At time 232
+Time 234
+Robots Locations 0-(2,8) 1-(4,10) 2-(4,2) 3-(13,2) 4-(15,2)
+Target Locations:  0-(6,14) 1-(8,14) 2-(2,8) 3-(11,12) 4-(4,2) 5-(15,14) 6-(7,6) 7-(15,2) 8-(7,9) 9-(12,8) 10-(12,9)
+Task Assignment: 2-4 0-2 4-7 1-8 3-9
+Robot 0 finished At time 236
+Time 238
+Robots Locations 0-(2,8) 1-(6,10) 2-(4,2) 3-(12,3) 4-(14,2)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(4,2) 4-(15,14) 5-(7,6) 6-(15,2) 7-(7,9) 8-(12,8) 9-(12,9)
+Task Assignment: 2-3 4-6 1-7 3-8 0-5
+Assignment aborted At time 238
+Time 240
+Robots Locations 0-(2,8) 1-(6,10) 2-(4,2) 3-(12,4) 4-(15,2)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(4,2) 4-(15,14) 5-(7,6) 6-(15,2) 7-(7,9) 8-(12,8) 9-(12,9) 10-(8,5)
+Task Assignment: 2-3 4-6 1-7 3-8 0-5
+Robot 2 finished At time 241
+Time 242
+Robots Locations 0-(3,9) 1-(7,9) 2-(4,2) 3-(12,5) 4-(15,2)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(7,6) 5-(15,2) 6-(7,9) 7-(12,8) 8-(12,9) 9-(8,5)
+Task Assignment: 1-6 4-5 3-7 2-9 0-4
+Assignment aborted At time 242
+Time 244
+Robots Locations 0-(3,9) 1-(7,9) 2-(4,2) 3-(12,5) 4-(15,2)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(7,6) 5-(15,2) 6-(7,9) 7-(12,8) 8-(12,9) 9-(8,5) 10-(14,5)
+Task Assignment: 4-5 1-6 3-10 2-9 0-4
+Assignment aborted At time 249
+Time 251
+Robots Locations 0-(5,7) 1-(7,9) 2-(6,3) 3-(13,6) 4-(15,2)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(7,6) 5-(15,2) 6-(7,9) 7-(12,8) 8-(12,9) 9-(8,5) 10-(14,5) 11-(14,9)
+Task Assignment: 1-6 4-5 3-10 0-4 2-9
+Robot 1 finished At time 252
+Time 254
+Robots Locations 0-(6,7) 1-(7,9) 2-(6,3) 3-(14,5) 4-(15,2)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(7,6) 5-(15,2) 6-(12,8) 7-(12,9) 8-(8,5) 9-(14,5) 10-(14,9)
+Task Assignment: 4-5 3-9 0-4 2-8 1-2
+Robot 4 finished At time 254
+Time 256
+Robots Locations 0-(6,7) 1-(7,9) 2-(7,4) 3-(14,5) 4-(15,2)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(7,6) 5-(12,8) 6-(12,9) 7-(8,5) 8-(14,5) 9-(14,9) 10-(4,12)
+Task Assignment: 3-8 0-4 2-7 1-10 4-5
+Robot 3 finished At time 259
+Time 261
+Robots Locations 0-(7,6) 1-(6,9) 2-(7,4) 3-(14,5) 4-(14,3)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(7,6) 5-(12,8) 6-(12,9) 7-(8,5) 8-(14,9) 9-(4,12)
+Task Assignment: 0-4 2-7 1-9 3-5 4-8
+Assignment aborted At time 261
+Time 263
+Robots Locations 0-(7,6) 1-(6,9) 2-(8,5) 3-(14,5) 4-(15,4)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(7,6) 5-(12,8) 6-(12,9) 7-(8,5) 8-(14,9) 9-(4,12) 10-(13,6)
+Task Assignment: 0-4 2-7 3-10 1-9 4-5
+Robot 0 finished At time 265
+Time 267
+Robots Locations 0-(7,6) 1-(5,10) 2-(8,5) 3-(14,6) 4-(15,5)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(12,8) 5-(12,9) 6-(8,5) 7-(14,9) 8-(4,12) 9-(13,6)
+Task Assignment: 2-6 3-9 1-8 4-7 0-4
+Assignment aborted At time 267
+Time 269
+Robots Locations 0-(7,6) 1-(5,10) 2-(8,5) 3-(13,6) 4-(15,5)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(12,8) 5-(12,9) 6-(8,5) 7-(14,9) 8-(4,12) 9-(13,6)
+Task Assignment: 3-9 2-6 1-8 4-7 0-4
+Robot 3 finished At time 272
+Time 274
+Robots Locations 0-(8,7) 1-(5,12) 2-(8,5) 3-(13,6) 4-(16,6)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(12,8) 5-(12,9) 6-(8,5) 7-(14,9) 8-(4,12)
+Task Assignment: 2-6 1-8 3-4 4-7 0-5
+Assignment aborted At time 274
+Time 276
+Robots Locations 0-(8,7) 1-(4,12) 2-(8,5) 3-(13,6) 4-(15,7)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(12,8) 5-(12,9) 6-(8,5) 7-(14,9) 8-(4,12)
+Task Assignment: 2-6 1-8 4-7 3-4 0-5
+Assignment aborted At time 278
+Time 279
+Robots Locations 0-(8,9) 1-(4,13) 2-(8,5) 3-(12,8) 4-(15,7)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(12,8) 5-(12,9) 6-(8,5) 7-(14,9) 8-(4,12)
+Task Assignment: 2-6 3-4 1-8 4-7 0-5
+Robot 2 finished At time 280
+Time 282
+Robots Locations 0-(8,9) 1-(4,13) 2-(8,5) 3-(12,8) 4-(15,7)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(12,8) 5-(12,9) 6-(14,9) 7-(4,12)
+Task Assignment: 3-4 1-7 4-6 0-5 2-2
+Assignment aborted At time 283
+Time 285
+Robots Locations 0-(9,9) 1-(5,12) 2-(8,6) 3-(12,8) 4-(14,8)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(12,8) 5-(12,9) 6-(14,9) 7-(4,12)
+Task Assignment: 3-4 4-6 1-7 0-5 2-2
+Robot 3 finished At time 287
+Time 289
+Robots Locations 0-(10,9) 1-(4,12) 2-(9,6) 3-(12,8) 4-(14,9)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(12,9) 5-(14,9) 6-(4,12)
+Task Assignment: 1-6 4-5 3-4 0-2 2-1
+Assignment aborted At time 289
+Time 291
+Robots Locations 0-(10,9) 1-(4,12) 2-(9,7) 3-(12,9) 4-(14,9)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(12,9) 5-(14,9) 6-(4,12)
+Task Assignment: 4-5 1-6 3-4 0-2 2-1
+Robot 3 finished At time 293
+Time 295
+Robots Locations 0-(10,9) 1-(4,12) 2-(7,7) 3-(12,9) 4-(13,9)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(14,9) 5-(4,12)
+Task Assignment: 1-5 4-4 0-2 3-3 2-1
+Assignment aborted At time 295
+Time 298
+Robots Locations 0-(10,10) 1-(4,12) 2-(7,7) 3-(12,10) 4-(14,9)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(14,9) 5-(4,12)
+Task Assignment: 4-4 1-5 0-2 3-3 2-1
+Robot 1 finished At time 300
+Time 302
+Robots Locations 0-(11,12) 1-(4,12) 2-(9,8) 3-(13,11) 4-(14,9)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(14,9)
+Task Assignment: 0-2 4-4 1-0 3-3 2-1
+Assignment aborted At time 302
+Time 304
+Robots Locations 0-(11,12) 1-(4,12) 2-(9,8) 3-(14,12) 4-(14,9)
+Target Locations:  0-(6,14) 1-(8,14) 2-(11,12) 3-(15,14) 4-(14,9)
+Task Assignment: 0-2 4-4 3-3 1-0 2-1
+Robot 4 finished At time 304
+Robot 0 finished At time 310
+Robot 3 finished At time 310
+Robot 1 finished At time 311
+Robot 2 finished At time 315
+/mmdr
+Time 3
+Robots Locations 0-(3,3) 1-(6,6) 2-(9,8) 3-(12,12) 4-(15,15)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10)
+Task Assignment: 0-4 1-0 2-2 3-3 4-1
+Assignment aborted At time 6
+Time 9
+Robots Locations 0-(2,4) 1-(5,6) 2-(10,8) 3-(10,12) 4-(14,16)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(2,4)
+Task Assignment: 0-5 1-4 2-2 3-3 4-1
+Assignment aborted At time 12
+Time 15
+Robots Locations 0-(2,4) 1-(6,7) 2-(12,7) 3-(9,13) 4-(13,15)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(2,4) 6-(4,5)
+Task Assignment: 0-5 1-6 2-2 3-3 4-1
+Robot 0 finished At time 17
+Time 19
+Robots Locations 0-(2,4) 1-(6,8) 2-(13,7) 3-(8,13) 4-(12,15)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(4,5)
+Task Assignment: 0-5 1-4 2-2 3-3 4-1
+Assignment aborted At time 19
+Time 22
+Robots Locations 0-(2,4) 1-(5,8) 2-(13,7) 3-(8,13) 4-(12,15)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(4,5) 6-(9,1)
+Task Assignment: 0-5 1-4 2-2 3-3 4-1
+Assignment aborted At time 24
+Time 26
+Robots Locations 0-(2,3) 1-(5,9) 2-(13,7) 3-(7,14) 4-(11,14)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(4,5) 6-(9,1) 7-(3,8)
+Task Assignment: 0-5 1-7 2-2 3-3 4-1
+Robot 2 finished At time 27
+Time 29
+Robots Locations 0-(2,3) 1-(5,9) 2-(13,7) 3-(7,14) 4-(11,14)
+Target Locations:  0-(3,15) 1-(9,13) 2-(6,15) 3-(8,10) 4-(4,5) 5-(9,1) 6-(3,8)
+Task Assignment: 0-4 1-6 2-3 3-2 4-1
+Assignment aborted At time 29
+Time 32
+Robots Locations 0-(2,3) 1-(5,9) 2-(13,7) 3-(7,14) 4-(11,14)
+Target Locations:  0-(3,15) 1-(9,13) 2-(6,15) 3-(8,10) 4-(4,5) 5-(9,1) 6-(3,8) 7-(5,13)
+Task Assignment: 0-4 1-6 2-3 3-2 4-1
+Assignment aborted At time 35
+Time 38
+Robots Locations 0-(4,5) 1-(4,9) 2-(13,8) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(9,13) 2-(6,15) 3-(8,10) 4-(4,5) 5-(9,1) 6-(3,8) 7-(5,13) 8-(13,11)
+Task Assignment: 0-4 1-6 2-8 3-2 4-1
+Robot 3 finished At time 40
+Time 43
+Robots Locations 0-(4,5) 1-(3,8) 2-(13,9) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(9,13) 2-(8,10) 3-(4,5) 4-(9,1) 5-(3,8) 6-(5,13) 7-(13,11)
+Task Assignment: 0-3 1-5 2-7 3-6 4-1
+Assignment aborted At time 43
+Time 45
+Robots Locations 0-(4,5) 1-(3,8) 2-(13,9) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(9,13) 2-(8,10) 3-(4,5) 4-(9,1) 5-(3,8) 6-(5,13) 7-(13,11) 8-(1,12)
+Task Assignment: 0-3 1-5 2-7 3-6 4-1
+Robot 4 finished At time 46
+Time 48
+Robots Locations 0-(4,5) 1-(3,8) 2-(13,9) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(8,10) 2-(4,5) 3-(9,1) 4-(3,8) 5-(5,13) 6-(13,11) 7-(1,12)
+Task Assignment: 0-2 1-4 2-6 3-5 4-1
+Assignment aborted At time 48
+Time 51
+Robots Locations 0-(4,5) 1-(3,8) 2-(13,9) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(8,10) 2-(4,5) 3-(9,1) 4-(3,8) 5-(5,13) 6-(13,11) 7-(1,12) 8-(12,13)
+Task Assignment: 0-2 1-4 2-6 3-5 4-1
+Robot 0 finished At time 51
+Time 54
+Robots Locations 0-(4,5) 1-(3,8) 2-(13,9) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(8,10) 2-(9,1) 3-(3,8) 4-(5,13) 5-(13,11) 6-(1,12) 7-(12,13)
+Task Assignment: 0-3 1-6 2-5 3-4 4-1
+Assignment aborted At time 54
+Time 56
+Robots Locations 0-(4,5) 1-(3,8) 2-(13,9) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(8,10) 2-(9,1) 3-(3,8) 4-(5,13) 5-(13,11) 6-(1,12) 7-(12,13) 8-(3,11)
+Task Assignment: 0-3 1-8 2-5 3-4 4-1
+Assignment aborted At time 58
+Time 60
+Robots Locations 0-(4,6) 1-(2,8) 2-(13,10) 3-(5,15) 4-(9,12)
+Target Locations:  0-(3,15) 1-(8,10) 2-(9,1) 3-(3,8) 4-(5,13) 5-(13,11) 6-(1,12) 7-(12,13) 8-(3,11) 9-(8,6)
+Task Assignment: 0-3 1-8 2-5 3-0 4-1
+Assignment aborted At time 64
+Time 66
+Robots Locations 0-(3,7) 1-(3,10) 2-(13,11) 3-(4,15) 4-(8,11)
+Target Locations:  0-(3,15) 1-(8,10) 2-(9,1) 3-(3,8) 4-(5,13) 5-(13,11) 6-(1,12) 7-(12,13) 8-(3,11) 9-(8,6) 10-(15,5)
+Task Assignment: 0-3 1-8 2-5 3-0 4-1
+Robot 2 finished At time 67
+Time 70
+Robots Locations 0-(3,8) 1-(3,10) 2-(13,11) 3-(3,15) 4-(8,10)
+Target Locations:  0-(3,15) 1-(8,10) 2-(9,1) 3-(3,8) 4-(5,13) 5-(1,12) 6-(12,13) 7-(3,11) 8-(8,6) 9-(15,5)
+Task Assignment: 0-3 1-7 2-6 3-0 4-1
+Assignment aborted At time 70
+Time 73
+Robots Locations 0-(3,8) 1-(3,11) 2-(13,11) 3-(3,15) 4-(8,10)
+Target Locations:  0-(3,15) 1-(8,10) 2-(9,1) 3-(3,8) 4-(5,13) 5-(1,12) 6-(12,13) 7-(3,11) 8-(8,6) 9-(15,5) 10-(8,11)
+Task Assignment: 0-3 1-7 2-6 3-0 4-1
+Robot 0 finished At time 75
+Time 77
+Robots Locations 0-(3,8) 1-(3,11) 2-(13,12) 3-(3,15) 4-(8,10)
+Target Locations:  0-(3,15) 1-(8,10) 2-(9,1) 3-(5,13) 4-(1,12) 5-(12,13) 6-(3,11) 7-(8,6) 8-(15,5) 9-(8,11)
+Task Assignment: 0-6 1-3 2-5 3-0 4-1
+Assignment aborted At time 78
+Time 80
+Robots Locations 0-(3,8) 1-(3,11) 2-(13,12) 3-(3,15) 4-(8,10)
+Target Locations:  0-(3,15) 1-(8,10) 2-(9,1) 3-(5,13) 4-(1,12) 5-(12,13) 6-(3,11) 7-(8,6) 8-(15,5) 9-(8,11) 10-(14,3)
+Task Assignment: 0-6 1-3 2-5 3-0 4-1
+Assignment aborted At time 80
+Time 83
+Robots Locations 0-(3,8) 1-(3,11) 2-(13,12) 3-(3,15) 4-(8,10)
+Target Locations:  0-(3,15) 1-(8,10) 2-(9,1) 3-(5,13) 4-(1,12) 5-(12,13) 6-(3,11) 7-(8,6) 8-(15,5) 9-(8,11) 10-(14,3) 11-(4,9)
+Task Assignment: 0-11 1-6 2-5 3-0 4-1
+Robot 4 finished At time 83
+Time 86
+Robots Locations 0-(3,8) 1-(3,11) 2-(12,12) 3-(3,15) 4-(8,10)
+Target Locations:  0-(3,15) 1-(9,1) 2-(5,13) 3-(1,12) 4-(12,13) 5-(3,11) 6-(8,6) 7-(15,5) 8-(8,11) 9-(14,3) 10-(4,9)
+Task Assignment: 0-10 1-5 2-4 3-0 4-8
+Assignment aborted At time 86
+Time 88
+Robots Locations 0-(3,8) 1-(3,11) 2-(12,12) 3-(3,15) 4-(8,10)
+Target Locations:  0-(3,15) 1-(9,1) 2-(5,13) 3-(1,12) 4-(12,13) 5-(3,11) 6-(8,6) 7-(15,5) 8-(8,11) 9-(14,3) 10-(4,9) 11-(10,12)
+Task Assignment: 0-10 1-5 2-4 3-0 4-8
+Robot 3 finished At time 89
+Time 92
+Robots Locations 0-(3,9) 1-(3,11) 2-(12,12) 3-(3,15) 4-(8,10)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(12,13) 4-(3,11) 5-(8,6) 6-(15,5) 7-(8,11) 8-(14,3) 9-(4,9) 10-(10,12)
+Task Assignment: 0-9 1-4 2-3 3-1 4-7
+Assignment aborted At time 92
+Time 94
+Robots Locations 0-(3,9) 1-(4,11) 2-(12,12) 3-(3,15) 4-(8,10)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(12,13) 4-(3,11) 5-(8,6) 6-(15,5) 7-(8,11) 8-(14,3) 9-(4,9) 10-(10,12) 11-(3,2)
+Task Assignment: 0-9 1-4 2-3 3-1 4-7
+Assignment aborted At time 98
+Time 100
+Robots Locations 0-(4,9) 1-(3,11) 2-(12,13) 3-(3,14) 4-(7,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(12,13) 4-(3,11) 5-(8,6) 6-(15,5) 7-(8,11) 8-(14,3) 9-(4,9) 10-(10,12) 11-(3,2) 12-(5,9)
+Task Assignment: 0-9 1-4 2-3 3-1 4-7
+Robot 0 finished At time 100
+Time 103
+Robots Locations 0-(4,9) 1-(3,11) 2-(12,13) 3-(3,14) 4-(8,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(12,13) 4-(3,11) 5-(8,6) 6-(15,5) 7-(8,11) 8-(14,3) 9-(10,12) 10-(3,2) 11-(5,9)
+Task Assignment: 0-11 1-4 2-3 3-1 4-7
+Assignment aborted At time 103
+Time 106
+Robots Locations 0-(4,9) 1-(3,11) 2-(12,13) 3-(3,14) 4-(8,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(12,13) 4-(3,11) 5-(8,6) 6-(15,5) 7-(8,11) 8-(14,3) 9-(10,12) 10-(3,2) 11-(5,9) 12-(11,1)
+Task Assignment: 0-11 1-4 2-3 3-1 4-7
+Robot 2 finished At time 106
+Time 109
+Robots Locations 0-(4,9) 1-(3,11) 2-(12,13) 3-(3,14) 4-(8,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(3,11) 4-(8,6) 5-(15,5) 6-(8,11) 7-(14,3) 8-(10,12) 9-(3,2) 10-(5,9) 11-(11,1)
+Task Assignment: 0-10 1-3 2-8 3-1 4-6
+Assignment aborted At time 109
+Time 111
+Robots Locations 0-(4,9) 1-(3,11) 2-(12,13) 3-(3,14) 4-(8,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(3,11) 4-(8,6) 5-(15,5) 6-(8,11) 7-(14,3) 8-(10,12) 9-(3,2) 10-(5,9) 11-(11,1) 12-(5,3)
+Task Assignment: 0-10 1-3 2-8 3-1 4-6
+Robot 1 finished At time 113
+Time 115
+Robots Locations 0-(5,9) 1-(3,11) 2-(11,13) 3-(4,14) 4-(8,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(8,6) 4-(15,5) 5-(8,11) 6-(14,3) 7-(10,12) 8-(3,2) 9-(5,9) 10-(11,1) 11-(5,3)
+Task Assignment: 0-9 1-2 2-7 3-1 4-5
+Assignment aborted At time 115
+Time 118
+Robots Locations 0-(5,9) 1-(3,11) 2-(11,13) 3-(4,14) 4-(8,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(8,6) 4-(15,5) 5-(8,11) 6-(14,3) 7-(10,12) 8-(3,2) 9-(5,9) 10-(11,1) 11-(5,3) 12-(15,12)
+Task Assignment: 0-9 1-2 2-7 3-1 4-5
+Robot 4 finished At time 119
+Time 122
+Robots Locations 0-(5,9) 1-(3,12) 2-(11,13) 3-(4,13) 4-(8,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(8,6) 4-(15,5) 5-(14,3) 6-(10,12) 7-(3,2) 8-(5,9) 9-(11,1) 10-(5,3) 11-(15,12)
+Task Assignment: 0-8 1-2 2-11 3-1 4-6
+Assignment aborted At time 122
+Time 124
+Robots Locations 0-(5,9) 1-(2,12) 2-(11,13) 3-(4,13) 4-(8,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(8,6) 4-(15,5) 5-(14,3) 6-(10,12) 7-(3,2) 8-(5,9) 9-(11,1) 10-(5,3) 11-(15,12) 12-(10,10)
+Task Assignment: 0-8 1-2 2-6 3-1 4-12
+Robot 0 finished At time 125
+Time 127
+Robots Locations 0-(5,9) 1-(2,12) 2-(11,13) 3-(4,13) 4-(8,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(8,6) 4-(15,5) 5-(14,3) 6-(10,12) 7-(3,2) 8-(11,1) 9-(5,3) 10-(15,12) 11-(10,10)
+Task Assignment: 0-3 1-2 2-6 3-1 4-11
+Assignment aborted At time 127
+Time 130
+Robots Locations 0-(5,9) 1-(2,12) 2-(11,13) 3-(5,13) 4-(8,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(8,6) 4-(15,5) 5-(14,3) 6-(10,12) 7-(3,2) 8-(11,1) 9-(5,3) 10-(15,12) 11-(10,10) 12-(6,5)
+Task Assignment: 0-3 1-2 2-6 3-1 4-11
+Assignment aborted At time 131
+Time 133
+Robots Locations 0-(5,9) 1-(2,12) 2-(10,12) 3-(5,13) 4-(9,11)
+Target Locations:  0-(9,1) 1-(5,13) 2-(1,12) 3-(8,6) 4-(15,5) 5-(14,3) 6-(10,12) 7-(3,2) 8-(11,1) 9-(5,3) 10-(15,12) 11-(10,10) 12-(6,5) 13-(5,12)
+Task Assignment: 0-13 1-2 2-6 3-1 4-11
+Robot 3 finished At time 136
+Time 139
+Robots Locations 0-(6,9) 1-(1,12) 2-(10,12) 3-(5,13) 4-(10,10)
+Target Locations:  0-(9,1) 1-(1,12) 2-(8,6) 3-(15,5) 4-(14,3) 5-(10,12) 6-(3,2) 7-(11,1) 8-(5,3) 9-(15,12) 10-(10,10) 11-(6,5) 12-(5,12)
+Task Assignment: 0-2 1-1 2-5 3-12 4-10
+Assignment aborted At time 139
+Time 141
+Robots Locations 0-(6,9) 1-(1,12) 2-(10,12) 3-(5,13) 4-(10,10)
+Target Locations:  0-(9,1) 1-(1,12) 2-(8,6) 3-(15,5) 4-(14,3) 5-(10,12) 6-(3,2) 7-(11,1) 8-(5,3) 9-(15,12) 10-(10,10) 11-(6,5) 12-(5,12) 13-(14,4)
+Task Assignment: 0-2 1-1 2-5 3-12 4-10
+Robot 2 finished At time 142
+Time 144
+Robots Locations 0-(6,9) 1-(1,12) 2-(10,12) 3-(5,13) 4-(10,10)
+Target Locations:  0-(9,1) 1-(1,12) 2-(8,6) 3-(15,5) 4-(14,3) 5-(3,2) 6-(11,1) 7-(5,3) 8-(15,12) 9-(10,10) 10-(6,5) 11-(5,12) 12-(14,4)
+Task Assignment: 0-10 1-1 2-9 3-11 4-2
+Assignment aborted At time 144
+Time 147
+Robots Locations 0-(6,9) 1-(1,12) 2-(10,12) 3-(5,13) 4-(10,10)
+Target Locations:  0-(9,1) 1-(1,12) 2-(8,6) 3-(15,5) 4-(14,3) 5-(3,2) 6-(11,1) 7-(5,3) 8-(15,12) 9-(10,10) 10-(6,5) 11-(5,12) 12-(14,4) 13-(6,14)
+Task Assignment: 0-2 1-1 2-13 3-11 4-9
+Robot 1 finished At time 148
+Time 150
+Robots Locations 0-(7,9) 1-(1,12) 2-(10,12) 3-(5,13) 4-(10,10)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(10,10) 9-(6,5) 10-(5,12) 11-(14,4) 12-(6,14)
+Task Assignment: 0-9 1-10 2-8 3-12 4-1
+Assignment aborted At time 150
+Time 153
+Robots Locations 0-(7,9) 1-(1,12) 2-(10,12) 3-(5,13) 4-(10,10)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(10,10) 9-(6,5) 10-(5,12) 11-(14,4) 12-(6,14) 13-(8,14)
+Task Assignment: 0-1 1-10 2-13 3-12 4-8
+Assignment aborted At time 155
+Time 157
+Robots Locations 0-(7,9) 1-(1,13) 2-(9,12) 3-(6,12) 4-(10,10)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(10,10) 9-(6,5) 10-(5,12) 11-(14,4) 12-(6,14) 13-(8,14) 14-(2,8)
+Task Assignment: 0-1 1-10 2-13 3-12 4-8
+Robot 4 finished At time 158
+Time 160
+Robots Locations 0-(7,9) 1-(1,13) 2-(9,12) 3-(6,12) 4-(10,10)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(6,5) 9-(5,12) 10-(14,4) 11-(6,14) 12-(8,14) 13-(2,8)
+Task Assignment: 0-8 1-9 2-12 3-11 4-1
+Assignment aborted At time 160
+Time 163
+Robots Locations 0-(7,9) 1-(1,13) 2-(9,12) 3-(6,12) 4-(10,10)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(6,5) 9-(5,12) 10-(14,4) 11-(6,14) 12-(8,14) 13-(2,8) 14-(14,6)
+Task Assignment: 0-8 1-9 2-12 3-11 4-1
+Assignment aborted At time 166
+Time 169
+Robots Locations 0-(7,7) 1-(2,13) 2-(8,13) 3-(6,14) 4-(10,9)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(6,5) 9-(5,12) 10-(14,4) 11-(6,14) 12-(8,14) 13-(2,8) 14-(14,6) 15-(3,10)
+Task Assignment: 0-8 1-9 2-12 3-11 4-1
+Robot 3 finished At time 172
+Time 174
+Robots Locations 0-(6,6) 1-(4,12) 2-(8,14) 3-(6,14) 4-(9,8)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(6,5) 9-(5,12) 10-(14,4) 11-(8,14) 12-(2,8) 13-(14,6) 14-(3,10)
+Task Assignment: 0-8 1-14 2-11 3-9 4-1
+Assignment aborted At time 174
+Time 177
+Robots Locations 0-(6,6) 1-(4,12) 2-(8,14) 3-(6,14) 4-(9,8)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(6,5) 9-(5,12) 10-(14,4) 11-(8,14) 12-(2,8) 13-(14,6) 14-(3,10) 15-(1,3)
+Task Assignment: 0-8 1-14 2-11 3-9 4-1
+Robot 2 finished At time 177
+Time 180
+Robots Locations 0-(6,6) 1-(4,12) 2-(8,14) 3-(6,14) 4-(9,7)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(6,5) 9-(5,12) 10-(14,4) 11-(2,8) 12-(14,6) 13-(3,10) 14-(1,3)
+Task Assignment: 0-8 1-11 2-9 3-13 4-1
+Assignment aborted At time 180
+Time 182
+Robots Locations 0-(6,6) 1-(4,12) 2-(8,14) 3-(6,14) 4-(9,7)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(6,5) 9-(5,12) 10-(14,4) 11-(2,8) 12-(14,6) 13-(3,10) 14-(1,3) 15-(5,2)
+Task Assignment: 0-8 1-11 2-9 3-13 4-1
+Assignment aborted At time 183
+Time 186
+Robots Locations 0-(6,5) 1-(4,12) 2-(8,14) 3-(5,14) 4-(9,7)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(6,5) 9-(5,12) 10-(14,4) 11-(2,8) 12-(14,6) 13-(3,10) 14-(1,3) 15-(5,2) 16-(11,12)
+Task Assignment: 0-8 1-13 2-16 3-9 4-1
+Robot 0 finished At time 189
+Time 191
+Robots Locations 0-(6,5) 1-(3,11) 2-(7,14) 3-(5,13) 4-(8,6)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(5,12) 9-(14,4) 10-(2,8) 11-(14,6) 12-(3,10) 13-(1,3) 14-(5,2) 15-(11,12)
+Task Assignment: 0-6 1-10 2-8 3-12 4-1
+Assignment aborted At time 191
+Time 194
+Robots Locations 0-(6,5) 1-(3,10) 2-(7,13) 3-(5,13) 4-(8,6)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(5,12) 9-(14,4) 10-(2,8) 11-(14,6) 12-(3,10) 13-(1,3) 14-(5,2) 15-(11,12) 16-(4,2)
+Task Assignment: 0-6 1-10 2-8 3-12 4-1
+Assignment aborted At time 195
+Time 197
+Robots Locations 0-(6,5) 1-(3,10) 2-(7,13) 3-(5,13) 4-(8,6)
+Target Locations:  0-(9,1) 1-(8,6) 2-(15,5) 3-(14,3) 4-(3,2) 5-(11,1) 6-(5,3) 7-(15,12) 8-(5,12) 9-(14,4) 10-(2,8) 11-(14,6) 12-(3,10) 13-(1,3) 14-(5,2) 15-(11,12) 16-(4,2) 17-(15,14)
+Task Assignment: 0-6 1-10 2-8 3-12 4-1
+Robot 4 finished At time 199
+Time 201
+Robots Locations 0-(5,4) 1-(3,9) 2-(7,13) 3-(4,12) 4-(8,6)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(5,3) 6-(15,12) 7-(5,12) 8-(14,4) 9-(2,8) 10-(14,6) 11-(3,10) 12-(1,3) 13-(5,2) 14-(11,12) 15-(4,2) 16-(15,14)
+Task Assignment: 0-3 1-9 2-7 3-11 4-5
+Assignment aborted At time 201
+Time 204
+Robots Locations 0-(5,4) 1-(3,9) 2-(7,13) 3-(4,12) 4-(8,6)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(5,3) 6-(15,12) 7-(5,12) 8-(14,4) 9-(2,8) 10-(14,6) 11-(3,10) 12-(1,3) 13-(5,2) 14-(11,12) 15-(4,2) 16-(15,14) 17-(7,6)
+Task Assignment: 0-5 1-9 2-7 3-11 4-17
+Assignment aborted At time 206
+Time 209
+Robots Locations 0-(5,3) 1-(2,8) 2-(6,12) 3-(4,12) 4-(7,6)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(5,3) 6-(15,12) 7-(5,12) 8-(14,4) 9-(2,8) 10-(14,6) 11-(3,10) 12-(1,3) 13-(5,2) 14-(11,12) 15-(4,2) 16-(15,14) 17-(7,6) 18-(13,2)
+Task Assignment: 0-5 1-9 2-7 3-11 4-17
+Robot 0 finished At time 211
+Time 213
+Robots Locations 0-(5,3) 1-(2,8) 2-(5,12) 3-(3,11) 4-(7,6)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(15,12) 6-(5,12) 7-(14,4) 8-(2,8) 9-(14,6) 10-(3,10) 11-(1,3) 12-(5,2) 13-(11,12) 14-(4,2) 15-(15,14) 16-(7,6) 17-(13,2)
+Task Assignment: 0-12 1-8 2-6 3-10 4-16
+Assignment aborted At time 213
+Time 215
+Robots Locations 0-(5,3) 1-(2,8) 2-(5,12) 3-(3,11) 4-(7,6)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(15,12) 6-(5,12) 7-(14,4) 8-(2,8) 9-(14,6) 10-(3,10) 11-(1,3) 12-(5,2) 13-(11,12) 14-(4,2) 15-(15,14) 16-(7,6) 17-(13,2) 18-(15,2)
+Task Assignment: 0-12 1-8 2-6 3-10 4-16
+Robot 4 finished At time 216
+Time 218
+Robots Locations 0-(5,3) 1-(2,8) 2-(5,12) 3-(3,10) 4-(7,6)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(15,12) 6-(5,12) 7-(14,4) 8-(2,8) 9-(14,6) 10-(3,10) 11-(1,3) 12-(5,2) 13-(11,12) 14-(4,2) 15-(15,14) 16-(13,2) 17-(15,2)
+Task Assignment: 0-14 1-8 2-6 3-10 4-12
+Assignment aborted At time 218
+Time 221
+Robots Locations 0-(5,3) 1-(2,8) 2-(5,12) 3-(3,10) 4-(7,6)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(15,12) 6-(5,12) 7-(14,4) 8-(2,8) 9-(14,6) 10-(3,10) 11-(1,3) 12-(5,2) 13-(11,12) 14-(4,2) 15-(15,14) 16-(13,2) 17-(15,2) 18-(7,9)
+Task Assignment: 0-12 1-8 2-6 3-10 4-18
+Robot 1 finished At time 221
+Time 224
+Robots Locations 0-(5,2) 1-(2,8) 2-(5,12) 3-(3,10) 4-(7,6)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(15,12) 6-(5,12) 7-(14,4) 8-(14,6) 9-(3,10) 10-(1,3) 11-(5,2) 12-(11,12) 13-(4,2) 14-(15,14) 15-(13,2) 16-(15,2) 17-(7,9)
+Task Assignment: 0-13 1-9 2-17 3-6 4-11
+Assignment aborted At time 224
+Time 226
+Robots Locations 0-(5,2) 1-(2,8) 2-(5,12) 3-(3,10) 4-(7,6)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(15,12) 6-(5,12) 7-(14,4) 8-(14,6) 9-(3,10) 10-(1,3) 11-(5,2) 12-(11,12) 13-(4,2) 14-(15,14) 15-(13,2) 16-(15,2) 17-(7,9) 18-(12,8)
+Task Assignment: 0-13 1-9 2-17 3-6 4-11
+Assignment aborted At time 228
+Time 231
+Robots Locations 0-(4,2) 1-(1,8) 2-(5,11) 3-(4,10) 4-(6,6)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(15,12) 6-(5,12) 7-(14,4) 8-(14,6) 9-(3,10) 10-(1,3) 11-(5,2) 12-(11,12) 13-(4,2) 14-(15,14) 15-(13,2) 16-(15,2) 17-(7,9) 18-(12,8) 19-(12,9)
+Task Assignment: 0-13 1-9 2-17 3-6 4-11
+Robot 0 finished At time 233
+Time 236
+Robots Locations 0-(4,2) 1-(2,9) 2-(6,10) 3-(4,11) 4-(6,5)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(15,12) 6-(5,12) 7-(14,4) 8-(14,6) 9-(3,10) 10-(1,3) 11-(5,2) 12-(11,12) 13-(15,14) 14-(13,2) 15-(15,2) 16-(7,9) 17-(12,8) 18-(12,9)
+Task Assignment: 0-3 1-9 2-16 3-6 4-11
+Assignment aborted At time 236
+Time 238
+Robots Locations 0-(4,2) 1-(2,9) 2-(6,10) 3-(4,11) 4-(6,5)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(15,12) 6-(5,12) 7-(14,4) 8-(14,6) 9-(3,10) 10-(1,3) 11-(5,2) 12-(11,12) 13-(15,14) 14-(13,2) 15-(15,2) 16-(7,9) 17-(12,8) 18-(12,9) 19-(8,5)
+Task Assignment: 0-3 1-9 2-16 3-6 4-19
+Assignment aborted At time 240
+Time 242
+Robots Locations 0-(3,2) 1-(3,10) 2-(6,10) 3-(5,11) 4-(6,4)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(3,2) 4-(11,1) 5-(15,12) 6-(5,12) 7-(14,4) 8-(14,6) 9-(3,10) 10-(1,3) 11-(5,2) 12-(11,12) 13-(15,14) 14-(13,2) 15-(15,2) 16-(7,9) 17-(12,8) 18-(12,9) 19-(8,5) 20-(14,5)
+Task Assignment: 0-3 1-9 2-16 3-6 4-11
+Robot 0 finished At time 244
+Time 247
+Robots Locations 0-(3,2) 1-(3,10) 2-(7,9) 3-(5,12) 4-(7,4)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(5,12) 6-(14,4) 7-(14,6) 8-(3,10) 9-(1,3) 10-(5,2) 11-(11,12) 12-(15,14) 13-(13,2) 14-(15,2) 15-(7,9) 16-(12,8) 17-(12,9) 18-(8,5) 19-(14,5)
+Task Assignment: 0-9 1-8 2-15 3-5 4-18
+Assignment aborted At time 247
+Time 249
+Robots Locations 0-(3,2) 1-(3,10) 2-(7,9) 3-(5,12) 4-(6,3)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(5,12) 6-(14,4) 7-(14,6) 8-(3,10) 9-(1,3) 10-(5,2) 11-(11,12) 12-(15,14) 13-(13,2) 14-(15,2) 15-(7,9) 16-(12,8) 17-(12,9) 18-(8,5) 19-(14,5) 20-(14,9)
+Task Assignment: 0-9 1-8 2-15 3-5 4-10
+Robot 1 finished At time 251
+Time 253
+Robots Locations 0-(2,2) 1-(3,10) 2-(7,9) 3-(5,12) 4-(6,3)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(5,12) 6-(14,4) 7-(14,6) 8-(1,3) 9-(5,2) 10-(11,12) 11-(15,14) 12-(13,2) 13-(15,2) 14-(7,9) 15-(12,8) 16-(12,9) 17-(8,5) 18-(14,5) 19-(14,9)
+Task Assignment: 0-8 1-5 2-17 3-14 4-9
+Assignment aborted At time 253
+Time 256
+Robots Locations 0-(2,2) 1-(3,10) 2-(7,9) 3-(5,12) 4-(6,3)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(5,12) 6-(14,4) 7-(14,6) 8-(1,3) 9-(5,2) 10-(11,12) 11-(15,14) 12-(13,2) 13-(15,2) 14-(7,9) 15-(12,8) 16-(12,9) 17-(8,5) 18-(14,5) 19-(14,9) 20-(4,12)
+Task Assignment: 0-8 1-20 2-14 3-5 4-9
+Robot 3 finished At time 256
+Time 258
+Robots Locations 0-(2,3) 1-(3,10) 2-(7,9) 3-(5,12) 4-(6,3)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(1,3) 8-(5,2) 9-(11,12) 10-(15,14) 11-(13,2) 12-(15,2) 13-(7,9) 14-(12,8) 15-(12,9) 16-(8,5) 17-(14,5) 18-(14,9) 19-(4,12)
+Task Assignment: 0-7 1-19 2-16 3-13 4-8
+Assignment aborted At time 258
+Time 261
+Robots Locations 0-(2,3) 1-(3,10) 2-(7,9) 3-(5,12) 4-(6,3)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(1,3) 8-(5,2) 9-(11,12) 10-(15,14) 11-(13,2) 12-(15,2) 13-(7,9) 14-(12,8) 15-(12,9) 16-(8,5) 17-(14,5) 18-(14,9) 19-(4,12) 20-(13,6)
+Task Assignment: 0-7 1-19 2-16 3-13 4-8
+Assignment aborted At time 262
+Time 265
+Robots Locations 0-(1,3) 1-(3,11) 2-(7,8) 3-(6,12) 4-(6,2)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(1,3) 8-(5,2) 9-(11,12) 10-(15,14) 11-(13,2) 12-(15,2) 13-(7,9) 14-(12,8) 15-(12,9) 16-(8,5) 17-(14,5) 18-(14,9) 19-(4,12) 20-(13,6)
+Task Assignment: 0-7 1-19 2-16 3-13 4-8
+Robot 0 finished At time 268
+Time 270
+Robots Locations 0-(1,3) 1-(4,12) 2-(8,7) 3-(6,11) 4-(5,2)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(5,2) 8-(11,12) 9-(15,14) 10-(13,2) 11-(15,2) 12-(7,9) 13-(12,8) 14-(12,9) 15-(8,5) 16-(14,5) 17-(14,9) 18-(4,12) 19-(13,6)
+Task Assignment: 0-7 1-18 2-15 3-12 4-0
+Assignment aborted At time 270
+Time 273
+Robots Locations 0-(1,3) 1-(4,12) 2-(8,7) 3-(6,11) 4-(5,2)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(5,2) 8-(11,12) 9-(15,14) 10-(13,2) 11-(15,2) 12-(7,9) 13-(12,8) 14-(12,9) 15-(8,5) 16-(14,5) 17-(14,9) 18-(4,12) 19-(13,6)
+Task Assignment: 0-7 1-18 2-15 3-12 4-0
+Assignment aborted At time 273
+Time 276
+Robots Locations 0-(1,3) 1-(4,12) 2-(8,7) 3-(6,11) 4-(5,2)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(5,2) 8-(11,12) 9-(15,14) 10-(13,2) 11-(15,2) 12-(7,9) 13-(12,8) 14-(12,9) 15-(8,5) 16-(14,5) 17-(14,9) 18-(4,12) 19-(13,6)
+Task Assignment: 0-7 1-18 2-15 3-12 4-0
+Robot 1 finished At time 278
+Time 280
+Robots Locations 0-(1,4) 1-(4,12) 2-(8,6) 3-(7,10) 4-(5,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(5,2) 8-(11,12) 9-(15,14) 10-(13,2) 11-(15,2) 12-(7,9) 13-(12,8) 14-(12,9) 15-(8,5) 16-(14,5) 17-(14,9) 18-(13,6)
+Task Assignment: 0-7 1-12 2-15 3-8 4-0
+Assignment aborted At time 280
+Time 283
+Robots Locations 0-(1,4) 1-(4,12) 2-(8,6) 3-(7,10) 4-(5,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(5,2) 8-(11,12) 9-(15,14) 10-(13,2) 11-(15,2) 12-(7,9) 13-(12,8) 14-(12,9) 15-(8,5) 16-(14,5) 17-(14,9) 18-(13,6)
+Task Assignment: 0-7 1-12 2-15 3-8 4-0
+Assignment aborted At time 285
+Time 288
+Robots Locations 0-(2,3) 1-(5,12) 2-(8,5) 3-(8,10) 4-(6,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(5,2) 8-(11,12) 9-(15,14) 10-(13,2) 11-(15,2) 12-(7,9) 13-(12,8) 14-(12,9) 15-(8,5) 16-(14,5) 17-(14,9) 18-(13,6)
+Task Assignment: 0-7 1-12 2-15 3-8 4-0
+Robot 2 finished At time 290
+Time 292
+Robots Locations 0-(3,3) 1-(5,11) 2-(8,5) 3-(8,11) 4-(7,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(5,2) 8-(11,12) 9-(15,14) 10-(13,2) 11-(15,2) 12-(7,9) 13-(12,8) 14-(12,9) 15-(14,5) 16-(14,9) 17-(13,6)
+Task Assignment: 0-7 1-12 2-0 3-8 4-3
+Assignment aborted At time 293
+Time 295
+Robots Locations 0-(3,3) 1-(6,11) 2-(8,5) 3-(9,11) 4-(8,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(5,2) 8-(11,12) 9-(15,14) 10-(13,2) 11-(15,2) 12-(7,9) 13-(12,8) 14-(12,9) 15-(14,5) 16-(14,9) 17-(13,6)
+Task Assignment: 0-7 1-12 2-0 3-8 4-3
+Assignment aborted At time 297
+Time 299
+Robots Locations 0-(4,3) 1-(6,10) 2-(8,4) 3-(9,11) 4-(8,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(5,2) 8-(11,12) 9-(15,14) 10-(13,2) 11-(15,2) 12-(7,9) 13-(12,8) 14-(12,9) 15-(14,5) 16-(14,9) 17-(13,6)
+Task Assignment: 0-7 1-12 2-0 3-8 4-3
+Assignment aborted At time 303
+Time 305
+Robots Locations 0-(5,2) 1-(7,9) 2-(9,2) 3-(11,12) 4-(10,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(5,2) 8-(11,12) 9-(15,14) 10-(13,2) 11-(15,2) 12-(7,9) 13-(12,8) 14-(12,9) 15-(14,5) 16-(14,9) 17-(13,6)
+Task Assignment: 0-7 1-12 2-0 3-8 4-3
+Robot 0 finished At time 306
+Time 308
+Robots Locations 0-(5,2) 1-(7,9) 2-(9,2) 3-(11,12) 4-(10,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(11,12) 8-(15,14) 9-(13,2) 10-(15,2) 11-(7,9) 12-(12,8) 13-(12,9) 14-(14,5) 15-(14,9) 16-(13,6)
+Task Assignment: 0-0 1-11 2-3 3-7 4-9
+Assignment aborted At time 308
+Time 311
+Robots Locations 0-(5,2) 1-(7,9) 2-(9,2) 3-(11,12) 4-(10,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(11,12) 8-(15,14) 9-(13,2) 10-(15,2) 11-(7,9) 12-(12,8) 13-(12,9) 14-(14,5) 15-(14,9) 16-(13,6)
+Task Assignment: 0-0 1-11 2-3 3-7 4-9
+Robot 1 finished At time 312
+Time 314
+Robots Locations 0-(5,2) 1-(7,9) 2-(9,2) 3-(11,12) 4-(11,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(11,12) 8-(15,14) 9-(13,2) 10-(15,2) 11-(12,8) 12-(12,9) 13-(14,5) 14-(14,9) 15-(13,6)
+Task Assignment: 0-0 1-11 2-3 3-7 4-9
+Assignment aborted At time 314
+Time 317
+Robots Locations 0-(5,2) 1-(7,9) 2-(9,2) 3-(11,12) 4-(11,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(11,12) 8-(15,14) 9-(13,2) 10-(15,2) 11-(12,8) 12-(12,9) 13-(14,5) 14-(14,9) 15-(13,6)
+Task Assignment: 0-0 1-11 2-3 3-7 4-9
+Robot 3 finished At time 318
+Time 321
+Robots Locations 0-(6,2) 1-(8,9) 2-(10,2) 3-(11,12) 4-(11,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(15,14) 8-(13,2) 9-(15,2) 10-(12,8) 11-(12,9) 12-(14,5) 13-(14,9) 14-(13,6)
+Task Assignment: 0-0 1-10 2-3 3-11 4-8
+Assignment aborted At time 321
+Time 323
+Robots Locations 0-(6,2) 1-(8,9) 2-(10,1) 3-(11,12) 4-(12,1)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(15,14) 8-(13,2) 9-(15,2) 10-(12,8) 11-(12,9) 12-(14,5) 13-(14,9) 14-(13,6)
+Task Assignment: 0-0 1-10 2-3 3-11 4-8
+Assignment aborted At time 325
+Time 328
+Robots Locations 0-(7,1) 1-(9,9) 2-(11,1) 3-(12,12) 4-(12,2)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(11,1) 4-(15,12) 5-(14,4) 6-(14,6) 7-(15,14) 8-(13,2) 9-(15,2) 10-(12,8) 11-(12,9) 12-(14,5) 13-(14,9) 14-(13,6)
+Task Assignment: 0-0 1-10 2-3 3-4 4-8
+Robot 2 finished At time 331
+Time 334
+Robots Locations 0-(8,1) 1-(10,8) 2-(11,1) 3-(13,11) 4-(13,2)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(15,12) 4-(14,4) 5-(14,6) 6-(15,14) 7-(13,2) 8-(15,2) 9-(12,8) 10-(12,9) 11-(14,5) 12-(14,9) 13-(13,6)
+Task Assignment: 0-0 1-9 2-7 3-3 4-2
+Assignment aborted At time 334
+Time 336
+Robots Locations 0-(8,1) 1-(10,8) 2-(11,1) 3-(13,11) 4-(13,2)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(15,12) 4-(14,4) 5-(14,6) 6-(15,14) 7-(13,2) 8-(15,2) 9-(12,8) 10-(12,9) 11-(14,5) 12-(14,9) 13-(13,6)
+Task Assignment: 0-0 1-9 2-7 3-3 4-2
+Assignment aborted At time 337
+Time 339
+Robots Locations 0-(9,1) 1-(10,8) 2-(11,1) 3-(13,11) 4-(13,2)
+Target Locations:  0-(9,1) 1-(15,5) 2-(14,3) 3-(15,12) 4-(14,4) 5-(14,6) 6-(15,14) 7-(13,2) 8-(15,2) 9-(12,8) 10-(12,9) 11-(14,5) 12-(14,9) 13-(13,6)
+Task Assignment: 0-0 1-9 2-7 3-3 4-2
+Robot 0 finished At time 341
+Time 344
+Robots Locations 0-(9,1) 1-(12,8) 2-(12,2) 3-(14,12) 4-(14,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(15,12) 3-(14,4) 4-(14,6) 5-(15,14) 6-(13,2) 7-(15,2) 8-(12,8) 9-(12,9) 10-(14,5) 11-(14,9) 12-(13,6)
+Task Assignment: 0-6 1-8 2-3 3-2 4-1
+Assignment aborted At time 344
+Time 346
+Robots Locations 0-(9,1) 1-(12,8) 2-(12,2) 3-(14,12) 4-(14,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(15,12) 3-(14,4) 4-(14,6) 5-(15,14) 6-(13,2) 7-(15,2) 8-(12,8) 9-(12,9) 10-(14,5) 11-(14,9) 12-(13,6)
+Task Assignment: 0-6 1-8 2-3 3-2 4-1
+Assignment aborted At time 348
+Time 350
+Robots Locations 0-(10,1) 1-(12,8) 2-(13,2) 3-(15,12) 4-(14,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(15,12) 3-(14,4) 4-(14,6) 5-(15,14) 6-(13,2) 7-(15,2) 8-(12,8) 9-(12,9) 10-(14,5) 11-(14,9) 12-(13,6)
+Task Assignment: 0-6 1-8 2-1 3-2 4-3
+Robot 1 finished At time 351
+Time 354
+Robots Locations 0-(10,1) 1-(12,8) 2-(13,2) 3-(15,12) 4-(14,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(15,12) 3-(14,4) 4-(14,6) 5-(15,14) 6-(13,2) 7-(15,2) 8-(12,9) 9-(14,5) 10-(14,9) 11-(13,6)
+Task Assignment: 0-6 1-8 2-1 3-2 4-3
+Assignment aborted At time 354
+Time 356
+Robots Locations 0-(10,1) 1-(12,8) 2-(13,3) 3-(15,12) 4-(14,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(15,12) 3-(14,4) 4-(14,6) 5-(15,14) 6-(13,2) 7-(15,2) 8-(12,9) 9-(14,5) 10-(14,9) 11-(13,6)
+Task Assignment: 0-6 1-8 2-3 3-2 4-1
+Robot 3 finished At time 358
+Time 361
+Robots Locations 0-(11,2) 1-(12,9) 2-(13,3) 3-(15,12) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,14) 5-(13,2) 6-(15,2) 7-(12,9) 8-(14,5) 9-(14,9) 10-(13,6)
+Task Assignment: 0-5 1-7 2-1 3-4 4-2
+Assignment aborted At time 361
+Time 364
+Robots Locations 0-(11,2) 1-(12,9) 2-(13,3) 3-(15,12) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,14) 5-(13,2) 6-(15,2) 7-(12,9) 8-(14,5) 9-(14,9) 10-(13,6)
+Task Assignment: 0-5 1-7 2-1 3-4 4-2
+Assignment aborted At time 365
+Time 368
+Robots Locations 0-(12,2) 1-(12,9) 2-(13,3) 3-(15,13) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,14) 5-(13,2) 6-(15,2) 7-(12,9) 8-(14,5) 9-(14,9) 10-(13,6)
+Task Assignment: 0-5 1-7 2-1 3-4 4-2
+Robot 1 finished At time 370
+Time 372
+Robots Locations 0-(13,2) 1-(12,9) 2-(13,3) 3-(15,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,14) 5-(13,2) 6-(15,2) 7-(14,5) 8-(14,9) 9-(13,6)
+Task Assignment: 0-5 1-8 2-1 3-4 4-2
+Assignment aborted At time 372
+Time 375
+Robots Locations 0-(13,2) 1-(12,9) 2-(13,3) 3-(15,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,14) 5-(13,2) 6-(15,2) 7-(14,5) 8-(14,9) 9-(13,6)
+Task Assignment: 0-5 1-8 2-1 3-4 4-2
+Robot 0 finished At time 376
+Time 379
+Robots Locations 0-(13,2) 1-(12,10) 2-(13,4) 3-(15,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,14) 5-(15,2) 6-(14,5) 7-(14,9) 8-(13,6)
+Task Assignment: 0-1 1-7 2-6 3-4 4-2
+Assignment aborted At time 379
+Time 382
+Robots Locations 0-(13,2) 1-(12,10) 2-(13,4) 3-(15,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,14) 5-(15,2) 6-(14,5) 7-(14,9) 8-(13,6)
+Task Assignment: 0-1 1-7 2-6 3-4 4-2
+Assignment aborted At time 382
+Time 384
+Robots Locations 0-(13,2) 1-(12,10) 2-(13,4) 3-(15,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,14) 5-(15,2) 6-(14,5) 7-(14,9) 8-(13,6)
+Task Assignment: 0-1 1-7 2-6 3-4 4-2
+Robot 3 finished At time 386
+Time 389
+Robots Locations 0-(14,3) 1-(13,10) 2-(13,4) 3-(15,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,2) 5-(14,5) 6-(14,9) 7-(13,6)
+Task Assignment: 0-1 1-3 2-5 3-6 4-2
+Assignment aborted At time 389
+Time 391
+Robots Locations 0-(14,3) 1-(13,9) 2-(13,4) 3-(15,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,2) 5-(14,5) 6-(14,9) 7-(13,6)
+Task Assignment: 0-1 1-3 2-5 3-6 4-2
+Assignment aborted At time 394
+Time 397
+Robots Locations 0-(14,3) 1-(13,8) 2-(14,5) 3-(14,14) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,2) 5-(14,5) 6-(14,9) 7-(13,6)
+Task Assignment: 0-1 1-3 2-5 3-6 4-2
+Robot 2 finished At time 400
+Time 403
+Robots Locations 0-(14,3) 1-(14,7) 2-(14,5) 3-(14,12) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,2) 5-(14,9) 6-(13,6)
+Task Assignment: 0-1 1-3 2-0 3-5 4-2
+Assignment aborted At time 403
+Time 405
+Robots Locations 0-(14,3) 1-(14,7) 2-(14,5) 3-(14,12) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,2) 5-(14,9) 6-(13,6)
+Task Assignment: 0-1 1-3 2-0 3-5 4-2
+Assignment aborted At time 406
+Time 409
+Robots Locations 0-(14,3) 1-(14,7) 2-(14,5) 3-(14,12) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,4) 3-(14,6) 4-(15,2) 5-(14,9) 6-(13,6)
+Task Assignment: 0-1 1-3 2-0 3-5 4-2
+Robot 4 finished At time 409
+Time 412
+Robots Locations 0-(14,3) 1-(14,6) 2-(15,5) 3-(14,12) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,6) 3-(15,2) 4-(14,9) 5-(13,6)
+Task Assignment: 0-3 1-2 2-0 3-4 4-1
+Assignment aborted At time 412
+Time 414
+Robots Locations 0-(14,3) 1-(14,6) 2-(15,5) 3-(14,12) 4-(14,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(14,6) 3-(15,2) 4-(14,9) 5-(13,6)
+Task Assignment: 0-3 1-2 2-0 3-4 4-1
+Robot 1 finished At time 417
+Time 420
+Robots Locations 0-(13,2) 1-(14,6) 2-(15,5) 3-(14,11) 4-(13,4)
+Target Locations:  0-(15,5) 1-(14,3) 2-(15,2) 3-(14,9) 4-(13,6)
+Task Assignment: 0-1 1-4 2-0 3-3 4-2
+Assignment aborted At time 420
+Time 423
+Robots Locations 0-(13,2) 1-(14,6) 2-(15,5) 3-(14,10) 4-(13,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(15,2) 3-(14,9) 4-(13,6)
+Task Assignment: 0-1 1-4 2-0 3-3 4-2
+Assignment aborted At time 423
+Time 426
+Robots Locations 0-(14,2) 1-(14,6) 2-(15,5) 3-(14,10) 4-(13,3)
+Target Locations:  0-(15,5) 1-(14,3) 2-(15,2) 3-(14,9) 4-(13,6)
+Task Assignment: 0-2 1-4 2-0 3-3 4-1
+Robot 2 finished At time 426
+Robot 4 finished At time 430
+Robot 0 finished At time 430
+Robot 1 finished At time 430
+Robot 3 finished At time 431
+/mmd_msd2
+Time 2
+Robots Locations 0-(3,3) 1-(6,6) 2-(9,9) 3-(12,13) 4-(15,15)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10)
+Task Assignment: 0-4 1-2 2-0 3-3 4-1
+Assignment aborted At time 6
+Time 8
+Robots Locations 0-(3,4) 1-(6,7) 2-(7,11) 3-(10,14) 4-(13,15)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(2,4)
+Task Assignment: 0-5 1-4 2-0 3-3 4-1
+Assignment aborted At time 12
+Time 14
+Robots Locations 0-(3,5) 1-(7,8) 2-(6,12) 3-(8,14) 4-(12,14)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(2,4) 6-(4,5)
+Task Assignment: 0-5 1-4 2-0 3-3 4-1
+Robot 0 finished At time 18
+Time 20
+Robots Locations 0-(2,4) 1-(8,10) 2-(5,13) 3-(6,15) 4-(10,13)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(4,5)
+Task Assignment: 0-5 1-4 2-0 3-3 4-1
+Assignment aborted At time 20
+Time 22
+Robots Locations 0-(2,4) 1-(8,10) 2-(5,13) 3-(6,15) 4-(10,13)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(8,10) 5-(4,5) 6-(9,1)
+Task Assignment: 0-5 1-4 2-0 3-3 4-1
+Robot 1 finished At time 24
+Time 26
+Robots Locations 0-(2,3) 1-(8,10) 2-(4,14) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(4,5) 5-(9,1)
+Task Assignment: 0-4 1-2 2-0 3-3 4-1
+Assignment aborted At time 26
+Time 29
+Robots Locations 0-(2,3) 1-(8,10) 2-(4,14) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(6,15) 4-(4,5) 5-(9,1) 6-(3,8)
+Task Assignment: 0-4 1-2 2-0 3-3 4-1
+Robot 3 finished At time 30
+Time 32
+Robots Locations 0-(3,4) 1-(8,10) 2-(4,14) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(4,5) 4-(9,1) 5-(3,8)
+Task Assignment: 0-3 1-2 2-5 3-0 4-1
+Assignment aborted At time 32
+Time 34
+Robots Locations 0-(3,4) 1-(9,10) 2-(3,15) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(9,13) 2-(13,7) 3-(4,5) 4-(9,1) 5-(3,8) 6-(5,13)
+Task Assignment: 0-3 1-2 2-0 3-6 4-1
+Robot 4 finished At time 36
+Time 38
+Robots Locations 0-(3,4) 1-(9,10) 2-(3,15) 3-(6,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(13,7) 2-(4,5) 3-(9,1) 4-(3,8) 5-(5,13)
+Task Assignment: 0-2 1-1 2-0 3-5 4-4
+Assignment aborted At time 38
+Time 40
+Robots Locations 0-(3,4) 1-(9,10) 2-(3,15) 3-(5,15) 4-(9,13)
+Target Locations:  0-(3,15) 1-(13,7) 2-(4,5) 3-(9,1) 4-(3,8) 5-(5,13) 6-(13,11)
+Task Assignment: 0-2 1-1 2-0 3-5 4-6
+Robot 2 finished At time 43
+Time 45
+Robots Locations 0-(4,5) 1-(10,9) 2-(3,15) 3-(5,14) 4-(9,12)
+Target Locations:  0-(13,7) 1-(4,5) 2-(9,1) 3-(3,8) 4-(5,13) 5-(13,11)
+Task Assignment: 0-1 1-0 2-4 3-3 4-5
+Assignment aborted At time 45
+Time 48
+Robots Locations 0-(4,5) 1-(10,9) 2-(3,15) 3-(5,14) 4-(9,12)
+Target Locations:  0-(13,7) 1-(4,5) 2-(9,1) 3-(3,8) 4-(5,13) 5-(13,11) 6-(1,12)
+Task Assignment: 0-1 1-0 2-6 3-4 4-5
+Assignment aborted At time 50
+Time 52
+Robots Locations 0-(4,5) 1-(11,9) 2-(2,15) 3-(5,13) 4-(10,12)
+Target Locations:  0-(13,7) 1-(4,5) 2-(9,1) 3-(3,8) 4-(5,13) 5-(13,11) 6-(1,12) 7-(12,13)
+Task Assignment: 0-1 1-0 2-6 3-4 4-7
+Robot 0 finished At time 52
+Time 54
+Robots Locations 0-(4,5) 1-(11,9) 2-(2,15) 3-(5,13) 4-(10,12)
+Target Locations:  0-(13,7) 1-(9,1) 2-(3,8) 3-(5,13) 4-(13,11) 5-(1,12) 6-(12,13)
+Task Assignment: 0-2 1-0 2-5 3-3 4-6
+Assignment aborted At time 55
+Time 57
+Robots Locations 0-(4,5) 1-(11,8) 2-(2,15) 3-(5,13) 4-(11,12)
+Target Locations:  0-(13,7) 1-(9,1) 2-(3,8) 3-(5,13) 4-(13,11) 5-(1,12) 6-(12,13) 7-(3,11)
+Task Assignment: 0-2 1-0 2-5 3-3 4-6
+Robot 3 finished At time 58
+Time 60
+Robots Locations 0-(4,6) 1-(11,8) 2-(2,15) 3-(5,13) 4-(11,12)
+Target Locations:  0-(13,7) 1-(9,1) 2-(3,8) 3-(13,11) 4-(1,12) 5-(12,13) 6-(3,11)
+Task Assignment: 0-2 1-0 2-4 3-6 4-5
+Assignment aborted At time 61
+Time 63
+Robots Locations 0-(4,6) 1-(12,8) 2-(2,14) 3-(5,13) 4-(11,13)
+Target Locations:  0-(13,7) 1-(9,1) 2-(3,8) 3-(13,11) 4-(1,12) 5-(12,13) 6-(3,11) 7-(8,6)
+Task Assignment: 0-2 1-0 2-4 3-6 4-5
+Robot 4 finished At time 66
+Time 68
+Robots Locations 0-(3,8) 1-(13,7) 2-(1,12) 3-(3,11) 4-(12,13)
+Target Locations:  0-(13,7) 1-(9,1) 2-(3,8) 3-(13,11) 4-(1,12) 5-(3,11) 6-(8,6)
+Task Assignment: 0-2 1-0 2-4 3-5 4-3
+Assignment aborted At time 68
+Time 70
+Robots Locations 0-(3,8) 1-(13,7) 2-(1,12) 3-(3,11) 4-(12,13)
+Target Locations:  0-(13,7) 1-(9,1) 2-(3,8) 3-(13,11) 4-(1,12) 5-(3,11) 6-(8,6) 7-(15,5)
+Task Assignment: 0-2 1-0 2-4 3-5 4-3
+Robot 1 finished At time 71
+Time 73
+Robots Locations 0-(3,8) 1-(13,7) 2-(1,12) 3-(3,11) 4-(12,13)
+Target Locations:  0-(9,1) 1-(3,8) 2-(13,11) 3-(1,12) 4-(3,11) 5-(8,6) 6-(15,5)
+Task Assignment: 0-1 1-6 2-3 3-4 4-2
+Assignment aborted At time 73
+Time 75
+Robots Locations 0-(3,8) 1-(13,7) 2-(1,12) 3-(3,11) 4-(12,13)
+Target Locations:  0-(9,1) 1-(3,8) 2-(13,11) 3-(1,12) 4-(3,11) 5-(8,6) 6-(15,5) 7-(8,11)
+Task Assignment: 0-1 1-6 2-3 3-4 4-2
+Robot 0 finished At time 77
+Time 79
+Robots Locations 0-(3,8) 1-(14,6) 2-(1,12) 3-(3,11) 4-(13,12)
+Target Locations:  0-(9,1) 1-(13,11) 2-(1,12) 3-(3,11) 4-(8,6) 5-(15,5) 6-(8,11)
+Task Assignment: 0-4 1-5 2-2 3-3 4-1
+Assignment aborted At time 79
+Time 81
+Robots Locations 0-(3,8) 1-(14,6) 2-(1,12) 3-(3,11) 4-(13,12)
+Target Locations:  0-(9,1) 1-(13,11) 2-(1,12) 3-(3,11) 4-(8,6) 5-(15,5) 6-(8,11) 7-(14,3)
+Task Assignment: 0-4 1-5 2-2 3-3 4-1
+Robot 2 finished At time 82
+Time 84
+Robots Locations 0-(3,8) 1-(14,6) 2-(1,12) 3-(3,11) 4-(13,12)
+Target Locations:  0-(9,1) 1-(13,11) 2-(3,11) 3-(8,6) 4-(15,5) 5-(8,11) 6-(14,3)
+Task Assignment: 0-3 1-4 2-2 3-5 4-1
+Assignment aborted At time 84
+Time 86
+Robots Locations 0-(3,8) 1-(14,6) 2-(1,12) 3-(3,11) 4-(13,12)
+Target Locations:  0-(9,1) 1-(13,11) 2-(3,11) 3-(8,6) 4-(15,5) 5-(8,11) 6-(14,3) 7-(4,9)
+Task Assignment: 0-7 1-4 2-2 3-5 4-1
+Robot 4 finished At time 91
+Time 93
+Robots Locations 0-(4,9) 1-(15,5) 2-(3,11) 3-(4,10) 4-(13,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(4,9)
+Task Assignment: 0-6 1-3 2-1 3-2 4-4
+Assignment aborted At time 93
+Time 95
+Robots Locations 0-(4,9) 1-(15,5) 2-(3,11) 3-(4,10) 4-(13,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(15,5) 4-(8,11) 5-(14,3) 6-(4,9) 7-(10,12)
+Task Assignment: 0-6 1-3 2-1 3-4 4-7
+Robot 1 finished At time 96
+Time 98
+Robots Locations 0-(4,9) 1-(15,5) 2-(3,11) 3-(4,10) 4-(13,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(8,11) 4-(14,3) 5-(4,9) 6-(10,12)
+Task Assignment: 0-5 1-4 2-1 3-3 4-6
+Assignment aborted At time 98
+Time 100
+Robots Locations 0-(4,9) 1-(15,5) 2-(3,11) 3-(5,10) 4-(13,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(8,11) 4-(14,3) 5-(4,9) 6-(10,12) 7-(3,2)
+Task Assignment: 0-5 1-4 2-1 3-3 4-6
+Robot 0 finished At time 101
+Time 104
+Robots Locations 0-(4,9) 1-(15,5) 2-(3,11) 3-(5,10) 4-(13,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(8,11) 4-(14,3) 5-(10,12) 6-(3,2)
+Task Assignment: 0-2 1-4 2-1 3-3 4-5
+Assignment aborted At time 104
+Time 106
+Robots Locations 0-(4,9) 1-(15,5) 2-(3,11) 3-(5,10) 4-(13,11)
+Target Locations:  0-(9,1) 1-(3,11) 2-(8,6) 3-(8,11) 4-(14,3) 5-(10,12) 6-(3,2) 7-(5,9)
+Task Assignment: 0-7 1-4 2-1 3-3 4-5
+Robot 2 finished At time 108
+Time 110
+Robots Locations 0-(5,9) 1-(15,4) 2-(3,11) 3-(6,11) 4-(12,11)
+Target Locations:  0-(9,1) 1-(8,6) 2-(8,11) 3-(14,3) 4-(10,12) 5-(3,2) 6-(5,9)
+Task Assignment: 0-1 1-3 2-6 3-2 4-4
+Assignment aborted At time 110
+Time 113
+Robots Locations 0-(5,9) 1-(15,4) 2-(3,11) 3-(6,11) 4-(12,11)
+Target Locations:  0-(9,1) 1-(8,6) 2-(8,11) 3-(14,3) 4-(10,12) 5-(3,2) 6-(5,9) 7-(11,1)
+Task Assignment: 0-1 1-3 2-6 3-2 4-4
+Assignment aborted At time 119
+Time 121
+Robots Locations 0-(6,8) 1-(14,3) 2-(4,10) 3-(8,11) 4-(10,12)
+Target Locations:  0-(9,1) 1-(8,6) 2-(8,11) 3-(14,3) 4-(10,12) 5-(3,2) 6-(5,9) 7-(11,1) 8-(5,3)
+Task Assignment: 0-1 1-3 2-6 3-2 4-4
+Robot 1 finished At time 122
+Time 124
+Robots Locations 0-(6,8) 1-(14,3) 2-(4,10) 3-(8,11) 4-(10,12)
+Target Locations:  0-(9,1) 1-(8,6) 2-(8,11) 3-(10,12) 4-(3,2) 5-(5,9) 6-(11,1) 7-(5,3)
+Task Assignment: 0-1 1-6 2-5 3-2 4-3
+Assignment aborted At time 126
+Time 128
+Robots Locations 0-(7,7) 1-(14,3) 2-(5,9) 3-(8,11) 4-(10,12)
+Target Locations:  0-(9,1) 1-(8,6) 2-(8,11) 3-(10,12) 4-(3,2) 5-(5,9) 6-(11,1) 7-(5,3) 8-(15,12)
+Task Assignment: 0-1 1-6 2-5 3-2 4-3
+Robot 4 finished At time 130
+Time 133
+Robots Locations 0-(7,7) 1-(13,2) 2-(5,9) 3-(8,11) 4-(10,12)
+Target Locations:  0-(9,1) 1-(8,6) 2-(8,11) 3-(3,2) 4-(5,9) 5-(11,1) 6-(5,3) 7-(15,12)
+Task Assignment: 0-6 1-5 2-1 3-4 4-2
+Assignment aborted At time 133
+Time 135
+Robots Locations 0-(7,7) 1-(13,2) 2-(5,9) 3-(8,11) 4-(10,12)
+Target Locations:  0-(9,1) 1-(8,6) 2-(8,11) 3-(3,2) 4-(5,9) 5-(11,1) 6-(5,3) 7-(15,12) 8-(10,10)
+Task Assignment: 0-1 1-5 2-4 3-2 4-8
+Robot 0 finished At time 140
+Time 143
+Robots Locations 0-(8,6) 1-(11,1) 2-(5,9) 3-(8,11) 4-(10,11)
+Target Locations:  0-(9,1) 1-(8,11) 2-(3,2) 3-(5,9) 4-(11,1) 5-(5,3) 6-(15,12) 7-(10,10)
+Task Assignment: 0-5 1-4 2-3 3-1 4-7
+Assignment aborted At time 143
+Time 145
+Robots Locations 0-(8,6) 1-(11,1) 2-(5,9) 3-(8,11) 4-(10,11)
+Target Locations:  0-(9,1) 1-(8,11) 2-(3,2) 3-(5,9) 4-(11,1) 5-(5,3) 6-(15,12) 7-(10,10) 8-(6,5)
+Task Assignment: 0-8 1-4 2-3 3-1 4-7
+Robot 2 finished At time 148
+Time 151
+Robots Locations 0-(8,5) 1-(11,1) 2-(5,9) 3-(8,11) 4-(10,10)
+Target Locations:  0-(9,1) 1-(8,11) 2-(3,2) 3-(11,1) 4-(5,3) 5-(15,12) 6-(10,10) 7-(6,5)
+Task Assignment: 0-4 1-3 2-7 3-1 4-6
+Assignment aborted At time 151
+Time 153
+Robots Locations 0-(8,5) 1-(11,1) 2-(5,9) 3-(8,11) 4-(10,10)
+Target Locations:  0-(9,1) 1-(8,11) 2-(3,2) 3-(11,1) 4-(5,3) 5-(15,12) 6-(10,10) 7-(6,5) 8-(5,12)
+Task Assignment: 0-7 1-3 2-8 3-1 4-6
+Robot 3 finished At time 154
+Time 156
+Robots Locations 0-(7,5) 1-(11,1) 2-(5,9) 3-(8,11) 4-(10,10)
+Target Locations:  0-(9,1) 1-(3,2) 2-(11,1) 3-(5,3) 4-(15,12) 5-(10,10) 6-(6,5) 7-(5,12)
+Task Assignment: 0-3 1-2 2-6 3-7 4-5
+Assignment aborted At time 156
+Time 159
+Robots Locations 0-(7,5) 1-(11,1) 2-(5,9) 3-(8,11) 4-(10,10)
+Target Locations:  0-(9,1) 1-(3,2) 2-(11,1) 3-(5,3) 4-(15,12) 5-(10,10) 6-(6,5) 7-(5,12) 8-(14,4)
+Task Assignment: 0-3 1-2 2-6 3-7 4-5
+Robot 1 finished At time 160
+Time 162
+Robots Locations 0-(7,5) 1-(11,1) 2-(5,9) 3-(8,11) 4-(10,10)
+Target Locations:  0-(9,1) 1-(3,2) 2-(5,3) 3-(15,12) 4-(10,10) 5-(6,5) 6-(5,12) 7-(14,4)
+Task Assignment: 0-2 1-0 2-5 3-6 4-4
+Assignment aborted At time 162
+Time 166
+Robots Locations 0-(7,5) 1-(11,1) 2-(5,9) 3-(8,11) 4-(10,10)
+Target Locations:  0-(9,1) 1-(3,2) 2-(5,3) 3-(15,12) 4-(10,10) 5-(6,5) 6-(5,12) 7-(14,4) 8-(6,14)
+Task Assignment: 0-5 1-0 2-6 3-8 4-4
+Robot 4 finished At time 167
+Time 169
+Robots Locations 0-(7,5) 1-(11,1) 2-(5,8) 3-(8,12) 4-(10,10)
+Target Locations:  0-(9,1) 1-(3,2) 2-(5,3) 3-(15,12) 4-(6,5) 5-(5,12) 6-(14,4) 7-(6,14)
+Task Assignment: 0-2 1-0 2-4 3-7 4-3
+Assignment aborted At time 172
+Time 174
+Robots Locations 0-(6,4) 1-(10,1) 2-(6,8) 3-(8,12) 4-(11,10)
+Target Locations:  0-(9,1) 1-(3,2) 2-(5,3) 3-(15,12) 4-(6,5) 5-(5,12) 6-(14,4) 7-(6,14) 8-(8,14)
+Task Assignment: 0-2 1-0 2-4 3-7 4-3
+Robot 1 finished At time 179
+Time 181
+Robots Locations 0-(5,3) 1-(9,1) 2-(6,6) 3-(7,13) 4-(12,11)
+Target Locations:  0-(3,2) 1-(5,3) 2-(15,12) 3-(6,5) 4-(5,12) 5-(14,4) 6-(6,14) 7-(8,14)
+Task Assignment: 0-0 1-1 2-3 3-6 4-2
+Assignment aborted At time 181
+Time 184
+Robots Locations 0-(5,3) 1-(9,1) 2-(6,6) 3-(6,13) 4-(12,11)
+Target Locations:  0-(3,2) 1-(5,3) 2-(15,12) 3-(6,5) 4-(5,12) 5-(14,4) 6-(6,14) 7-(8,14) 8-(2,8)
+Task Assignment: 0-0 1-1 2-3 3-4 4-2
+Assignment aborted At time 187
+Time 189
+Robots Locations 0-(4,3) 1-(8,1) 2-(6,5) 3-(6,13) 4-(13,11)
+Target Locations:  0-(3,2) 1-(5,3) 2-(15,12) 3-(6,5) 4-(5,12) 5-(14,4) 6-(6,14) 7-(8,14) 8-(2,8) 9-(14,6)
+Task Assignment: 0-0 1-1 2-3 3-4 4-2
+Robot 2 finished At time 191
+Time 193
+Robots Locations 0-(4,2) 1-(7,2) 2-(6,5) 3-(5,13) 4-(14,11)
+Target Locations:  0-(3,2) 1-(5,3) 2-(15,12) 3-(5,12) 4-(14,4) 5-(6,14) 6-(8,14) 7-(2,8) 8-(14,6)
+Task Assignment: 0-0 1-1 2-7 3-3 4-2
+Assignment aborted At time 193
+Time 195
+Robots Locations 0-(4,2) 1-(7,2) 2-(6,5) 3-(5,13) 4-(14,11)
+Target Locations:  0-(3,2) 1-(5,3) 2-(15,12) 3-(5,12) 4-(14,4) 5-(6,14) 6-(8,14) 7-(2,8) 8-(14,6) 9-(3,10)
+Task Assignment: 0-0 1-1 2-7 3-3 4-2
+Robot 0 finished At time 199
+Time 202
+Robots Locations 0-(3,2) 1-(6,3) 2-(5,5) 3-(5,12) 4-(15,12)
+Target Locations:  0-(5,3) 1-(15,12) 2-(5,12) 3-(14,4) 4-(6,14) 5-(8,14) 6-(2,8) 7-(14,6) 8-(3,10)
+Task Assignment: 0-6 1-0 2-8 3-2 4-1
+Assignment aborted At time 202
+Time 204
+Robots Locations 0-(3,2) 1-(6,3) 2-(5,5) 3-(5,12) 4-(15,12)
+Target Locations:  0-(5,3) 1-(15,12) 2-(5,12) 3-(14,4) 4-(6,14) 5-(8,14) 6-(2,8) 7-(14,6) 8-(3,10) 9-(1,3)
+Task Assignment: 0-9 1-0 2-6 3-2 4-1
+Robot 3 finished At time 205
+Time 208
+Robots Locations 0-(3,2) 1-(6,3) 2-(5,5) 3-(5,12) 4-(15,12)
+Target Locations:  0-(5,3) 1-(15,12) 2-(14,4) 3-(6,14) 4-(8,14) 5-(2,8) 6-(14,6) 7-(3,10) 8-(1,3)
+Task Assignment: 0-8 1-0 2-5 3-3 4-1
+Assignment aborted At time 208
+Time 210
+Robots Locations 0-(3,2) 1-(6,3) 2-(5,5) 3-(5,12) 4-(15,12)
+Target Locations:  0-(5,3) 1-(15,12) 2-(14,4) 3-(6,14) 4-(8,14) 5-(2,8) 6-(14,6) 7-(3,10) 8-(1,3) 9-(5,2)
+Task Assignment: 0-8 1-9 2-0 3-3 4-1
+Robot 4 finished At time 213
+Time 215
+Robots Locations 0-(2,2) 1-(5,3) 2-(4,5) 3-(4,12) 4-(15,12)
+Target Locations:  0-(5,3) 1-(14,4) 2-(6,14) 3-(8,14) 4-(2,8) 5-(14,6) 6-(3,10) 7-(1,3) 8-(5,2)
+Task Assignment: 0-7 1-8 2-0 3-2 4-5
+Assignment aborted At time 216
+Time 219
+Robots Locations 0-(2,3) 1-(5,2) 2-(4,5) 3-(4,12) 4-(15,12)
+Target Locations:  0-(5,3) 1-(14,4) 2-(6,14) 3-(8,14) 4-(2,8) 5-(14,6) 6-(3,10) 7-(1,3) 8-(5,2) 9-(11,12)
+Task Assignment: 0-7 1-8 2-0 3-2 4-9
+Robot 1 finished At time 223
+Time 226
+Robots Locations 0-(1,3) 1-(5,2) 2-(5,4) 3-(5,13) 4-(15,11)
+Target Locations:  0-(5,3) 1-(14,4) 2-(6,14) 3-(8,14) 4-(2,8) 5-(14,6) 6-(3,10) 7-(1,3) 8-(11,12)
+Task Assignment: 0-7 1-0 2-4 3-2 4-8
+Assignment aborted At time 226
+Time 228
+Robots Locations 0-(1,3) 1-(5,2) 2-(5,4) 3-(5,13) 4-(15,11)
+Target Locations:  0-(5,3) 1-(14,4) 2-(6,14) 3-(8,14) 4-(2,8) 5-(14,6) 6-(3,10) 7-(1,3) 8-(11,12) 9-(4,2)
+Task Assignment: 0-7 1-9 2-0 3-2 4-8
+Robot 0 finished At time 229
+Time 231
+Robots Locations 0-(1,3) 1-(5,2) 2-(5,3) 3-(5,13) 4-(15,11)
+Target Locations:  0-(5,3) 1-(14,4) 2-(6,14) 3-(8,14) 4-(2,8) 5-(14,6) 6-(3,10) 7-(11,12) 8-(4,2)
+Task Assignment: 0-4 1-8 2-0 3-2 4-7
+Assignment aborted At time 232
+Time 234
+Robots Locations 0-(1,3) 1-(5,2) 2-(5,3) 3-(5,13) 4-(15,11)
+Target Locations:  0-(5,3) 1-(14,4) 2-(6,14) 3-(8,14) 4-(2,8) 5-(14,6) 6-(3,10) 7-(11,12) 8-(4,2) 9-(15,14)
+Task Assignment: 0-4 1-8 2-0 3-2 4-9
+Robot 2 finished At time 238
+Time 240
+Robots Locations 0-(1,4) 1-(4,2) 2-(5,3) 3-(6,14) 4-(15,13)
+Target Locations:  0-(14,4) 1-(6,14) 2-(8,14) 3-(2,8) 4-(14,6) 5-(3,10) 6-(11,12) 7-(4,2) 8-(15,14)
+Task Assignment: 0-5 1-7 2-3 3-1 4-8
+Assignment aborted At time 240
+Time 242
+Robots Locations 0-(1,4) 1-(4,2) 2-(5,3) 3-(6,14) 4-(15,13)
+Target Locations:  0-(14,4) 1-(6,14) 2-(8,14) 3-(2,8) 4-(14,6) 5-(3,10) 6-(11,12) 7-(4,2) 8-(15,14) 9-(7,6)
+Task Assignment: 0-3 1-7 2-9 3-1 4-8
+Robot 3 finished At time 243
+Time 245
+Robots Locations 0-(1,5) 1-(4,2) 2-(5,3) 3-(6,14) 4-(15,13)
+Target Locations:  0-(14,4) 1-(8,14) 2-(2,8) 3-(14,6) 4-(3,10) 5-(11,12) 6-(4,2) 7-(15,14) 8-(7,6)
+Task Assignment: 0-2 1-6 2-8 3-1 4-7
+Assignment aborted At time 245
+Time 247
+Robots Locations 0-(1,5) 1-(4,2) 2-(6,3) 3-(6,14) 4-(15,13)
+Target Locations:  0-(14,4) 1-(8,14) 2-(2,8) 3-(14,6) 4-(3,10) 5-(11,12) 6-(4,2) 7-(15,14) 8-(7,6) 9-(13,2)
+Task Assignment: 0-2 1-6 2-8 3-1 4-7
+Robot 1 finished At time 249
+Time 251
+Robots Locations 0-(1,6) 1-(4,2) 2-(6,4) 3-(7,14) 4-(15,14)
+Target Locations:  0-(14,4) 1-(8,14) 2-(2,8) 3-(14,6) 4-(3,10) 5-(11,12) 6-(15,14) 7-(7,6) 8-(13,2)
+Task Assignment: 0-4 1-7 2-2 3-1 4-6
+Assignment aborted At time 251
+Time 253
+Robots Locations 0-(1,6) 1-(4,2) 2-(6,4) 3-(7,14) 4-(15,14)
+Target Locations:  0-(14,4) 1-(8,14) 2-(2,8) 3-(14,6) 4-(3,10) 5-(11,12) 6-(15,14) 7-(7,6) 8-(13,2) 9-(15,2)
+Task Assignment: 0-4 1-7 2-2 3-1 4-6
+Robot 4 finished At time 256
+Time 258
+Robots Locations 0-(2,7) 1-(4,3) 2-(5,4) 3-(8,14) 4-(15,14)
+Target Locations:  0-(14,4) 1-(8,14) 2-(2,8) 3-(14,6) 4-(3,10) 5-(11,12) 6-(7,6) 7-(13,2) 8-(15,2)
+Task Assignment: 0-4 1-2 2-6 3-1 4-5
+Assignment aborted At time 258
+Time 260
+Robots Locations 0-(2,7) 1-(4,3) 2-(5,5) 3-(8,14) 4-(15,14)
+Target Locations:  0-(14,4) 1-(8,14) 2-(2,8) 3-(14,6) 4-(3,10) 5-(11,12) 6-(7,6) 7-(13,2) 8-(15,2) 9-(7,9)
+Task Assignment: 0-2 1-6 2-9 3-1 4-5
+Robot 3 finished At time 262
+Time 264
+Robots Locations 0-(2,8) 1-(5,4) 2-(6,5) 3-(8,14) 4-(14,15)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(3,10) 4-(11,12) 5-(7,6) 6-(13,2) 7-(15,2) 8-(7,9)
+Task Assignment: 0-1 1-5 2-3 3-8 4-4
+Assignment aborted At time 264
+Time 266
+Robots Locations 0-(2,8) 1-(5,4) 2-(6,6) 3-(8,14) 4-(14,14)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(3,10) 4-(11,12) 5-(7,6) 6-(13,2) 7-(15,2) 8-(7,9) 9-(12,8)
+Task Assignment: 0-3 1-5 2-1 3-8 4-4
+Assignment aborted At time 268
+Time 270
+Robots Locations 0-(2,9) 1-(6,5) 2-(5,6) 3-(8,13) 4-(13,14)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(3,10) 4-(11,12) 5-(7,6) 6-(13,2) 7-(15,2) 8-(7,9) 9-(12,8) 10-(12,9)
+Task Assignment: 0-3 1-5 2-1 3-8 4-4
+Assignment aborted At time 274
+Time 276
+Robots Locations 0-(3,10) 1-(7,6) 2-(3,7) 3-(8,11) 4-(12,13)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(3,10) 4-(11,12) 5-(7,6) 6-(13,2) 7-(15,2) 8-(7,9) 9-(12,8) 10-(12,9) 11-(8,5)
+Task Assignment: 0-3 1-5 2-1 3-8 4-4
+Robot 0 finished At time 277
+Time 278
+Robots Locations 0-(3,10) 1-(7,6) 2-(3,7) 3-(8,11) 4-(12,13)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(11,12) 4-(7,6) 5-(13,2) 6-(15,2) 7-(7,9) 8-(12,8) 9-(12,9) 10-(8,5)
+Task Assignment: 0-1 1-10 2-4 3-7 4-3
+Assignment aborted At time 280
+Time 282
+Robots Locations 0-(3,10) 1-(7,6) 2-(3,8) 3-(8,11) 4-(11,12)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(11,12) 4-(7,6) 5-(13,2) 6-(15,2) 7-(7,9) 8-(12,8) 9-(12,9) 10-(8,5) 11-(14,5)
+Task Assignment: 0-1 1-10 2-4 3-7 4-3
+Robot 4 finished At time 285
+Time 287
+Robots Locations 0-(2,10) 1-(8,5) 2-(4,8) 3-(7,9) 4-(11,12)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(7,6) 4-(13,2) 5-(15,2) 6-(7,9) 7-(12,8) 8-(12,9) 9-(8,5) 10-(14,5)
+Task Assignment: 0-1 1-9 2-3 3-6 4-8
+Assignment aborted At time 287
+Time 289
+Robots Locations 0-(2,10) 1-(8,5) 2-(4,8) 3-(7,9) 4-(11,12)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(7,6) 4-(13,2) 5-(15,2) 6-(7,9) 7-(12,8) 8-(12,9) 9-(8,5) 10-(14,5) 11-(14,9)
+Task Assignment: 0-1 1-9 2-3 3-6 4-8
+Robot 1 finished At time 290
+Time 293
+Robots Locations 0-(2,9) 1-(8,5) 2-(5,7) 3-(7,9) 4-(11,11)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(7,6) 4-(13,2) 5-(15,2) 6-(7,9) 7-(12,8) 8-(12,9) 9-(14,5) 10-(14,9)
+Task Assignment: 0-1 1-4 2-3 3-6 4-8
+Assignment aborted At time 293
+Time 295
+Robots Locations 0-(2,9) 1-(8,5) 2-(5,7) 3-(7,9) 4-(11,11)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(7,6) 4-(13,2) 5-(15,2) 6-(7,9) 7-(12,8) 8-(12,9) 9-(14,5) 10-(14,9) 11-(4,12)
+Task Assignment: 0-11 1-3 2-1 3-6 4-8
+Robot 3 finished At time 296
+Time 298
+Robots Locations 0-(3,8) 1-(8,4) 2-(5,7) 3-(7,9) 4-(11,11)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(7,6) 4-(13,2) 5-(15,2) 6-(12,8) 7-(12,9) 8-(14,5) 9-(14,9) 10-(4,12)
+Task Assignment: 0-1 1-4 2-3 3-10 4-7
+Assignment aborted At time 298
+Time 300
+Robots Locations 0-(3,8) 1-(8,4) 2-(5,7) 3-(7,9) 4-(11,11)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(7,6) 4-(13,2) 5-(15,2) 6-(12,8) 7-(12,9) 8-(14,5) 9-(14,9) 10-(4,12) 11-(13,6)
+Task Assignment: 0-1 1-4 2-3 3-10 4-7
+Assignment aborted At time 303
+Time 306
+Robots Locations 0-(3,7) 1-(8,3) 2-(6,6) 3-(6,9) 4-(12,9)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(7,6) 4-(13,2) 5-(15,2) 6-(12,8) 7-(12,9) 8-(14,5) 9-(14,9) 10-(4,12) 11-(13,6)
+Task Assignment: 0-1 1-4 2-3 3-10 4-7
+Robot 4 finished At time 309
+Time 311
+Robots Locations 0-(2,8) 1-(10,3) 2-(7,6) 3-(5,10) 4-(12,9)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(7,6) 4-(13,2) 5-(15,2) 6-(12,8) 7-(14,5) 8-(14,9) 9-(4,12) 10-(13,6)
+Task Assignment: 0-1 1-4 2-3 3-9 4-6
+Assignment aborted At time 311
+Time 312
+Robots Locations 0-(2,8) 1-(10,3) 2-(7,6) 3-(5,10) 4-(12,9)
+Target Locations:  0-(14,4) 1-(2,8) 2-(14,6) 3-(7,6) 4-(13,2) 5-(15,2) 6-(12,8) 7-(14,5) 8-(14,9) 9-(4,12) 10-(13,6)
+Task Assignment: 0-1 1-4 2-3 3-9 4-6
+Robot 0 finished At time 313
+Time 315
+Robots Locations 0-(2,8) 1-(10,3) 2-(7,6) 3-(5,11) 4-(12,9)
+Target Locations:  0-(14,4) 1-(14,6) 2-(7,6) 3-(13,2) 4-(15,2) 5-(12,8) 6-(14,5) 7-(14,9) 8-(4,12) 9-(13,6)
+Task Assignment: 0-2 1-3 2-5 3-8 4-7
+Assignment aborted At time 315
+Time 317
+Robots Locations 0-(2,8) 1-(10,3) 2-(7,6) 3-(5,11) 4-(12,9)
+Target Locations:  0-(14,4) 1-(14,6) 2-(7,6) 3-(13,2) 4-(15,2) 5-(12,8) 6-(14,5) 7-(14,9) 8-(4,12) 9-(13,6)
+Task Assignment: 0-2 1-3 2-5 3-8 4-7
+Assignment aborted At time 322
+Time 323
+Robots Locations 0-(3,8) 1-(12,2) 2-(9,7) 3-(4,12) 4-(14,9)
+Target Locations:  0-(14,4) 1-(14,6) 2-(7,6) 3-(13,2) 4-(15,2) 5-(12,8) 6-(14,5) 7-(14,9) 8-(4,12) 9-(13,6)
+Task Assignment: 0-2 1-3 2-5 3-8 4-7
+Robot 3 finished At time 325
+Time 327
+Robots Locations 0-(4,8) 1-(13,2) 2-(10,7) 3-(4,12) 4-(14,9)
+Target Locations:  0-(14,4) 1-(14,6) 2-(7,6) 3-(13,2) 4-(15,2) 5-(12,8) 6-(14,5) 7-(14,9) 8-(13,6)
+Task Assignment: 0-2 1-3 2-8 3-5 4-7
+Assignment aborted At time 327
+Time 329
+Robots Locations 0-(4,8) 1-(13,2) 2-(10,7) 3-(4,12) 4-(14,9)
+Target Locations:  0-(14,4) 1-(14,6) 2-(7,6) 3-(13,2) 4-(15,2) 5-(12,8) 6-(14,5) 7-(14,9) 8-(13,6)
+Task Assignment: 0-2 1-3 2-8 3-5 4-7
+Robot 4 finished At time 331
+Time 333
+Robots Locations 0-(4,8) 1-(13,2) 2-(10,7) 3-(4,13) 4-(14,9)
+Target Locations:  0-(14,4) 1-(14,6) 2-(7,6) 3-(13,2) 4-(15,2) 5-(12,8) 6-(14,5) 7-(13,6)
+Task Assignment: 0-5 1-3 2-7 3-2 4-1
+Assignment aborted At time 333
+Time 335
+Robots Locations 0-(4,8) 1-(13,2) 2-(10,7) 3-(4,13) 4-(14,9)
+Target Locations:  0-(14,4) 1-(14,6) 2-(7,6) 3-(13,2) 4-(15,2) 5-(12,8) 6-(14,5) 7-(13,6)
+Task Assignment: 0-5 1-3 2-7 3-2 4-1
+Robot 1 finished At time 336
+Time 338
+Robots Locations 0-(5,8) 1-(13,2) 2-(11,7) 3-(5,13) 4-(15,9)
+Target Locations:  0-(14,4) 1-(14,6) 2-(7,6) 3-(15,2) 4-(12,8) 5-(14,5) 6-(13,6)
+Task Assignment: 0-4 1-0 2-6 3-2 4-1
+Assignment aborted At time 339
+Time 341
+Robots Locations 0-(5,8) 1-(13,2) 2-(11,7) 3-(5,12) 4-(15,9)
+Target Locations:  0-(14,4) 1-(14,6) 2-(7,6) 3-(15,2) 4-(12,8) 5-(14,5) 6-(13,6)
+Task Assignment: 0-4 1-0 2-6 3-2 4-1
+Assignment aborted At time 345
+Time 347
+Robots Locations 0-(7,8) 1-(14,4) 2-(13,6) 3-(5,11) 4-(14,7)
+Target Locations:  0-(14,4) 1-(14,6) 2-(7,6) 3-(15,2) 4-(12,8) 5-(14,5) 6-(13,6)
+Task Assignment: 0-4 1-0 2-6 3-2 4-1
+Robot 1 finished At time 350
+Time 352
+Robots Locations 0-(8,8) 1-(14,4) 2-(13,6) 3-(6,9) 4-(14,6)
+Target Locations:  0-(14,6) 1-(7,6) 2-(15,2) 3-(12,8) 4-(14,5) 5-(13,6)
+Task Assignment: 0-3 1-4 2-5 3-1 4-0
+Assignment aborted At time 352
+Time 354
+Robots Locations 0-(8,8) 1-(14,4) 2-(13,6) 3-(6,9) 4-(14,6)
+Target Locations:  0-(14,6) 1-(7,6) 2-(15,2) 3-(12,8) 4-(14,5) 5-(13,6)
+Task Assignment: 0-3 1-4 2-5 3-1 4-0
+Robot 2 finished At time 354
+Time 356
+Robots Locations 0-(9,8) 1-(14,4) 2-(13,6) 3-(6,9) 4-(14,6)
+Target Locations:  0-(14,6) 1-(7,6) 2-(15,2) 3-(12,8) 4-(14,5)
+Task Assignment: 0-3 1-2 2-4 3-1 4-0
+Assignment aborted At time 357
+Time 358
+Robots Locations 0-(9,8) 1-(14,4) 2-(13,6) 3-(6,9) 4-(14,6)
+Target Locations:  0-(14,6) 1-(7,6) 2-(15,2) 3-(12,8) 4-(14,5)
+Task Assignment: 0-3 1-2 2-4 3-1 4-0
+Robot 4 finished At time 359
+Robot 0 finished At time 367
+Robot 3 finished At time 368
+Robot 1 finished At time 368
+Robot 2 finished At time 374
