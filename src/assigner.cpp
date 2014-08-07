@@ -46,6 +46,8 @@ typedef actionlib::SimpleActionClient<online_scram::WalkAction> WalkClient;
 #define NUM_RUNS 20
 #define GRID_WIDTH 15
 #define LOGGER_NAME "ScramOnline.log"
+// could be 1 or 2
+#define INJECT_METHOD 2
 
 void moveRobot(WalkClient *ac, std::pair<int,int> location, bool care_collision = true);
 
@@ -117,6 +119,9 @@ std::vector<Edge> BLE(Test t){
 			break;
 		}
 	}
+
+	delete []is_robot_taken;
+	delete []is_target_taken;
 
 	return answer;
 }
@@ -226,11 +231,13 @@ void adjustAngle(ros::Publisher &cmd_vel_pub, double curAngle, double newAngle) 
 
 int NUM_CUR_GOALS = 0;
 bool shouldAbort = false;
+#if (INJECT_METHOD == 2)
 void timerCallback(const ros::TimerEvent&) {
 	ROS_WARN("Timer called");
 	NUM_CUR_GOALS++;
 	shouldAbort = true;
 }
+#endif
 
 int main(int argc, char** argv) {
 	ros::init(argc, argv, "assigner");
@@ -325,9 +332,14 @@ int main(int argc, char** argv) {
 
 			int n = NUM_ROBOTS;
 			NUM_CUR_GOALS = n;
+#if (INJECT_METHOD == 2)
 			ros::Timer timer = nh.createTimer(ros::Duration(5.0), timerCallback);
 			timer.start();
+#endif
 			while (GoalsList.size() > 0) {
+#if (INJECT_METHOD == 1)
+				NUM_CUR_GOALS = NUM_CUR_GOALS + 1;
+#endif
 				NUM_CUR_GOALS = std::min(NUM_CUR_GOALS,(int)GoalsList.size());
 
 				Test t;
@@ -343,23 +355,14 @@ int main(int argc, char** argv) {
 				  t.targets.push_back(GoalsList.back());
 				  GoalsList.pop_back();
 				}
-				/*
-				// put the targets on the stage map
-				for (int i = 0; i < std::min(n,NUM_CUR_GOALS); i++) {
-					Point p = t.targets[i];
-					geometry_msgs::Pose2D msg;
-					msg.x = p.first;
-					msg.y = p.second;
-					msg.theta = 0;
-					PosePublishersList[i].publish(msg);
-				}
-				*/
+
 				ROS_INFO("Trying to run task assignment algorithm");
 				// solve the task assignment problem
 				std::vector<Edge> answer =
 						((AssignmentAlgo*)(it->second))(t);
 				ROS_INFO("Success !!!");
 
+				// put the targets on the stage map
 				for (int i=0; i < answer.size(); i++) {
 					Point p = t.targets[answer[i].second.second];
 					geometry_msgs::Pose2D msg;
@@ -430,7 +433,9 @@ int main(int argc, char** argv) {
 				ROS_INFO("NUM_CUR_GOALS %d", NUM_CUR_GOALS);
 				ROS_INFO("GoalsList size %d", GoalsList.size());
 				if ((GoalsList.size() == 0) && (NUM_CUR_GOALS <= 4)) {
+#if (INJECT_METHOD == 2)
 					timer.stop();
+#endif
 					bool robots_state[NUM_ROBOTS];
 					memset(robots_state,false,NUM_ROBOTS);
 					robots_state[robot_finished] = true;
