@@ -46,6 +46,7 @@ typedef actionlib::SimpleActionClient<online_scram::WalkAction> WalkClient;
 #define NUM_RUNS 20
 #define GRID_WIDTH 15
 #define LOGGER_NAME "ScramOnline.log"
+#define FREQUENCY 5.0
 // could be 1 or 2
 #define INJECT_METHOD 2
 
@@ -337,7 +338,7 @@ int main(int argc, char** argv) {
 			int n = NUM_ROBOTS;
 			NUM_CUR_GOALS = n;
 #if (INJECT_METHOD == 2)
-			ros::Timer timer = nh.createTimer(ros::Duration(5.0), timerCallback);
+			ros::Timer timer = nh.createTimer(ros::Duration(FREQUENCY), timerCallback);
 			timer.start();
 #endif
 			while (GoalsList.size() > 0) {
