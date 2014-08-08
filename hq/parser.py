@@ -3,6 +3,8 @@ import sys
 import math
 import os
 
+support_collision = True
+
 GOAL_PATTERN = "\(\d+,\d+\)"
 ALGO_PATTERN = "/(\w+)"
 START_TIME_PATTERN = "Time (\d+)"
@@ -10,6 +12,7 @@ LOCATIONS_PATTERN = "(\d+)-\(([-]*\d+),([-]*\d+)\)"
 ASSIGNMENT_PATTERN = "(\d+)-(\d+)"
 FINISH_TIME_PATTERN = "Robot (\d+) finished At time (\d+)"
 ABORT_TIME_PATTERN = "Assignment aborted At time (\d+)"
+NUM_COLLISIONS_PATTERN = "number of collisions is (\d+)"
 
 NUM_OF_ALGORITHMS = 4
 '''
@@ -43,6 +46,10 @@ if __name__ == "__main__":
 				break
 			else:
 				lines.append(line)
+		if support_collision:
+			colllsions_num = int(re.findall(NUM_COLLISIONS_PATTERN, lines[-1])[0])
+			print "number of collisons: %d" % colllsions_num
+		lines = lines[:-1]
 		Makespan = 0
 		robotLocationsList = []
 		arrivalTimes = []
