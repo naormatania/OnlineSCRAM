@@ -49,6 +49,8 @@ typedef actionlib::SimpleActionClient<online_scram::WalkAction> WalkClient;
 // could be 1 or 2
 #define INJECT_METHOD 2
 
+int num_collisions = 0;
+
 void moveRobot(WalkClient *ac, std::pair<int,int> location, bool care_collision = true);
 
 bool sortEdges(const Edge &e1,const Edge &e2) { return (e1.first<e2.first); }
@@ -78,6 +80,7 @@ void feedbackCb(const online_scram::WalkFeedbackConstPtr& feedback)
   if (feedback->is_waiting == true) {
 	  ROS_WARN("Robot id %d with feed_back %d", feedback->robot_id,
 	  			feedback->is_waiting);
+	  num_collisions = num_collisions + 1;
   }
   is_waiting[feedback->robot_id] = feedback->is_waiting;
 }
@@ -325,6 +328,7 @@ int main(int argc, char** argv) {
 		for (std::vector<std::pair<std::string,void*> >::iterator it=AssignmentAlgorithms.begin();
 				it!=AssignmentAlgorithms.end(); ++it)
 		{
+			num_collisions = 0;
 			// log assignment algorithm type
 			log << "/" << it->first << std::endl;
 			std::vector<Point> GoalsList = RunGoalsList;
@@ -473,6 +477,7 @@ int main(int argc, char** argv) {
 					}
 				}
 			}
+			log << "number of collisions is " << num_collisions << std::endl;
 			// move robots back to their spots (30,30) for another run
 			for (int i=0; i< NUM_ROBOTS; i++) {
 				moveRobot(WalkClientList[i],
